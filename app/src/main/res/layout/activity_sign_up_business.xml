@@ -1,0 +1,473 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="@string/Sign_Up"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <!--name of farm-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/name_of_farm"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Name_Of_Farm"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--name of propertier-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/properiter_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Name_Of_the_Propertier"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--location of farm-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textAllCaps="true"
+                                android:text="@string/Location_Of_The_Farm"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:background="#C6C4C4"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:background="#C6C4C4"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp"
+                                >
+                                <!--district spinner-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    >
+
+                                    <TextView
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Select_District"
+                                        android:textSize="15sp"/>
+
+
+                                    <LinearLayout
+                                        android:background="@drawable/rectangle_border"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/edittext_height"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight="1">
+
+                                        <Spinner
+                                            android:id="@+id/district"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <!--block spinner-->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    >
+
+                                    <TextView
+                                        android:textAllCaps="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Select_Block"
+                                        android:textSize="15sp"/>
+
+
+                                    <LinearLayout
+                                        android:background="@drawable/rectangle_border"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/edittext_height"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight="1">
+
+                                        <Spinner
+                                            android:id="@+id/block"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+
+                                            />
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!--phone number-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mob_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/PHONENUMBER"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--email-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Email"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--website-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/idwebsite"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Website"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="textWebEditText"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--password-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/PASSWORD"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="textPassword"
+                                android:maxLength="6"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--type of business-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp"
+                            >
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Type_Of_Business"
+                                android:textSize="15sp"/>
+
+
+                            <LinearLayout
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <Spinner
+                                    android:id="@+id/business_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_business_type"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <!--deals in-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/DealsIn"
+                                android:textSize="15sp"/>
+
+
+                            <LinearLayout
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <Spinner
+                                    android:id="@+id/dealsIn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_deals_in"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <!--Preferred area of business-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <TextView
+                                android:textAllCaps="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Preferred_Area_Of_Business"
+                                android:textSize="15sp"/>
+
+
+                            <LinearLayout
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <com.odishakrushi.utils.multiselectspinner.MultiSpinner
+                                    android:id="@+id/multi_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/termcondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark2"
+                    android:layout_weight="1"
+                    android:text="@string/I_agree_T_C" />
+
+                <TextView
+                    android:id="@+id/readTermCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:linksClickable="true"
+                    android:autoLink="web"
+                    android:text="@string/Read_here_T_C_P"
+                   />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/Submit"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/register"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:background="@color/ColorName"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

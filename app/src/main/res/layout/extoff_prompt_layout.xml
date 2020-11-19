@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@color/transparentgrey"
+        android:text="After registration and approval, Please watch the Tutorial video available in 'Setting' to know about different features and use of the app"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Officers from Agriculture and allied sector (both In-service and Retired) having jurisdiction (working area) of Sub-division or blocks or block or Gram panchayat(s) can register as Extension Officer. They may be from State or Central Govt, Private sector, Educational Instute, Financial institutions, NGO etc."/>
+</LinearLayout>

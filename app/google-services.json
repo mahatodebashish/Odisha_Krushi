@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1083705092442",
+    "firebase_url": "https://odisha-krushi.firebaseio.com",
+    "project_id": "odisha-krushi",
+    "storage_bucket": "odisha-krushi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083705092442:android:27224df0e29c7729",
+        "android_client_info": {
+          "package_name": "com.odishakrushi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083705092442-o7th5ef42eivb384ashs675q28i6d0vj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxzXGn55NkVhS0LK3cC8I02R9UCFP5pJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083705092442-o7th5ef42eivb384ashs675q28i6d0vj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

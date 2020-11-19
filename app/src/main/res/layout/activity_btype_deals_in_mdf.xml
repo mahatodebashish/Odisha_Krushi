@@ -1,0 +1,166 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#71d687"
+    >
+
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="@string/Business_Type_Deals_In"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/agriproduct1"
+                android:textColor="#fff"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:onClick="onClickAgrilProduct"/>
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/veterinaryitem1"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:onClick="onClickVeterinary"/>
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/fish"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:onClick="onClickFish"
+
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/others"
+                android:textColor="#fff"
+                android:onClick="onClickOthers"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioDealsInProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Seed_and_Seedlings"
+                android:textSize="18sp"/>
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Pesticides"
+                android:textSize="18sp"/>
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fertiliser"
+                android:textSize="18sp"/>
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Machinery"
+                android:textSize="18sp"/>
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Veterinary_Item"
+                android:textSize="18sp"/>
+
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fishery"
+                android:textSize="18sp"/>
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Others"
+                android:textSize="18sp"/>
+        </RadioGroup>
+        <Button
+            android:onClick="onClickSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/Sign_Up"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimaryDark"/>
+        <!--ad-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/image_ad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

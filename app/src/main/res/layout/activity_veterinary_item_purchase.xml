@@ -1,0 +1,155 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#71d687"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Veterinary Item"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       >
+
+                        <Button
+                            android:id="@+id/cowID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/Cow"
+                            android:background="@drawable/rectangle_border"
+                            android:textColor="#000"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:checked="false"
+                            android:onClick="onClickCow"
+
+                            />
+                        <Button
+                            android:id="@+id/chickID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/Chick"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/rectangle_border"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:checked="false"
+
+                            android:onClick="onClickChick"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/goatID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_border"
+                            android:textColor="#000"
+                            android:layout_margin="1dp"
+                            android:checked="false"
+                            android:onClick="onClickGoat"
+                            android:text="@string/Goat"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                        <Button
+
+                            android:id="@+id/buffaloID"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/Buffalo"
+                            android:background="@drawable/rectangle_border"
+                            android:textColor="#000"
+                            android:layout_margin="1dp"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:checked="false"
+                            android:onClick="onClickBuffalo"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <Button
+
+                        android:id="@+id/otherID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/Others"
+                        android:background="@drawable/rectangle_border"
+                        android:textColor="#000"
+                        android:layout_margin="1dp"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:checked="false"
+                        android:onClick="onClickOther"
+
+                        />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

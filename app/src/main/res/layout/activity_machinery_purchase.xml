@@ -1,0 +1,415 @@
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+<LinearLayout
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#71d687"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/Select_Machines_To_Purchase"/>
+    <LinearLayout
+        android:id="@+id/layoutcheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/tractorID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/Tractor"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickTractor"
+                android:checked="false"
+
+
+                />
+            <Button
+                android:id="@+id/powertillerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="@string/Power_Tiller"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickPowerTiller"
+                android:checked="false"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/rotavatorID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Rotavator"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickRotavator"
+                android:checked="false"
+
+                />
+
+            <Button
+
+                android:id="@+id/ploughID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Plough"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickPlough"
+                android:checked="false"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+
+                android:id="@+id/ridgerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Ridger"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickRidger"
+                android:checked="false"
+
+                />
+            <Button
+
+                android:id="@+id/levellerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Leveller"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickLeveller"
+
+                android:checked="false"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/seeddrillID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Seed_Drill"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickSeedDrill"
+                android:checked="false"
+
+                />
+            <Button
+                android:id="@+id/transplanterID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Transplanter"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:layout_margin="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickTransplanter"
+                android:checked="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/weederID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Weeder"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickWeeder"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/sprayerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Sprayer"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickSprayer"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:checked="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/reaperID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Reaper"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickReaper"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/thresherID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Thresher"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:onClick="onClickThresher"
+                android:checked="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/cleanerID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Cleaner"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickCleaner"
+                android:checked="false"
+                />
+
+            <Button
+                android:id="@+id/graderID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Grader"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickGrader"
+                android:checked="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/combineID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Combine"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickCombine"
+                android:layout_weight="1"
+                android:checked="false"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/pumpsID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Pumps"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickPumps"
+                android:layout_margin="5dp"
+                android:checked="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/parboilingunitID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Parboiling_Unit"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickParboilingUnit"
+                android:checked="false"
+                />
+            <Button
+                android:id="@+id/ricemillID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Rice_Mill"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:layout_margin="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:onClick="onClickRiceMill"
+                android:checked="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <Button
+                android:id="@+id/decorticatorID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Decorticator"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickDecorticator"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+
+
+            <Button
+                android:id="@+id/toolfruitvegID"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:text="@string/Tools_For_Fruit_And_Vegetable"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:onClick="onClickToolsForFruitAndVegetable"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <!--<Button
+                android:id="@+id/othersID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Others"
+                android:textColor="#000"
+                android:background="@drawable/rectangle_border"
+                android:textSize="13sp"
+                android:onClick="onClickOthers"
+                android:layout_margin="5dp"
+                android:checked="false"
+                />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

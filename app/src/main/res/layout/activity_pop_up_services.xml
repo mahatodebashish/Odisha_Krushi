@@ -1,0 +1,172 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#71d687"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Services"
+                        android:textColor="#000"
+                        android:paddingLeft="5dp"
+                        android:background="@color/colorTransparent"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioService"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Repairing_of_Small_Machines"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Repairing_of_Big_Machines"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Insurance"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Loan"
+                            android:textSize="14sp"/>
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Consultancy"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Executant"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Liaisoning"
+                            android:textSize="14sp"/>
+
+                        <RadioButton
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:text="@string/Machine_testing_and_Designing"
+                            android:textSize="14sp"/>
+
+
+
+                    </RadioGroup>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#565"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/OK"
+                            android:layout_weight="1"
+                            android:textColor="#fff"
+                            android:background="@drawable/custom_button"
+                            android:layout_marginRight="5dp"
+                            android:onClick="onClickOk"
+                            />
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Cancel"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:textColor="#fff"
+                            android:background="@drawable/custom_button"
+                            android:layout_weight="1"
+                            android:onClick="onClickCancel"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,425 @@
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="?actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="@string/Register_as_Farmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Name"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/fathername"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="20sp"
+                                    android:hint="@string/Fathers_name"
+                                    android:singleLine="true"
+                                    />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Gender"/>
+                        <RadioGroup
+                            android:id="@+id/radioGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Male"
+                                android:textSize="18sp"/>
+
+                            <RadioButton
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Female"
+                                android:textSize="18sp"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Caste"/>
+                        <RadioGroup
+                            android:id="@+id/radioCaste"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/SC"
+                                android:textSize="18sp"/>
+
+                            <RadioButton
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ST"
+                                android:textSize="18sp"/>
+                            <RadioButton
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/GENERAL"
+                                android:textSize="18sp"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:id="@+id/input_mob_no"
+                                        android:background="@drawable/rectangle_border"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/edittext_height"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:textSize="20sp"
+                                        android:hint="@string/Mobile"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mail"
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="20sp"
+                                android:hint="@string/Email"
+                                android:inputType="textEmailAddress"
+                                />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_pass"
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="20sp"
+                                android:inputType="textPassword"
+                                android:hint="@string/PASSWORD"
+                                android:maxLength="6"
+                                />
+                    </LinearLayout>
+
+                    <!--district spinner-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_District"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/district"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--block spinner-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_Block"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/block"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--gp spinner-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/layoutGP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/GP"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/gp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/NEXT"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickNext"
+            android:layout_gravity="bottom"
+            />
+            <ImageView
+                android:id="@+id/imgArrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/floating_arrow"
+
+                android:tint="@color/black"
+                />
+        </FrameLayout>
+
+
+</LinearLayout>

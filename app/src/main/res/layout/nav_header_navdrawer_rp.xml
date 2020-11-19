@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgeditProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="@string/Profile_Completeness"
+            android:layout_gravity="bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="20dp"
+            android:minWidth="200dp"
+            android:progress="100" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/ic_person"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Hello"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/keyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="25dp"
+            android:text="Extension Officer"
+            android:layout_gravity="bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <TextView
+            android:id="@+id/txt_mobile"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="#d8e6e6"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#d8e6e6"
+        android:textStyle="bold"
+        android:text="Extension Officer"
+        android:layout_marginLeft="17dp"
+        />
+</LinearLayout>

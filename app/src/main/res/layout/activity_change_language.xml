@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.odishakrushi.Login">
+    <!--android:background="#62a6f2a6"
+      android:background="@drawable/watermark_bg"-->
+
+    <android.support.v7.widget.Toolbar
+        android:visibility="visible"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:popupTheme="@style/MyDarkToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="ଭାଷା ବାଛନ୍ତୁ / Choose Language"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/mu_odisha"
+            android:scaleType="centerInside"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+        >
+
+            <!--android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"-->
+        <RadioGroup
+            android:id="@+id/radioChangeLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="top"
+            android:orientation="horizontal"
+          >
+
+
+
+            <!--android:drawableLeft="@android:drawable/btn_radio"
+            android:drawablePadding="30dp"-->
+            <RadioButton
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="30sp"
+                android:padding="5dp"
+                android:button="@null"
+                android:background="@drawable/round_corner"
+                android:text="ଓଡ଼ିଆ" />
+
+
+            <!--android:drawableLeft="@android:drawable/btn_radio"
+                      android:drawablePadding="30dp"-->
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:button="@null"
+                android:textSize="30sp"
+                android:background="@drawable/round_corner"
+                android:text="English"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#c2bebe"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="20sp"
+                android:text="ପରେ ସେଟିଙ୍ଗ ରେ ମଧ୍ୟ ଆପଣ ଭାଷା ବଦଳେଇ ପାରିବେ / You can also change language in the Settings later on"/>
+
+            <!--android:onClick="OnSave"-->
+            <Button
+                android:visibility="gone"
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#fff"
+                android:text="@string/Save"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

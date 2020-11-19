@@ -1,0 +1,684 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="@string/Sign_Up"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <!--name -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Name"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--phone number-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mob_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/PHONENUMBER"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--email-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/Email"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <!--password-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            >
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:background="@drawable/rectangle_border"
+                                android:hint="@string/PASSWORD"
+                                android:paddingLeft="10dp"
+                                android:inputType="textPassword"
+                                android:paddingRight="10dp"
+                                android:maxLength="6"
+                                android:singleLine="true"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                android:textAllCaps="true"
+                                android:text="@string/Gender"/>
+                            <RadioGroup
+                                android:id="@+id/radioGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonMale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Male"
+                                    android:textAllCaps="true"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioButtonFemale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Female"
+                                    android:textAllCaps="true"
+                                    android:textSize="18sp"/>
+
+                            </RadioGroup>
+
+                            <!--type of control-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Type Of Control"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/typeOfControl"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--service status-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/serviceStatus"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/serviceStatus"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--department-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Department"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/depart_type"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:visibility="gone"
+                                    android:id="@+id/txtDpart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_margin="15dp"
+                                    android:singleLine="true"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <!--"Directorate/Corporation/Agency/Research Center"-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Directorate/Corporation/Agency/Research Center/Institution"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/dcar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:visibility="gone"
+                                    android:id="@+id/txtDcar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_margin="15dp"
+                                    android:singleLine="true"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <!--post-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Post"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/post"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                            <!--jurisdiction-->
+                            <LinearLayout
+                                android:id="@+id/layoutJurisdiction"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Jurisdiction"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/jurisdiction"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--jurisdiction name-->
+                            <LinearLayout
+                                android:id="@+id/layoutJurisdictionName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jurisdiction Name"
+                                    android:textSize="15sp"/>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/layoutState"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/state"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/array_state"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/layoutDistrict"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/districtSingle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/array_district"
+                                        />
+
+                                </LinearLayout>
+
+                                <!--Multi-District-->
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/layoutMultiDistrict"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <com.odishakrushi.utils.multiselectspinner.MultiSpinner
+                                        android:id="@+id/multi_spinner"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+
+                                </LinearLayout>
+
+                                <!--here we will select multiple gram-panchayat-->
+
+                                <!--    &lt;!&ndash;district spinner&ndash;&gt;
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        >
+
+                                        <TextView
+                                            android:textAllCaps="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/Select_District"
+                                            android:textSize="15sp"/>
+
+
+                                        <LinearLayout
+                                            android:background="@drawable/rectangle_border"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/edittext_height"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:orientation="vertical"
+                                            android:layout_weight="1">
+
+                                            <Spinner
+                                                android:id="@+id/district"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    &lt;!&ndash;block spinner&ndash;&gt;
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        >
+
+                                        <TextView
+                                            android:textAllCaps="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/Select_Block"
+                                            android:textSize="15sp"/>
+
+
+                                        <LinearLayout
+                                            android:background="@drawable/rectangle_border"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/edittext_height"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:orientation="vertical"
+                                            android:layout_weight="1">
+
+                                            <Spinner
+                                                android:id="@+id/block"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    &lt;!&ndash;gp spinner&ndash;&gt;
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/layoutGP"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_marginBottom="20dp"
+                                        >
+
+                                        <TextView
+                                            android:textAllCaps="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/GP"
+                                            android:textSize="15sp"/>
+
+
+                                        <LinearLayout
+                                            android:background="@drawable/rectangle_border"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/edittext_height"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:orientation="vertical"
+                                            android:layout_weight="1">
+
+                                            <Spinner
+                                                android:id="@+id/gp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+
+                                                />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>-->
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <CheckBox
+                            android:id="@+id/termcondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark2"
+                            android:textAllCaps="true"
+                            android:text="@string/I_agree_T_C" />
+
+                        <TextView
+                            android:id="@+id/readTermCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textAllCaps="true"
+                            android:text="@string/Read_here_T_C_P"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/Submit"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/register"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:background="@color/ColorName"
+            />  <!--android:onClick="onClickSubmit"-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

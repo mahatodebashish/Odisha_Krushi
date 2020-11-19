@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/qna"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/Q_and_A" />
+
+        <item
+            android:id="@+id/knowledgebank"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/Knowledge_Bank" />
+
+        <item
+            android:id="@+id/openforum"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Open_Forum" />
+        <item
+            android:id="@+id/message"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/Message" />
+        <item
+            android:id="@+id/contactus"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Contact_Us" />
+
+<!--
+        <item
+            android:id="@+id/logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="@string/Log_Out" />-->
+    </group>
+
+
+</menu>

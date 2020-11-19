@@ -1,0 +1,155 @@
+{
+  "status": true,
+  "districts": [
+    {
+      "id": "1",
+      "name": "Angul/Anugul",
+      "state_id": "29"
+    },
+    {
+      "id": "2",
+      "name": "Balangir",
+      "state_id": "29"
+    },
+    {
+      "id": "3",
+      "name": "Balasore-Baleshwar",
+      "state_id": "29"
+    },
+    {
+      "id": "4",
+      "name": "Bargarh",
+      "state_id": "29"
+    },
+    {
+      "id": "5",
+      "name": "Baudh",
+      "state_id": "29"
+    },
+    {
+      "id": "6",
+      "name": "Bhadrak",
+      "state_id": "29"
+    },
+    {
+      "id": "7",
+      "name": "Cuttack",
+      "state_id": "29"
+    },
+    {
+      "id": "8",
+      "name": "Deogarh-Debagarh",
+      "state_id": "29"
+    },
+    {
+      "id": "9",
+      "name": "Dhenkanal",
+      "state_id": "29"
+    },
+    {
+      "id": "10",
+      "name": "Gajapati",
+      "state_id": "29"
+    },
+    {
+      "id": "11",
+      "name": "Ganjam",
+      "state_id": "29"
+    },
+    {
+      "id": "12",
+      "name": "Jagatsinghapur",
+      "state_id": "29"
+    },
+    {
+      "id": "13",
+      "name": "Jajpur",
+      "state_id": "29"
+    },
+    {
+      "id": "14",
+      "name": "Jharsuguda",
+      "state_id": "29"
+    },
+    {
+      "id": "15",
+      "name": "Kalahandi",
+      "state_id": "29"
+    },
+    {
+      "id": "16",
+      "name": "Kandhamal",
+      "state_id": "29"
+    },
+    {
+      "id": "17",
+      "name": "Kendrapara",
+      "state_id": "29"
+    },
+    {
+      "id": "18",
+      "name": "Kendujhar",
+      "state_id": "29"
+    },
+    {
+      "id": "19",
+      "name": "Khordha",
+      "state_id": "29"
+    },
+    {
+      "id": "20",
+      "name": "Koraput",
+      "state_id": "29"
+    },
+    {
+      "id": "21",
+      "name": "Malkangiri",
+      "state_id": "29"
+    },
+    {
+      "id": "22",
+      "name": "Mayurbhanj",
+      "state_id": "29"
+    },
+    {
+      "id": "23",
+      "name": "Nabarangpur",
+      "state_id": "29"
+    },
+    {
+      "id": "24",
+      "name": "Nayagarh",
+      "state_id": "29"
+    },
+    {
+      "id": "25",
+      "name": "Nuapada",
+      "state_id": "29"
+    },
+    {
+      "id": "26",
+      "name": "Puri",
+      "state_id": "29"
+    },
+    {
+      "id": "27",
+      "name": "Rayagada",
+      "state_id": "29"
+    },
+    {
+      "id": "28",
+      "name": "Sambalpur",
+      "state_id": "29"
+    },
+    {
+      "id": "29",
+      "name": "Subarnapur",
+      "state_id": "29"
+    },
+    {
+      "id": "30",
+      "name": "Sundargarh",
+      "state_id": "29"
+    }
+  ]
+}

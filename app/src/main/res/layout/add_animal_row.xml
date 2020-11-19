@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:weightSum="4">
+
+    <EditText
+        android:id="@+id/animalName"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Animal"/>
+
+    <EditText
+        android:id="@+id/animal_variety"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Variety"/>
+
+    <EditText
+        android:id="@+id/animal_numbers"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="3"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+         android:src="@drawable/circledelete"/>
+
+</LinearLayout>

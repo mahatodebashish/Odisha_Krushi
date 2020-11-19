@@ -1,0 +1,1454 @@
+<!--suppress ALL -->
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="@string/Register_as_Farmer"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <!--district spinner-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_District"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                              <Spinner
+                                    android:id="@+id/district"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--block spinner-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_Block"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/block"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--gp spinner-->
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/GP"
+                            android:textSize="15sp"/>
+
+
+                        <LinearLayout
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <Spinner
+                                android:id="@+id/gp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                       <TextView
+                           android:textAllCaps="true"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="@string/Village"
+                           android:textSize="15sp"
+
+                           />
+                        <!---->
+                        <AutoCompleteTextView
+                            android:id="@+id/autocompleteEditTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="7dp"
+                            android:text=""
+                            android:hint="@string/Village_Name"
+                            android:textSize="20sp"
+                            android:background="@drawable/rectangle_border"
+                            android:textColor="#000"
+
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        >
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="@string/Irrigated_land_area_under_cultivation"/>
+
+                        <EditText
+                            android:id="@+id/iluc"
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:maxLength="7"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/area_in_acres"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/Source_Of_Irrigation"/>
+
+                        <RadioGroup
+                            android:id="@+id/radioIrrigationSource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Dug_Well"
+                                android:textSize="20sp"/>
+
+
+                            <RadioButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bore_well"
+                                android:textSize="20sp"/>
+
+                            <RadioButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lipoint"
+                                android:textSize="20sp"/>
+                            <RadioButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/River_Lift"
+                                android:textSize="20sp"/>
+
+                            <RadioButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Others"
+                                android:textSize="20sp"/>
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textAllCaps="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Non_Irrigated_Land_Under_Cultivation"
+                         />
+
+                        <EditText
+                            android:id="@+id/niluc"
+                            android:background="@drawable/rectangle_border"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_height"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="20sp"
+                            android:hint="@string/area_in_acres"
+                            android:inputType="numberDecimal"
+                            android:maxLength="7" />
+
+                        <!--machine tool own-->
+                            <TextView
+                                android:textAllCaps="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Machine_tool_and_own"
+                                android:textSize="15sp"/>
+
+
+                            <LinearLayout
+                                android:background="@drawable/rectangle_border"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/edittext_height"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <com.odishakrushi.utils.multiselectspinner.MultiSpinner
+                                    android:id="@+id/multi_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    />
+
+
+                            </LinearLayout>
+
+
+                            <!--last crop grown in Kharif , Rabi , etc...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/lastCropGrownIn"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/last_crop_grown_in"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/array_rabi_kharif"
+                                        />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--area-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:text="@string/area"/>
+
+                                <EditText
+                                    android:id="@+id/area"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center"
+                                    android:maxLength="7"
+                                    android:inputType="numberDecimal"
+                                    android:hint="@string/area_in_acres"/>
+
+
+                            </LinearLayout>
+
+                            <!--Soil Testing done [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Soil_Testing_Done"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/soil_testing_done"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Fertilisers used [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/fertiliserUsed"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/fertiliser_used"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Pesticides used [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/pesticidesUsed"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/pesticide_used"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Machines used [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Machines_Used"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/machineUsed"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Insurance Done [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Insurance"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/insuranceDone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Loan Done [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Loan"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/loanTaken"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Any special crop grown [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Any_special_crop_grown"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/any_special_crop_grown"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--Fishery activity starts-->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#6000BCD4"
+                                android:padding="10dp"
+                                android:orientation="vertical">
+
+                            <!--fishery activity [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/fisheryActivity"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/fishery_activity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                                <!--sublayoutFisheryActivity-->
+                          <LinearLayout
+                            android:id="@+id/sublayoutFisheryActivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            >
+
+                            <!--pond area ...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:weightSum="2"
+
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:layout_weight="1"
+                                    android:text="@string/area_of_pond_acres"/>
+
+                                <EditText
+                                    android:id="@+id/area_of_pond_acres"
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:layout_weight="1"
+                                    android:textSize="20sp"
+                                    android:layout_gravity="center"
+                                    android:maxLength="7"
+                                    android:inputType="numberDecimal"
+                                    android:hint="@string/area_in_acres"/>
+
+
+
+                            </LinearLayout>
+
+                            <!--owner of pond ...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/area_of_pond_own_lease"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/area_of_pond_own_lease"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--fingerlings from ...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/fingerling_from"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/fingerlingsFrom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--trained for farming[Yes/No] ...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/fishery_trained_for_farming"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/fishery_trained_for_farming"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--medicine used [Yes/No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/fishery_medicine_used"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/fishery_medicine_used"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--loan taken [Yes/No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Loan"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/loanTakenFishery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--insurance done [Yes/No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Insurance"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/insuranceDoneFishery"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            </LinearLayout>
+              </LinearLayout>
+
+                            <!--Veterinary activity starts-->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/grey"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+
+                                />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FF91A4"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingRight="5dp"
+                        >
+
+                            <!--Veterinary activity [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/veterinary_activity"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/veterinary_activity"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        <!--sublayoutVeterinaryActivity-->
+                         <LinearLayout
+                             android:id="@+id/sublayoutVeterinaryActivity"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical"
+                             >
+
+                            <!--animals-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="20dp"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/Animal_Category"
+                                        android:layout_weight="1"
+                                        android:textSize="15sp"
+                                        android:textAllCaps="true"
+                                        />
+                                    <ImageView
+                                        android:id="@+id/addRow"
+                                        android:onClick="addOneRow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:tint="@color/black"
+                                        app:srcCompat="@drawable/ic_addbutton"/>
+                                </LinearLayout>
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerViewAnimals"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"/>
+
+
+                            </LinearLayout>
+
+                            <!--trained for farming [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/veterinary_trained_for_farming"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/veterinary_trained_for_farming"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--medicine used [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/veterinary_medicine_used"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/veterinary_medicine_used"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--loan taken [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Loan"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/loanTakenVeterinary"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--insurance done [Yes,No]...-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:weightSum="2"
+                                >
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/Insurance"
+                                    android:textSize="15sp"/>
+
+
+                                <LinearLayout
+                                    android:background="@drawable/rectangle_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/edittext_height"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <Spinner
+                                        android:id="@+id/insuranceDoneVeterinary"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:entries="@array/yes_no"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                         </LinearLayout>
+                   </LinearLayout>
+
+
+
+                        <CheckBox
+                            android:id="@+id/termcondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark2"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/I_agree_T_C" />
+
+                        <TextView
+                            android:id="@+id/readTermCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:fontFamily="serif-monospace"
+                            android:text="@string/Read_here_T_C_P"
+                            android:textColor="@android:color/holo_blue_dark"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PHOTOGRAPH (OPTIONAL)"
+                                android:gravity="center"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layoutimagepreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_gravity="center"
+                                android:visibility="visible"
+                                android:src="@drawable/selectpicture"
+                                android:onClick="addPhoto"
+                                />
+                         <!--   <Button
+                                android:id="@+id/addImageButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/selectpicture"
+                                android:onClick="addPhoto"/>-->
+                            <Button
+                                android:id="@+id/uploadButton"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Upload_Photo"
+                                android:textSize="10sp"
+
+                                android:layout_margin="10dp"
+
+                                android:background="#b14e3c"
+                                android:textColor="#fff"
+                              />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/Submit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+
+            android:id="@+id/register"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:background="@color/ColorName"
+            />  <!-- android:onClick="onClickSubmit"-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

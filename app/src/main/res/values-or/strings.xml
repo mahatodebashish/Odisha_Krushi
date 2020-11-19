@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ଓଡିଶା କୃଷି</string>
+    <string name="welcome_text">\'ଓଡିଶା କୃଷି\' ପରିବାର କୁ ହାର୍ଦ୍ଧିକ ସ୍ୱାଗତ</string>
+
+    <string name="Admin_Manager">ଆଡମିନ / ମ୍ୟାନେଜେର</string>
+    <string name="farmers">କୃଷକ</string>
+    <string name="BusinessPerson">ବ୍ୟବସାୟୀ</string>
+    <string name="ExtensionOfficer">ସମ୍ପ୍ରସାରଣ ଅଧିକାରୀ</string>
+    <string name="Students">ଛାତ୍ର</string>
+    <string name="Guest">ଗେଷ୍ଟ</string>
+    <string name="Login">ଲଗଇନ</string>
+    <string name="PHONENUMBER">ଫୋନ ନମ୍ବର</string>
+    <string name="PASSWORD">ଆପ ପାସୱାର୍ଡ</string>
+    <string name="new_registration">ନୂଆ ରେଜିଷ୍ଟ୍ରେସନ</string>
+    <string name="RegisterAs">ରେଜିଷ୍ଟର କରନ୍ତୁ</string>
+    <string name="Register_as_Farmer">କୃଷକ ରେଜିଷ୍ଟର କରନ୍ତୁ</string>
+
+    <string name="acre">ଏକର</string>
+    <string name="agriculture">କୃଷି</string> <!--same for Agril-->
+    <string name="agril_machinery">କୃଷି ଯନ୍ତ୍ରପାତି</string>
+    <string name="Agril_Product">କୃଷି ଉତ୍ପାଦ</string>
+    <string name="and">ଏବଂ</string>
+    <string name="Animal_Resources">ପଶୁ ସମ୍ପଦ</string>
+    <string name="Any_Remark">କିଛି ମନ୍ତବ୍ୟ</string>
+    <string name="Any_special_crop_grown">କିଛି ବିଶେଷ ଫସଲ ଚାଷ</string>
+    <string name="area">କ୍ଷେତ୍ର</string>
+    <string name="area_of_operation">କାର୍ଯ୍ୟକ୍ଷେତ୍ର</string>
+    <string name="arhar">ହରଡ଼</string>
+    <string name="ask_question">ପ୍ରଶ୍ନ ପଚାରନ୍ତୁ</string>
+    <string name="Black_Gram">ବିରି</string>
+    <string name="Block">ବ୍ଲକ</string>
+    <string name="bore_well">ଗଭୀର ନଳକୂପ</string>
+    <string name="Breed">କିସମ</string>
+
+    <string name="Buffalo">ମଇଁଷି</string>
+    <string name="Caste">ଜାତି </string>
+    <string name="Cereal">ଖାଦ୍ୟଶସ୍ୟ</string>
+    <string name="Chick">କୁକୁଡ଼ା ଚିଆଁ </string>
+    <string name="Choose_Language">ଭାଷା ବାଛନ୍ତୁ</string>
+    <string name="Cleaner">ସଫା କରିବା ଯନ୍ତ୍ର </string>
+    <string name="Combine">କମ୍ବାଇନ </string>
+    <string name="Condition">ଅବସ୍ଥ|</string>
+    <string name="Contact_Us">ଯୋଗାଯୋଗ </string>
+    <string name="Cotton">କପା</string>
+    <string name="Covered_By_Insurance">ଇନ୍ସୁରାନ୍ସ ହେଇଛି କି?</string>
+    <string name="Cow">ଗାଈ </string>
+    <string name="Crop">ଫସଲ</string>
+    <string name="Cultivation_Practice">ଚାଷ ପ୍ରଣାଳୀ</string>
+
+    <string name="Decorticator">ମଂଜିଛଡ଼ା ଯନ୍ତ୍ର</string>
+    <string name="Department">ବିଭାଗ</string>
+    <string name="Disease">ରୋଗ</string>
+    <string name="Disease_and_Pest">ରୋଗପୋକ</string>
+    <string name="District">ଜ଼ିଲ୍ଲା</string>
+    <string name="Dug_Well">ଖୋଲାକୂଅ</string>
+    <string name="Executant">ଏକଜିକ୍ୟୁଟାଣ୍ଟ</string>
+
+    <string name="Feed">ଖାଦ୍ୟ</string>
+    <string name="Female">ମହିଳା</string>
+    <string name="Fertiliser">ସାର </string>
+    <string name="Fingerlings">ଜାଅଁଳା</string>
+    <string name="Fish">ମାଛ</string>
+    <string name="Fishery">ମାଛ ଚାଷ</string>
+    <string name="Floriculture">ଫୁଲଚାଷ</string>
+    <string name="Flower">ଫୁଲ</string>
+    <string name="Fodder">ପଶୁ ଚାରା</string>
+    <string name="Gender">ଲିଙ୍ଗ</string>
+    <string name="General">ସାଧାରଣ</string>
+    <string name="Give_on_hire">ଭଡା ଦିଅନ୍ତୁ</string>
+    <string name="Goat">ଛେଳି</string>
+    <string name="Good">ଭଲ</string>
+    <string name="Govt_Schemes">ସରକାରୀ ଯୋଜନା</string>
+    <string name="GP">ଗ୍ରାମ ପଞ୍ଚାୟତ</string>
+    <string name="Grader">ଗ୍ରେଡର</string>
+    <string name="Green_Gram">ମୁଗ</string>
+    <string name="Groundnut">ବାଦାମ</string>
+    <string name="Harvesting">ଅମଳ</string>
+    <string name="Hire">ଭଡା</string>
+    <string name="Hi_Yielding">ଅଧିକ ଅମଳ କ୍ଷମ</string>
+    <string name="Horticulture">ଉଦ୍ୟାନ କୃଷି</string>
+    <string name="Housing">ଆବାସ (ରହିବା)</string>
+    <string name="Hybreed">ଶଙ୍କର ଜାତୀୟ</string>
+    <string name="Insurance">ବୀମା</string>
+    <string name="Irrigation_Land_Under_Cultivation">ଜଳସେଚିତ ଚାଷଜମି</string>
+
+    <string name="Irrigation">ଜଳସେଚନ</string>
+    <string name="Kharif">ଖରିଫ</string>
+    <string name="Knowledge_Bank">ଜ୍ଞାନ ଭଣ୍ଡାର</string>
+    <string name="less_than_1">ଏକ ରୁ କମ</string>
+    <string name="Leveller">ଲେଭେଲର</string>
+    <string name="Livelihood">ଜୀବିକା</string>
+    <string name="Loan">ଋଣ</string>
+    <string name="Machine_tool_and_own">ନିଜ ଯନ୍ତ୍ରପାତି</string>
+    <string name="Machinery">ଯନ୍ତ୍ରପାତି</string>
+    <string name="Machines_Used">ବ୍ୟବହୃତ ଯନ୍ତ୍ରପାତି</string>
+    <string name="Maize">ମକା</string>
+    <string name="Major">ମୁଖ୍ୟ</string>
+    <string name="Make">କମ୍ପାନୀ</string>
+    <string name="Medicine">ଔଷଧ</string>
+    <string name="Message">ବାର୍ତ୍ତା</string>
+    <string name="Micro_Enterprise">ଅଣୁଶୀଳ୍ପ</string>
+    <string name="Micro_Nutrients">ଅଣୁସାର</string>
+    <string name="Minor">ସାମାନ୍ୟ</string>
+    <string name="Model">ମଡେଲ</string>
+    <string name="More_than_5">୫ ରୁ ଅଧିକ</string>
+    <string name="Mushroom">ଛତୁ</string>
+    <string name="Mustard">ସୋରିଷ</string>
+    <string name="My_Story">ମୋ କାହାଣୀ</string>
+    <string name="Name">ନାମ</string>
+    <string name="Needs_Repair">ମରାମତି ଦରକାର</string>
+    <string name="New">ନୂଆ</string>
+    <string name="No">ନାଁ</string>
+    <string name="Non_Irrigated_Land_Under_Cultivation">ଅଣ ଜଳସେଚିତ ଜମି</string>
+    <string name="NRM">ଏନ.ଆର.ଏମ.</string>
+    <string name="Numbers">ସଂଖ୍ୟା</string>
+    <string name="Odia">ଓଡ଼ିଆ</string>
+    <string name="Oilseed">ତୈଳବୀଜ</string>
+    <string name="Old">ପୁରୁଣା</string>
+    <string name="On_Hire">ଭଡା ରେ</string>
+    <string name="Open_Forum">ଖୋଲା ମଞ୍ଚ</string>
+    <string name="Others">ଅନ୍ୟାନ୍ୟ</string>
+    <string name="Own">ନିଜର</string>
+    <string name="Paddy">ଧାନ</string>
+    <string name="Palm">ତାଳ</string>
+    <string name="Parboiling_Unit">ଧାନ ସିଝା ଯନ୍ତ୍ର</string>
+    <string name="Pesticides">ପୋକମରା ଔଷଧ</string>
+    <string name="Photograph">ଫଟୋ</string>
+    <string name="Plough">ଲଙ୍ଗଳ</string>
+    <string name="Plowing">ହଳ କରିବା</string>
+    <string name="Pond">ପୋଖରୀ</string>
+    <string name="Pond_Management">ପୋଖରୀ ପରିଚାଳନା</string>
+    <string name="Power_Tiller">ପାୱାର ଟିଲର</string>
+    <string name="Prawn">ଚିଙ୍ଗୁଡ଼ି</string>
+    <string name="Price">ଦାମ</string>
+    <string name="Private">ବେସରକାରୀ</string>
+    <string name="Problem">ସମସ୍ୟା</string>
+    <string name="Processing">ପ୍ରକ୍ରିୟାକରଣ</string>
+    <string name="Preferred_Time">ଅନୁକୂଳ ସମୟ</string>
+    <string name="Project_Report">ପ୍ରୋଜେକଟ ରିପୋର୍ଟ</string>
+    <string name="Pulses">ଡାଲିଜାତୀୟ</string>
+    <string name="Pumps">ପମ୍ପ</string>
+    <string name="Purchase">କ୍ରୟ</string>
+    <string name="Q_and_A">ପ୍ରଶ୍ନୋତ୍ତର</string>
+    <string name="Quantity">ପରିମାଣ(kg)</string>
+    <string name="Quantity_Required">ପରିମାଣ ଆବଶ୍ୟକ</string>
+    <string name="Rabi">ରବି</string>
+    <string name="Reaper">ଫସଲ କଟାଯନ୍ତ୍ର(ରିପର)</string>
+    <string name="Rearing">ପାଳନ</string>
+    <string name="Repair">ମରାମତି</string>
+    <string name="Repair_Needed">ମରାମତି ଆବଶ୍ୟକ</string>
+    <string name="Rice_Mill">ଧାନକଳ</string>
+    <string name="Ridger">ହୁଡ଼ାଟେକାଯନ୍ତ୍ର</string>
+    <string name="Rotavator">ରୋଟାଭେଟର</string>
+
+
+    <string name="Sale">ବିକ୍ରି</string>
+    <string name="SC">ହରିଜନ</string>
+    <string name="Scientist">ବୈଜ୍ଞାନିକ</string>
+    <string name="Scrap">ପୁରା ଖରାପ</string>
+    <string name="Seed">ବିହନ</string>
+    <string name="Seed_and_Seedlings">ବିହନ ଓ ଚାରା</string>
+    <string name="Seed_Drill">ବିହନବୁଣା ଯନ୍ତ୍ର</string>
+    <string name="Seed_Seedling_Variety">ବିହନ, ଚାରା କିସମ</string>
+    <string name="Service">ସେବା</string>
+    <string name="Services">ସେବା</string>
+    <string name="Soil">ମାଟି</string>
+    <string name="Soil_Conservation_And_Watershed">ମୃତ୍ତିକା ସଂରକ୍ଷଣ ଓ ଜଳ ବିଭାଜିକା</string>
+    <string name="Soil_Testing">ମାଟି ପରୀକ୍ଷା</string>
+    <string name="Soil_Testing_Done">ମାଟି ପରୀକ୍ଷା ହେଇଚି</string>
+    <string name="Soil_Conservation">ମୃତ୍ତିକା ସଂରକ୍ଷଣ</string>
+    <string name="Source_Of_Irrigation">ଜଳସେଚନ ଉତ୍ସ</string>
+    <string name="Sowing">ବୁଣିବା</string>
+    <string name="Spices">ମସଲା</string>
+    <string name="Sprayer">ସ୍ପ୍ରେୟର</string>
+    <string name="ST">ଆଦିବାସୀ</string>
+    <string name="Succes_Story">ସଫଳ କାହାଣୀ</string>
+    <string name="Take_On_Hire">ଭଡାରେ ନବା</string>
+    <string name="Thresher">ଅମଳ ଯନ୍ତ୍ର(ଥ୍ରେସର)</string>
+    <string name="Tools_For_Fruit_And_Vegetable">ଫଳ,ପନିପରିବା ପାଇଁ ଯନ୍ତ୍ର</string>
+    <string name="Tractor">ଟ୍ରାକଟର</string>
+    <string name="Training">ପ୍ରଶିକ୍ଷଣ</string>
+    <string name="Transplanter">ରୁଆଯନ୍ତ୍ର</string>
+    <string name="Transplanting">ଧାନ ରୁଆ</string>
+    <string name="Type">ପ୍ରକାର</string>
+    <string name="Upload_Photo">ଫୋଟୋ ପଠାନ୍ତୁ</string>
+    <string name="Variety">କିସମ</string>
+    <string name="Vegetable">ପରିବା</string>
+    <string name="Very_Good">ବହୁତ ଭଲ</string>
+    <string name="Veterinary">ପଶୁ ସମ୍ପଦ</string>
+    <string name="Veterinary_Item">ପଶୁସମ୍ପଦ ଜିନିଷ</string>
+    <string name="View_Answers">ଉତ୍ତର ଦେଖନ୍ତୁ</string>
+    <string name="Village">ଗାଁ</string>
+    <string name="Weeder">ଘାସବଛା ଯନ୍ତ୍ର</string>
+    <string name="Weedling">ଘାସବଛା</string>
+    <string name="Wheat">ଗହମ</string>
+    <string name="Yes">ହଁ</string>
+    <string name="Year_Of_Purchase">କିଣିଥିବା ବର୍ଷ</string>
+
+    <string name="Fathers_name">ବାପାଙ୍କ ନାମ</string>
+    <string name="Mobile">ଫୋନ ନମ୍ବର</string>
+    <string name="Email">ଇ-ମେଲ</string>
+    <string name="Male">ପୁରୁଷ</string>
+    <string name="GENERAL">ସାଧାରଣ</string>
+    <string name="Fruit">ଫଳ</string>
+    <string name="Type_here">ଏଠାରେ ଟାଇପ କରନ୍ତୁ</string>
+    <string name="Submit">ପଠାନ୍ତୁୁ</string>
+    <string name="Select_Photo">ଫୋଟୋ ବାଛନ୍ତୁ</string>
+    <string name="Open_Camera">କ୍ୟାମେରା ଖୋଲନ୍ତୁ</string>
+    <string name="Upload_Image">ଫୋଟୋ ପଠାନ୍ତୁ</string>
+    <string name="Select_Video">ଭିଡ଼ିଓ ବାଛନ୍ତୁ</string>
+    <string name="Record_Video">ଭିଡିଓ ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="Upload_Video">ଭିଡିଓ ପଠାନ୍ତୁ</string>
+    <string name="Select_Audio">ଅଡିଓ ବାଛନ୍ତୁ</string>
+    <string name="Record_Audio">ଅଡିଓ ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="Upload_Audio">ଅଡିଓ ପଠାନ୍ତୁ</string>
+    <string name="Subsidy">ଆର୍ଥିକ ସହାୟତା</string>
+    <string name="Individual_Details">ସମ୍ପୂର୍ଣ ବିବରଣୀ</string>
+    <string name="Enter_Details">ବିବରଣୀ ଦିଅନ୍ତୁ</string>
+    <string name="OK">ଠିକ ଅଛି</string>
+    <string name="Cancel">କ୍ୟାନସଲ</string>
+    <string name="Useful_for">ଉପଯୁକ୍ତ</string>
+    <string name="Mention_here">ଏଠାରେ ଦିଅନ୍ତୁ</string>
+
+    <string name="DealsIn">ବ୍ୟବସାୟ କରାହୁଏ</string>
+    <string name="Post">ପଦବୀ</string>
+    <string name="Jurisdiction">କର୍ମକ୍ଷେତ୍ର</string>
+    <string name="jurisdiction_name">କର୍ମ ସ୍ଥାନ</string>
+    <string name="Select_District">ଜ଼ିଲ୍ଲା ବାଛନ୍ତୁ</string>
+    <string name="Select_Block">ବ୍ଲକ ବାଛନ୍ତୁ</string>
+    <string name="Govt_Type">ସରକାର ପ୍ରକାର</string>
+    <string name="Current_Post">ବର୍ତମାନ ପଦବୀ</string>
+    <string name="Select_New_Post">ନୂଆ ପଦବୀ ବାଛନ୍ତୁ</string>
+    <string name="UPDATE">ଅପଡେଟ</string>
+    <string name="Website">ୱେବସାଇଟ(ଇଚ୍ଛାଧୀନ)</string>
+    <string name="Name_Of_Farm">ଫାର୍ମର ନାମ</string>
+    <string name="Name_Of_the_Propertier">ଫାର୍ମ ମାଲିକ ଙ୍କ ନାମ</string>
+
+
+    <string name="Location_Of_The_Farm">ଫାର୍ମର ସ୍ଥାନ</string>
+    <string name="Preferred_Area_Of_Business">ବ୍ୟବସାୟ ପାଇଁ ଉପଯୁକ୍ତ ସ୍ଥାନ</string>
+    <string name="Type_Of_Business">ବ୍ୟବସାୟ ପ୍ରକାର</string>
+    <string name="Business_Type_Deals_In">କଣ ବ୍ୟବସାୟ</string>
+    <string name="Other_Product">ଅନ୍ୟାନ୍ୟ ଉତ୍ପାଦ</string>
+    <string name="Animal_Category">ପଶୁ ବର୍ଗ</string>
+    <string name="Agril_Product_Category">କୃଷିଉତ୍ପାଦ ବର୍ଗ</string>
+    <string name="After_Sale_Service_Spare_Parts_Available">ବିକ୍ରି ପର ସେବା ଉପଲବ୍ଧ?</string>
+    <string name="Status">ସ୍ତର</string>
+    <string name="InService">ସେବାରେ</string>
+    <string name="Retired">ଅବସରପ୍ରାପ୍ତ</string>
+    <string name="SelfEmployed">ଆତ୍ମ ନିୟୋଜିତ</string>
+    <string name="Village_Name">ଗ୍ରାମର ନାମ</string>
+    <string name="Irrigated_land_area_under_cultivation">ଜଳସେଚିତ ଚାଷଜମି(ଏକର)</string>
+    <string name="area_in_acres">କ୍ଷେତ୍ର (ଏକର)</string>
+    <string name="NEXT">ପରବର୍ତୀ</string>
+    <string name="FirstName">ପ୍ରଥମ ନାମ</string>
+    <string name="LastName">ଶେଷ ନାମ</string>
+    <string name="Education_Status">ଶିକ୍ଷା ସ୍ତର</string>
+    <string name="Highest_Qualification">ସର୍ବୋଚ୍ଚ ଶିକ୍ଷା</string>
+    <string name="Specialization">କେଉଁଥିରେ ବିଷେଶଜ୍ଞ</string>
+    <string name="University_School_College">ବିଶ୍ୱବିଦ୍ୟାଳୟ କିମ୍ବା ମହାବିଦ୍ୟାଳୟ କିମ୍ବା ସ୍କୁଲ</string>
+
+    <string name="Net">ନେଟ</string>
+    <string name="Select_Date">ତାରିଖ ବାଛନ୍ତୁ</string>
+    <string name="Select_Start_Time">ଆରମ୍ଭ ସମୟ ବାଛନ୍ତୁ</string>
+    <string name="Select_End_Time">ଶେଷହବାର ସମୟ ବାଛନ୍ତୁ</string>
+    <string name="Select">ବାଛନ୍ତୁ</string>
+    <string name="Expertise_In">ବିଶେଷତ୍ୱ</string>
+
+    <string name="Government">ସରକାରୀ</string>
+    <string name="NGO">ଅଣସରକାରୀ ସଂସ୍ଥା</string>
+    <string name="Profile_Completeness">ପୁର୍ଣ ବିବରଣୀ</string>
+    <string name="Get_Report">ରିପୋର୍ଟ ପାଆନ୍ତୁ</string>
+    <string name="Conduct_Survey">ସର୍ଭେ କରନ୍ତୁ</string>
+    <string name="Log_Out">ଲଗ ଆଉଟ</string>
+
+    <string name="Product_Promotion">ଉତ୍ପାଦର ପ୍ରଚାର</string>
+    <string name="Interested_Buyer">ଇଛୁକ କ୍ରେତା</string>
+    <string name="View_Asked_Question">ପଚାରିଥିବା ପ୍ରଶ୍ନ ଦେଖନ୍ତୁ</string>
+    <string name="P_S_H_R_S">କିଣା,ବିକା,ଭଡା,ମରାମତି, ସେବା</string> <!--Purchase Sale Hire Repair-->
+
+    <string name="Ques_Asked_By_Farmer">କୃଷକ ପଚାରିଥିବା ପ୍ରଶ୍ନ</string>
+    <string name="Ans_To_Farmer">ଉତ୍ତର ଦିଅନ୍ତୁ</string>
+    <string name="Survey">ସର୍ଭେ</string>
+    <string name="Profile">ବିବରଣୀ</string>
+    <string name="Theme">ବିଷୟ</string>
+    <string name="Change_Language">ଭାଷା ବଦଳାନ୍ତୁ</string>
+
+    <string name="Select_Machines_To_Purchase">କିଣିବା ପାଇଁ ଯନ୍ତ୍ରପାତି ବାଛନ୍ତୁ</string>
+    <string name="Select_Machines_To_Sale">ବିକିବା ପାଇଁ ଯନ୍ତ୍ରପାତି ବାଛନ୍ତୁ</string>
+    <string name="Capacity">କ୍ଷମତା</string>
+    <string name="Power_Source">ଶକ୍ତି ସ୍ରୋତ</string>
+    <string name="Suitable_for_Crop">କେଉଁ ଫସଲ ପାଇଁ ଉପଯୁକ୍ତ</string>
+    <string name="Fertiliser_Brands">ସାର ର ବ୍ରାଣ୍ଡ</string>
+
+    <string name="Machine_Quality">ଯନ୍ତ୍ରପାତି ଗୁଣ</string>
+    <string name="Purchase_Year">କିଣାଯାଇଥିବା ବର୍ଷ</string>
+    <string name="Name_Other_Product">ଅନ୍ୟାନ୍ୟ ଉତ୍ପାଦର ନାମ</string>
+    <string name="Pesticides_Brand">ସାର ର ବ୍ରାଣ୍ଡ</string>
+    <string name="Institute_Name">ସଂସ୍ଥାର ନାମ</string>
+
+    <string name="Search">ଖୋଜନ୍ତୁ</string>
+    <string name="Nearest_Business_Person">ପାଖରେ ଥିବା ବ୍ୟବସାୟୀ</string>
+    <string name="I_agree_T_C">ମୁ ସମସ୍ତ ନିୟମ ଏବଂ ସର୍ତ୍ତରେ ସହମତ</string>
+    <string name="Read_here_T_C_P">ଏଠାରେ ସର୍ତ୍ତ,ନିୟମ ପଢନ୍ତୁ</string>
+
+    <string name="Select_Machine_to_Take_on_hire">ଭଡାରେ ନେବା ପାଇଁ ଯନ୍ତ୍ରପାତି ବାଛନ୍ତୁ</string>
+    <string name="Hire_Now">ବର୍ତମାନ ଭଡାରେ ନିଅନ୍ତୁ</string>
+    <string name="View_Question_Detail">ପ୍ରଶ୍ନର ବିବରଣୀ ଦେଖନ୍ତୁ</string>
+    <string name="Buy">କିଣନ୍ତୁ</string>
+    <string name="Give_Answer">ଉତ୍ତର ଦିଅନ୍ତୁ </string>
+    <string name="Question">ପ୍ରଶ୍ନ</string>
+
+    <string name="Central_Government">କେନ୍ଦ୍ର  ସରକାର</string>
+    <string name="Recording">ରେକର୍ଡିଙ୍ଗ</string>
+    <string name="ICAR_OUAT_Agriculture">ଆଇକାର/ଓୟୁଏଟି  କୃଷି</string>
+    <string name="ICAR_OUAT">ଆଇ ସି ଏ ଆର/ଓୟୁଏଟି</string>
+    <string name="ICAR_OUAT_Fishery">ଆଇ ସି ଏ ଆର/ଓୟୁଏଟି/ ମାଛ ଚାଷ  </string>
+    <string name="ICAR_OUAT_Horticulture">ଆଇ ସି ଏ ଆର/ ଓୟୁଏଟି /ଉଦ୍ୟାନକୃଷି</string>
+    <string name="ICAR_OUAT_Veterinary">ଆଇ ସି ଏ ଆର/ ଓୟୁଏଟି/  ପଶୁ ସମ୍ପଦ </string>
+    <string name="Answer">ଉତ୍ତର</string>
+
+    <string name="Sign_Up">ସାଇନ ଅପ</string>
+
+    <string name="StateGovt">ରାଜ୍ୟ ସରକାର</string>
+    <string name="Marketing">ବିପଣନ</string>
+    <string name="logoutmsg">ଆପଣ ଲଗ ଆଉଟ କରିବାକୁ ଚାହାନ୍ତି କି ?</string>
+    <string name="title_activity_nav_drawer_admin_manager">ଆଡମିନ / ମ୍ୟାନେଜେର</string>
+    <string name="title_activity_nav_drawer_guest">ଅତିଥି/ଗେଷ୍ଟ</string>
+    <string name="title_activity_nav_drawer_student_r">ଛାତ୍ରଛାତ୍ରୀ</string>
+    <string name="title_activity_nav_drawer_business">ବ୍ୟବସାୟୀ</string>
+    <string name="title_activity_navdrawer_rp">ବିଶେଷଜ୍ଞ</string>
+    <string name="navigation_drawer_close">ଓଡିଶା କୃଷି</string>
+    <string name="qna">ପ୍ରଶ୍ନୋତ୍ତର</string>
+    <string name="Password">ପାସୱାର୍ଡ</string>
+
+    <string name="Save">ସେଭ କରନ୍ତୁ</string>
+
+    <string name="msgtofarmer">କୃଷକ ମାନେ ଦୟା କରି ଧ୍ୟାନ ଦିଅନ୍ତୁ</string>
+    <string name="msgtofarmerdetail">ଆପଣଙ୍କର ଆବଶ୍ୟକ ଅନୁଯାୟୀ ଏଠାରେ ସମସ୍ତ ବିବରଣୀ ସୂଚିତ କରାଯାଇଛି.ସୁଖୀ କୃଷକ,ସୁଖୀ ରାଷ୍ଟ୍ର!</string>
+
+    <string name="ProductListPurchase">କିଣାଯିବା ଉତ୍ପାଦ</string>
+    <string name="ProductListSale">ବିକ୍ରି ହଵାକୁ ଥିବା ଉତ୍ପାଦ</string>
+    <string name="fieldempty">କିଛି ସ୍ଥାନ ପୁରଣ କରିନାହାନ୍ତି କି?</string>
+    <string name="selling">ବିକ୍ରି...</string>
+    <string name="perkg">କେଜି କୁ</string>
+    <string name="EDIT">ଏଡିଟ</string>
+    <string name="DELETE">ଡିଲିଟ</string>
+    <string name="Rs">ଟଙ୍କା</string>
+
+    <string name="Itemdeleted">ଜିନିଷ ଡିଲିଟ ହେଇଗଲା</string>
+    <string name="Purchase_From">କିଣାଯାଇଛି</string>
+    <string name="Medicine_Feed">ଔଷଧ ଏବଂ ସାର</string>
+    <string name="Medicine_for">ଔଷଧ ଆବଶ୍ୟକ</string>
+    <string name="Maker">ନିର୍ମାତାଙ୍କ ନାମ</string>
+    <string name="Machine_Condition">ଯନ୍ତ୍ର ର ଅବସ୍ଥା</string>
+
+    <string-array name="knowledgebankfilters">
+        <item>ମୋ କାହାଣୀ</item>
+        <item>ପ୍ରଶ୍ନ ଓ ଉତ୍ତର</item>
+        <item>ଉତ୍ପାଦ</item>
+    </string-array>
+
+    <string name="Group_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ </string> <!--ଦଳ କୁ ବାର୍ତ୍ତା-->
+    <string name="Select_Groups">ଦଳ ଚୟନ କରନ୍ତୁ</string>
+
+    <string-array name="msg_groups">
+        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
+        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ଚାଷୀ</item>
+        <item>ମୋ ପରି ସମସ୍ତ ବିଶେଷଜ୍ଞ</item>
+        <item>ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
+        <item>Customise</item>
+    </string-array>
+
+    <string name="Business_Admin_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ</string> <!--ବାର୍ତ୍ତା-->
+
+    <string-array name="business_msg_groups">
+        <item>ରାଜ୍ୟ ର ସବୁ ଚାଷୀ</item>
+        <item>ରାଜ୍ୟ ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
+        <item>ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
+        <item>Customise</item>
+    </string-array>
+
+    <string name="Pesticides_For">କେଉଁ କୀଟନାଶକ</string>
+    <string name="Enter_Brand_Variety">କମ୍ପାନୀ କଣ</string>
+    <string name="npk">ଏନ ପି କେ/ NPK_Compound</string>
+    <string name="Fertiliser_Variety">କେଉଁ ପ୍ରକାର ସାର</string>
+
+    <string name="Hi_Yielding_Agriculture">ଅଧିକ  ଅମଳକ୍ଷମ</string>
+    <string name="Hybreed_Agriculture">ଶଙ୍କର ଜାତୀୟ</string>
+    <string name="Hi_Yielding_Horticulture">ଅଧିକ  ଅମଳକ୍ଷମ</string>
+    <string name="Hybreed_Horticulture">ଶଙ୍କର ଜାତୀୟ</string>
+    <string name="your_service">ସେବା ବିବରଣୀ ଦିଅନ୍ତୁ</string>
+    <string name="Manufacturer">ଉତ୍ପାଦକ</string>
+    <string name="Dealer">ଡିଲର</string>
+    <string name="Franchise">ଫ୍ରାଞ୍ଚାଇଜ/Franchise</string>
+
+
+    <string name="Repairing_of_Small_Machines">ଛୋଟ ମେସିନ  ମରାମତି</string>
+    <string name="Repairing_of_Big_Machines">ବଡ଼ ମେସିନ  ମରାମତି</string>
+    <string name="Consultancy">ପରାମର୍ଶ/Consultancy</string>
+    <string name="Liaisoning">ଯୋଗସୂତ୍ର/Liaisoning</string>
+    <string name="Machine_testing_and_Designing">ଯନ୍ତ୍ରପାତି ପରୀକ୍ଷଣ ଓ ଗବେଷଣା/Design</string>
+    <string name="SendToFarmer">ଚାଷୀକୁ ପଠାନ୍ତୁ</string>
+    <string name="sendToFarmerandOpenforum">ଚାଷୀକୁ ଓ ଖୋଲାମଞ୍ଚକୁ  ପଠାନ୍ତୁ</string>
+    <string name="or">କିମ୍ବା</string>
+
+    <string-array name="admin_msg_groups">
+        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
+        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ଚାଷୀ</item>
+        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
+        <item>Customise</item>
+    </string-array>
+
+    <string name="Success_Story">ସଫଳ କାହାଣୀ</string>
+    <string name="Failure_Story">ବିଫଳ କାହାଣୀ</string>
+    <string name="View_Story">କାହାଣୀ ଦେଖିବା</string>
+
+
+    <string-array name="choosefrom_cameragallery">
+        <item>କ୍ୟାମେରା</item>
+        <item>ଗ୍ୟାଲେରୀ</item>
+    </string-array>
+
+
+    <string-array name="govtschemefisheryarray">
+        <item>ମାଛ ଯାଆଁଳା</item>
+        <item>ପୋଖରୀ</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+    </string-array>
+
+    <string-array name="govtschemescwarray">
+        <item>ଜୀବିକା</item>
+        <item>Micro Enterprise</item>
+        <item>NRM</item>
+        <item>ପ୍ରଶିକ୍ଷଣ/Training</item>
+    </string-array>
+
+
+    <string-array name="area_of_operation">
+        <item>ବ୍ଲକ ଭିତରେ</item>
+        <item>ଜିଲ୍ଲା ଭିତରେ </item>
+        <item>ରାଜ୍ୟ ଭିତରେ </item>
+
+    </string-array>
+
+    <string name="gramPanchayat">ଗ୍ରାମ ପଞ୍ଚାୟତ</string>
+    <string name="lastCropGrownIn">କେଉଁ ଫସଲ କରିଥିଲେ </string>
+    <string name="animal_numbers">କେତୋଟି</string>
+    <string name="animalVariety">କିସମ କଣ</string>
+    <string name="fertiliserUsed">ସାର ବ୍ୟବହାର କରିଛନ୍ତି କି</string>
+    <string name="pesticidesUsed">କୀଟନାଶକ ବ୍ୟବହାର କରିଛନ୍ତି କି</string>
+    <string name="lcp_machines_used">ଯନ୍ତ୍ରପାତି ବ୍ୟବହାର କରିଛନ୍ତି କି</string>
+    <string name="lcp_loan_taken">ଋଣ ନେଇଛନ୍ତି କି</string>
+    <string name="fisheryActivity">ମାଛ ଚାଷ</string>
+    <string name="area_of_pond_acres">ପୋଖରୀ ର ଆକାର/Area(ଏକର)</string>
+    <string name="fingerling_from">ଯାଆଁଳା କେଉଁଠୁ ନେଲେ</string>
+    <string name="fishery_trained_for_farming">ମାଛ ଚାଷ ରେ ଟ୍ରେନିଂ ପାଇଛନ୍ତି କି</string>
+    <string name="fishery_medicine_used">ଔଷଧବ୍ୟବହାର କରିଛନ୍ତି କି</string>
+    <string name="fishery_lone_taken">ଋଣ ନେଇଛନ୍ତି କି</string>
+    <string name="area_of_pond_own_lease">ନିଜର ନ ଭଡା ସୂତ୍ର ରେ</string>
+    <string name="fishery_lone_taken_for">ଋଣ ନେଇଛନ୍ତି କି</string>
+    <string name="veterinary_activity">ପଶୁ ସମ୍ପଦ</string>
+    <string name="animal_type">ପ୍ରାଣୀ</string>
+    <string name="covered_by_insurance">ବୀମା ହେଇଛି କି</string>
+    <string name="veterinary_lone_taken">ଋଣ ନେଇଛନ୍ତି କି</string>
+    <string name="veterinary_lone_taken_for">ଋଣ ନେଇଛନ୍ତି କି</string>
+    <string name="veterinary_trained_for_farming">ପଶୁ ପାଳନ ରେ ଟ୍ରେନିଂ ପାଇଛନ୍ତି କି</string>
+    <string name="veterinary_medicine_used">ଔଷଧବ୍ୟବହାର କରିଛନ୍ତି କି</string>
+    <string name="viewProfile">ବିବରଣୀ ଦେଖନ୍ତୁ</string>
+    <string name="otherDetails">ଅନ୍ୟ ବିବରଣୀ</string>
+    <string name="otherHighestQualification">ଅନ୍ୟ ଶିକ୍ଷାଗତ ଯୋଗ୍ୟତା</string>
+    <string name="otherSpecialization">ଅନ୍ୟ ବିଶେଷତା</string>
+    <string name="sale_service_spare_parts_available">ବିକ୍ରି ପରବର୍ତ୍ତୀ ସେବା ଉପଲବ୍ଧ</string>
+    <string name="governmentDepartment">ସରକାରୀ ବିଭାଗ</string>
+    <string name="departmentPost">ପଦବୀ</string>
+    <string name="expertiseInOptions">କେଉଁ ବିଷୟ ରେ ବିଶେଷଜ୍ଞ</string>
+    <string name="Question_Answer">ପ୍ରଶ୍ନୋତ୍ତର</string>
+    <string name="forgotPasswordText">ନିଜ ପାସୱର୍ଡ ଜାଣିବା ପାଇଁ ୮୭୬୩୮୬୫୯୩୬ କୁ ଫୋନ କରନ୍ତୁ</string>
+
+    <string-array name="array_district">
+        <item>ଅନୁଗୁଳ</item>
+        <item>ବଲାଙ୍ଗୀର</item>
+        <item>ବାଲେଶ୍ୱର</item>
+        <item>ବରଗଡ଼</item>
+        <item>ବୌଦ</item>
+        <item>ଭଦ୍ରକ</item>
+        <item>କଟକ</item>
+        <item>ଦେବଗଡ଼</item>
+        <item>ଢେଙ୍କାନାଳ</item>
+        <item>ଗଜପତି</item>
+        <item>ଗଂଜାମ</item>
+        <item>ଜଗତସିଂପୁର</item>
+        <item>ଯାଜପୁର</item>
+        <item>ଝାରସୁଗୁଡା</item>
+        <item>କଳାହାଣ୍ଡି</item>
+        <item>କନ୍ଧମାଳ</item>
+        <item>କେନ୍ଦ୍ରାପଡା</item>
+        <item>କେନ୍ଦୁଝର</item>
+        <item>ଖୋର୍ଦ୍ଧା</item>
+        <item>କୋରାପୁଟ</item>
+        <item>ମାଲକାନଗିରି</item>
+        <item>ମୟୁରଭଞ୍ଜ</item>
+        <item>ନବରଙ୍ଗପୁର</item>
+        <item>ନୟାଗଡ଼</item>
+        <item>ନୂଆପଡା</item>
+        <item>ପୁରୀ</item>
+        <item>ରାୟଗଡା</item>
+        <item>ସମ୍ବଲପୁର</item>
+        <item>ସୁବର୍ଣପୁର</item>
+        <item>ସୁନ୍ଦରଗଡ଼</item>
+    </string-array>
+
+    <string name="forgotPassword"><u>ପାସୱର୍ଡ ମନେନାହିଁ</u></string>
+    <string name="welcome_text_1">ଫାର୍ମେର ରେଜିଷ୍ଟ୍ରସ ଫାର୍ମ ଥେ ମୋବିଲେ ଅପ୍ପଲିକେସନ </string>
+    <string name="welcome_text_2">ଫାର୍ମେର ଅଶ୍ୱକ୍ଷ କଇସସନ ଆଣ୍ଡ ଗେଟସ ଅଂସବେରେଡ  </string>
+    <string name="welcome_text_3">ପୁତ୍ରସହସେ ପ୍ରଡୁସସ୍ତା , ସଲେ ପ୍ରଡୁସସ୍ତା , ହଇରେ ମାଛିନେସ ଆଣ୍ଡ ରପାଇଁର ଇଂ ଥେ ସମେ ଆପ୍ପ </string>
+    <string name="welcome_text_4">ମୋବିଲେ ଅପ୍ପଲିକେସନ ଫୋର ଳ</string>
+    <string name="odisha_krushi_app">ଥେ ଓଡିଶା କୃଷି ଆପ୍ପ</string>
+
+    <string name="next">ନେକ୍ସଟ</string>
+    <string name="skip">ସକିପ  </string>
+    <string name="start">ଷ୍ଟାର୍ଟ </string>
+
+
+    <!--Added on 29-fEB-2020-->
+    <string name="Notification">ନୋଟିଫିକେସନ</string>
+    <string name="no_new_notifications">ନ ନେବ ନୋଟିଫିକେସନ୍ସ </string>
+
+    <string-array name="fisherysubgroup">
+
+        <item>:ବାଛନ୍ତୁ:</item>
+        <item>ଚିଙ୍ଗୁଡ଼ି </item>
+        <item>ମାଛ</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+
+    </string-array>
+
+    <string-array name="veterinaryarray">
+
+        <item>:ବାଛନ୍ତୁ:</item>
+        <item>ଗାଈ</item>
+        <item>ଛେଳି</item>
+        <item>କୁକୁଡ଼ା</item>
+        <item>ମଇଁଷି</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+
+    </string-array>
+
+    <string-array name="machinetoolsarray">
+
+        <item>ଟ୍ରାକ୍ଟର</item>
+        <item>ପାୱାର ଟିଲର</item>
+        <item>ରୋଟାଭେଟର</item>
+        <item>ଲଙ୍ଗଳ</item>
+        <item>ହୁଡ଼ା ଟେକା ଯନ୍ତ୍ର</item>
+        <item>ଲେଭେଲର</item>
+        <item>ମଞ୍ଜି ବୁଣା ଯନ୍ତ୍ର</item>
+        <item>ରୁଆ ଯନ୍ତ୍ର</item>
+        <item>ଘାସ ବଛା ଯନ୍ତ୍ର</item>
+        <item>ସ୍ପ୍ରେୟର</item>
+        <item>ରିପର/ ଧାନ କଟା ଯନ୍ତ୍ର</item>
+        <item>ଥ୍ରେସର / ଅମଳ ଯନ୍ତ୍ର</item>
+        <item>ମଞ୍ଜି ସଫା ଯନ୍ତ୍ର</item>
+        <item>ଗ୍ରେଡ଼ର</item>
+        <item>କମ୍ବାଇନ</item>
+        <item>ପାଣି ପମ୍ପ</item>
+        <item>ଧାନ ଉଁଷା ଯନ୍ତ୍ର</item>
+        <item>ଧାନ କଳ</item>
+        <item>ମଞ୍ଜି ଛଡା ଯନ୍ତ୍ର</item>
+        <item>ଫଳ ଓ ପରିବା ପାଇଁ ଯନ୍ତ୍ର</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+    </string-array>
+
+    <string-array name="spinnerarray">
+
+        <item>:ବାଛନ୍ତୁ:</item>
+        <item>ପନି ପରିବା</item>
+        <item>ଫଳ </item>
+        <item>ଫୁଲ</item>
+        <item>ଛତୁ</item>
+        <item>ଶସ୍ୟ ଜାତୀୟ </item>
+        <item>ଡାଲି ଜାତୀୟ</item>
+        <item>ତୈଳବୀଜ</item>
+        <item>ମସଲା ଜାତୀୟ</item>
+        <item>କପା</item>
+        <item>ଆଖୁ</item>
+        <item>ପଶୁ ଚାରା</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+
+    </string-array>
+
+    <!--Added on 08-Mar-2020-->
+    <string name="no_messages">କିଛି ଖବର ନାହିଁ</string>
+    <string name="attachFile">ଚିତ୍ର, କଥା ବା ଭିଡିଓ ଦିଅନ୍ତୁ</string>
+    <string name="takePhoto">ଫଟୋ ଉଠାନ୍ତୁ</string>
+    <string name="Seller">ବିକ୍ରେତା</string>
+
+    <string name="not_answered">ଉତ୍ତର ମିଳିନାହିଁ</string>
+    <string name="answered">ଉତ୍ତର ଦେଖନ୍ତୁ</string>
+    <string name="forwared_to_open_forum">ଖୋଲାମଞ୍ଚ କୁ ପଠାଯାଇଛି</string>
+    <string name="answered_in_open_forum">ଖୋଲାମଞ୍ଚ ରେ ଉତ୍ତର ଦେଖନ୍ତୁ</string>
+
+    <string name="answered_date">ଉତ୍ତର ତାରିଖ</string>
+    <string name="AnswerBy">ଉତ୍ତର ଦାତା</string>
+    <string name="Q">ପ୍ରଶ୍ନ.</string>
+    <string name="dt">ତା.</string>
+    <string name="give_rating">ମାନ ଦିଅନ୍ତୁ</string>
+
+    <string name="subject">ବିଷୟ- </string>
+    <string name="sender">ପ୍ରେରକ</string>
+    <string name="msg">ବାର୍ତ୍ତା</string>
+    <string name="View_Messages">ବାର୍ତ୍ତା ଦେଖନ୍ତୁ</string>
+
+
+    <string name="lipoint">ଉଠା ଜଳ ସେଚନ ପଏଣ୍ଟ</string>
+    <string name="River_Lift">ନଦୀ ଉଠା ସେଚ</string>
+    <string name="specify_post">ପଦବୀ ନିର୍ଦ୍ଧିଷ୍ଟ କରନ୍ତୁ</string>
+    <string name="specify_institution">ସଂସ୍ଥା ନିର୍ଦ୍ଧିଷ୍ଟ କରନ୍ତୁ</string>
+    <string name="AEE">ସହକାରୀ ନିର୍ବାହୀ ଯନ୍ତ୍ରୀ</string>
+    <string name="EE">ନିର୍ବାହୀ ଯନ୍ତ୍ରୀ</string>
+    <string name="DE">ଉନ୍ନୟନ ଯନ୍ତ୍ରୀ</string>
+    <string name="SE">ଅଧିକ୍ଷଣ ଯନ୍ତ୍ରୀ</string>
+    <string name="CE">ମୁଖ୍ୟ ଯନ୍ତ୍ରୀ</string>
+    <string name="CDAO">ଜିଲ୍ଲା ମୁଖ୍ୟ କୃଷି ଅଧିକାରୀ</string>
+    <string name="JDA">ଯୁଗ୍ମ ନିର୍ଦେଶକ-କୃଷି</string>
+    <string name="ADA">ଅତିରିକ୍ତ ନିର୍ଦେଶକ-କୃଷି</string>
+    <string name="Director">ନିର୍ଦେଶକ</string>
+    <string name="ADH">ସହକାରୀ ନିର୍ଦେଶକ-ଉଦ୍ୟାନ କୃଷି</string>
+    <string name="DDH">ଉପ ନିର୍ଦେଶକ-ଉଦ୍ୟାନ କୃଷି</string>
+    <string name="JDH">ଯୁଗ୍ମ ନିର୍ଦେଶକ-ଉଦ୍ୟାନ କୃଷି</string>
+    <string name="JD">ଯୁଗ୍ମ ନିର୍ଦେଶକ</string>
+    <string name="CDVO">ଜିଲ୍ଲା ମୁଖ୍ୟ ପଶୁ ଚିକିତ୍ସା ଅଧିକାରୀ</string>
+    <string name="Joint_Director">ଯୁଗ୍ମ ନିର୍ଦେଶକ</string>
+    <string name="Dist_Fishery_Officer">ଜିଲ୍ଲା ମତ୍ସ୍ୟ ଅଧିକାରୀ</string>
+    <string name="DDF">ଉପ ନିର୍ଦେଶକ-ମତ୍ସ୍ୟ ଅଧିକାରୀ</string>
+    <string name="JDF">ଯୁଗ୍ମ ନିର୍ଦେଶକ-ମତ୍ସ୍ୟ</string>
+    <string name="ADF">ଅତିରିକ୍ତ ନିର୍ଦେଶକ-ମତ୍ସ୍ୟ</string>
+
+    <!--districts-->
+    <string name="angul">ଅନୁଗୁଳ</string>
+    <string name="balangir">ବଲାଙ୍ଗୀର</string>
+    <string name="balasore">ବାଲେଶ୍ବର</string>
+    <string name="bargarh">ବରଗଡ</string>
+    <string name="baudh">ବୌଧ</string>
+    <string name="bhadrak">ଭଦ୍ରକ</string>
+    <string name="cuttack">କଟକ</string>
+    <string name="deogarh">ଦେବଗଡ</string>
+    <string name="dhenkanal">ଢେଙ୍କାନାଳ</string>
+    <string name="gajapati">ଗଜପତି</string>
+    <string name="ganjam">ଗଂଜାମ</string>
+    <string name="jagatsinghapur">ଜଗତସିଂହପୁର</string>
+    <string name="jajpur">ଯାଜପୁର</string>
+    <string name="jharsuguda">ଝାରସୁଗୁଡା</string>
+    <string name="kalahandi">କଳାହାଣ୍ଡି</string>
+    <string name="kandhamal">କନ୍ଧମାଳ</string>
+    <string name="kendrapara">କେନ୍ଦ୍ରାପଡ଼ା</string>
+    <string name="kendujhar">କେନ୍ଦୁଝର</string>
+    <string name="khordha">ଖୋର୍ଦ୍ଧା</string>
+    <string name="koraput">କୋରାପୁଟ</string>
+    <string name="malkangiri">ମାଲକାନଗିରି</string>
+    <string name="mayurbhanj">ମୟୁରଭଞ୍ଜ</string>
+    <string name="nabarangpur">ନବରଙ୍ଗପୁର</string>
+    <string name="nayagarh">ନୟାଗଡ</string>
+    <string name="nuapada">ନୂଆପଡା</string>
+    <string name="puri">ପୁରୀ</string>
+    <string name="rayagada">ରାୟଗଡା</string>
+    <string name="sambalpur">ସମ୍ବଲପୁର</string>
+    <string name="subarnapur">ସୋନପୁର</string>
+    <string name="sundargarh">ସୁନ୍ଦରଗଡ</string>
+
+    <string name="selectall">ସବୁ ବାଛନ୍ତୁ</string>
+    <string name="multi_numbers">ଏକ ରୁ ଅଧିକ ନମ୍ବର ବ୍ୟବହାର କଲେ ମଝିରେ କେବଳ କମା(,) ଦିଅନ୍ତୁ(ଉଦାହରଣ: 9999999999,8888888888)</string>
+    <string name="appTutorials">ଆପ ବ୍ୟବହାର ଜାଣନ୍ତୁ</string>
+
+    <string name="common_features">ସାଧାରଣ ବ୍ୟବସ୍ଥା</string>
+    <string name="serviceStatus">ଚାକିରୀ ପ୍ରକାର</string>
+    <string name="guest_user_without_login">ଅତିଥି(ଲଗ ଇନ ଆବଶ୍ୟକ ନାଇଁ)</string>
+    <string name="hint_text_at_login">ରେଜିଷ୍ଟ୍ରାସନ ପୂର୍ବ ରୁ ଏହି ଭିଡିଓ ଦେଖନ୍ତୁ</string>
+    <string name="for_any_doubt">ଅଧିକ ଜାଣିବା ପାଇଁ</string>
+    <string name="native_district">କେଉଁ ଜିଲ୍ଲା ବାସିନ୍ଦା</string>
+
+    <string name="something_went_wrong">କିଛି ଅସୁବିଧା ଅଛି</string>
+    <string name="pleasewait">ଟିକେ ଅପେକ୍ଷା କରନ୍ତୁ...</string>
+
+    <string-array name="yes_no">
+        <item>ହଁ</item>
+        <item>ନାଁ</item>
+    </string-array>
+
+    <string-array name="array_rabi_kharif">
+        <item>ରବି</item>
+        <item>ଖରିଫ</item>
+    </string-array>
+
+    <string-array name="array_type_of_control">
+        <item>ରାଜ୍ୟ ସରକାର</item>
+        <item>କେନ୍ଦ୍ର ସରକାର</item>
+        <item>ବେସରକାରୀ ଶିକ୍ଷାନୁଷ୍ଠାନ</item>
+        <item>ବେସରକାରୀ</item>
+        <item>ସ୍ବେଛାସେବୀ ସଂଗଠନ</item>
+        <item>ଆର୍ଥିକ ସଂସ୍ଥା</item>
+
+    </string-array>
+
+    <string-array name="array_service_status">
+        <item>ସେବାରେ</item>
+        <item>ସେବା ନିବୃତ୍ତ</item>
+    </string-array>
+
+    <string-array name="arrays_depart">
+        <item>ଆଇ.ସି. ଏ.ଆର</item>
+        <item>କୃଷି ଓ କୃଷକ ସଶକ୍ତିକରଣ(Govt.)</item>
+        <item>କୃଷି</item>
+        <item>ଉଦ୍ୟନକୃଷି</item>
+        <item>ମୃତ୍ତିକା ସଂରକ୍ଷଣ</item>
+        <item>ମତ୍ସ୍ୟ ଓ ପଶୁ ସମ୍ପଦ ବିକାଶ(ସରକାର)</item>
+        <item>ପଶୁ ସମ୍ପଦ</item>
+        <item>ମତ୍ସ୍ୟ</item>
+        <item>ଓ ୟୁ ଏ ଟି</item>
+        <item>ଆଇ ଟି ଏ ଆର</item>
+        <item>ସେଞ୍ଚୁରିଆନ</item>
+        <item>ବ୍ୟାଙ୍କିଙ୍ଗ</item>
+        <item>ବୀମା</item>
+    </string-array>
+
+    <string-array name="array_dcar">
+        <item>NRRI</item>
+        <item>CIFA</item>
+        <item>CIAW</item>
+        <item>CTCRI</item>
+        <item>IIWM</item>
+        <item>IIHR(CHES)</item>
+        <item>CARI</item>
+        <item>ସଚିବାଳୟ</item>
+        <item>କୃଷି ନିର୍ଦଶାଳୟ</item>
+        <item>IMAGE</item>
+        <item>OAIC</item>
+        <item>ଆପିକଲ</item>
+        <item>OSSC</item>
+        <item>OSAMB</item>
+        <item>ଉଦ୍ୟନକୃଷି ନିର୍ଦେଶଳୟ</item>
+        <item>NHM</item>
+        <item>ମୃତ୍ତିକା ସଂରକ୍ଷଣ ନିର୍ଦେଶଳୟ</item>
+        <item>OWDM</item>
+        <item>ପଶୁ ସମ୍ପଦ ବିକାଶ ନିର୍ଦେଶାଳୟ</item>
+        <item>ଓମଫେଡ</item>
+        <item>OPDC</item>
+        <item>OLRDS (The Odisha Livestock Resources Development Society)</item>
+        <item>OPOLFED</item>
+        <item>VOTI</item>
+        <item>ମତ୍ସ୍ୟ ନିର୍ଦେଶଳୟ</item>
+        <item>OPDC (Orissa Pisciculture Development Corporation Ltd)</item>
+        <item>ଫିସଫେଡ</item>
+        <item>ଗବେଷଣା</item>
+        <item>କୃଷି ବିଜ୍ଞାନ କେନ୍ଦ୍ର</item>
+        <item>ମହାବିଦ୍ୟାଳୟ</item>
+
+    </string-array>
+
+
+    <string-array name="arrays_post">
+    <item>ନିର୍ଦେଶକ</item>
+    <item>ବୈଜ୍ଞାନିକ</item>
+    <item>କୃଷି ସଚିବ</item>
+    <item>କୃଷକ ସାଥି</item>
+    <item>ଗ୍ରାମ ସେବକ</item>
+    <item>କୃଷି ଓଭରସିଅର</item>
+    <item>ମେକାନିକ</item>
+    <item>ଫିଟର</item>
+    <item>ସହକାରୀ କୃଷି ଅଧିକାରୀ</item>
+    <item>ବ୍ଲକ କୃଷି ଅଧିକାରୀ</item>
+    <item>କୃଷି ଜିଲ୍ଲା ଅଧିକାରୀ</item>
+    <item>ସହକାରୀ କୃଷି ଯନ୍ତ୍ରୀ</item>
+    <item>ସହକାରୀ ନିର୍ବାହୀ ଯନ୍ତ୍ରୀ</item>
+    <item>କୃଷି ବିଶେଷଜ୍ଞ</item>
+    <item>ନିର୍ବାହୀ ଯନ୍ତ୍ରୀ</item>
+    <item>ଉନ୍ନୟନ ଯନ୍ତ୍ରୀ</item>
+    <item>ଅଧିକ୍ଷଣ ଯନ୍ତ୍ରୀ</item>
+    <item>ମୁଖ୍ୟ ଯନ୍ତ୍ରୀ</item>
+    <item>ଉପ କୃଷି ନିର୍ଦେଶକ</item>
+    <item>ଯୁଗ୍ମ କୃଷି ନିର୍ଦେଶକ</item>
+    <item>ମୁଖ୍ୟ ଜିଲ୍ଲା କୃଷି ଅଧିକାରୀ</item>
+    <item>ଯୋଜନା ଅଧିକାରୀ (Directorate)</item>
+    <item>ପରିଚାଳନା ନିର୍ଦେଶକ</item>
+    <item>ଜିଲ୍ଲା ପରିଚାଳକ</item>
+    <item>ଉଦ୍ୟାନ ସାଥି</item>
+    <item>ଗାର୍ଡେନର</item>
+    <item>ସମ୍ପ୍ରସାରଣ ଉଦ୍ୟାନକୃଷ କର୍ମୀ</item>
+    <item>ଓଭରସିଅର</item>
+    <item>ସହକାରୀ ଉଦ୍ୟାନକୃଷି ଅଧିକାରୀ</item>
+    <item>ସହକାରୀ ଉଦ୍ୟାନକୃଷି ନିର୍ଦେଶକ</item>
+    <item>ଅତିରିକ୍ତ ଉଦ୍ୟାନକୃଷି ନିର୍ଦେଶକ</item>
+    <item>ଉପ ଉଦ୍ୟାନକୃଷି ନିର୍ଦେଶକ</item>
+    <item>ଯୁଗ୍ମ ଉଦ୍ୟାନକୃଷି ନିର୍ଦେଶକ</item>
+    <item>ଯୁଗ୍ମ ନିର୍ଦେଶକ</item>
+    <item>ସହକାରୀ ମୃତ୍ତିକା ସଂରକ୍ଷଣି ଅଧିକାରୀ</item>
+    <item>ମୃତ୍ତିକା ସଂରକ୍ଷଣି ଅଧିକାରୀ</item>
+    <item>କନିଷ୍ଠ ମୃତ୍ତିକା ସଂରକ୍ଷଣି ସହକାରୀ</item>
+    <item>ଜଳ ବିଭାଜୀକା ପରିଚାଳନା ଟିମ</item>
+    <item>ଜୀବିକା ସହାୟତା ଟିମ</item>
+    <item>ପ୍ରକଳ୍ପ ପରିଚାଳନା ସଂସ୍ଥା(PIA)</item>
+    <item>ବୈଷୟିକ ବିଶେଷଜ୍ଞ</item>
+    <item>ପ୍ରକଳ ନିର୍ଦେଶକ</item>
+    <item>ସହକାରୀ ପ୍ରକଳ ନିର୍ଦେଶକ</item>
+    <item>ମତ୍ସ୍ୟ ଓ ପଶୁସମ୍ପଦ ସଚିବ</item>
+    <item>ପ୍ରାଣୀ ମିତ୍ର</item>
+    <item>ପଶୁସମ୍ପଦ ନିରୀକ୍ଷକ</item>
+    <item>ବ୍ଲକ ପଶୁ ଚିକିତ୍ସା ଅଧିକାରୀ</item>
+    <item>ଅତିରିକ୍ତ ପଶୁ ଚିକିତ୍ସକ</item>
+    <item>ପଶୁ ଚିକିତ୍ସକ</item>
+    <item>ଉପଖଣ୍ଡ ପଶୁ ଚିକିତ୍ସା ଅଧିକାରୀ</item>
+    <item>ମୁଖ୍ୟ ଜିଲ୍ଲା ପଶୁ ଚିକିତ୍ସା ଅଧିକାରୀ</item>
+    <item>ଉପ ନିର୍ଦେଶକ (ପଶୁ ଚିକିତ୍ସା)</item>
+    <item>ମୀନଶ୍ରୀ</item>
+    <item>ସହକାରୀ ମତ୍ସ୍ୟ ଅଧିକାରୀ</item>
+    <item>ଅତିରିକ୍ତ ମତ୍ସ୍ୟ ଅଧିକାରୀ</item>
+    <item>ମୁଖ୍ୟ ଜିଲ୍ଲା ମତ୍ସ୍ୟ ଅଧିକାରୀ</item>
+    <item>ଉପ ନିର୍ଦେଶକ (ମତ୍ସ୍ୟ)</item>
+    <item>ଯୁଗ୍ମ ନିର୍ଦେଶକ(ମତ୍ସ୍ୟ)</item>
+    <item>ଅତିରିକ୍ତ ନିର୍ଦେଶକ(ମତ୍ସ୍ୟ)</item>MyApplication
+    <item>ଡିନ</item>
+    <item>ପ୍ରମୁଖ୍ୟ ବୈଜ୍ଞାନିକ ଓ ମୁଖ୍ୟ</item>
+    <item>ପ୍ରଫେସର</item>
+    <item>ଜିଲ୍ଲା ଅଧିିିକାରୀ</item>
+    <item>ବ୍ଲକ ଅଧିକାରୀ</item>
+    <item>ବ୍ଲକ ସ୍ତରୀୟ ଅଧିକାରୀ</item>
+    </string-array>
+
+    <string-array name="array_state">
+        <item>ଓଡିଶା</item>
+    </string-array>
+
+    <string-array name="arrays_jurisdiction_admin_manager">
+        <item>ରାଜ୍ୟ</item>
+        <item>ଜିଲ୍ଲା</item>
+        <item>ଜିଲ୍ଲା ସମୂହ</item>
+    </string-array>
+
+    <string-array name="arrays_jurisdiction_ext_off">
+        <item>ଗ୍ରାମ ପଞ୍ଚାୟତ(s)</item>
+        <item>ବ୍ଲକ</item>
+        <item>ବ୍ଲକ ସମୂହ</item>
+    </string-array>
+
+    <string-array name="array_expertise_in">
+        <item>ଚାଷ ପ୍ରଣାଳୀ</item>
+        <item>ମୃତ୍ତିକା</item>
+        <item>ବିହନ</item>
+        <item>ସାର</item>
+        <item>ରୋଗପକ</item>
+        <item>ବୀମା</item>
+        <item>ପ୍ରଶିକ୍ଷଣ</item>
+        <item>ପ୍ରକ୍ରିୟାକରଣ</item>
+        <item>ଯନ୍ତ୍ରପାତି</item>
+        <item>ଛତୁ</item>
+        <item>ଫୁଲଚାଷ</item>
+        <item>ପନିପରିବା</item>
+        <item>ଫଳ</item>
+        <item>ଜୀବିକା</item>
+        <item>ଅଣୁ ଶିଳ୍ପ</item>
+        <item>ପ୍ରାକୃତିକ ସମ୍ପଦ ପରିଚାଳନା</item>
+        <item>ପଶୁ ପାଳନ</item>
+        <item>ପଶୁ ସମ୍ପଦ କିସମ</item>
+        <item>ଖାଦ୍ୟ</item>
+        <item>ରୋଗ</item>
+        <item>ଆବାସ</item>
+        <item>ପୋଖରୀ ପରିଚାଳନା</item>
+        <item>ମତ୍ସ୍ୟଚାଷ</item>
+        <item>ମୃତ୍ତିକା ସଂରକ୍ଷଣ ଓ ଜଳ ବିଭାଜୀକା</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+    </string-array>
+
+    <string-array name="array_business_type">
+        <item>ଉତ୍ପାଦକ</item>
+        <item>ଡିଲର</item>
+        <item>ଫ୍ରାଞ୍ଚାଇଜ</item>
+        <item>ସେବା</item>
+    </string-array>
+
+    <string-array name="array_deals_in">
+        <item>କୃଷି ଉତ୍ପାଦ</item>
+        <item>ପଶୁସମ୍ପଦ  </item>
+        <item>ମାଛ ଚାଷ ଜିନିଷ</item>
+        <item>ଅନ୍ୟାନ୍ୟ ଉତ୍ପାଦ</item>
+    </string-array>
+
+    <string name="blanks">କିଛି ଫର୍ମ ପୂରଣ କରିବା ବାକି ଅଛି</string>
+    <string name="dcari">Directorate/Corporation/Agency/Research Center/Institution</string>
+
+
+    <string-array name="state">
+        <item>ଓଡ଼ିଶା</item>
+    </string-array>
+</resources>
+

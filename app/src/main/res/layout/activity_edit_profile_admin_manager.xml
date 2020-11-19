@@ -1,0 +1,1238 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#71d687"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+
+                >
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        app:title="Edit Profile Admin,Manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="#b9101010">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:hint="@string/Name"
+                                    android:textSize="13sp"
+                                    android:singleLine="true"
+                                    android:focusable="false"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+                               <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColorHint="#b9101010">
+
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:id="@+id/input_mob_no"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/PHONENUMBER"
+                                        android:maxLength="10"
+                                        android:inputType="number"
+                                        android:textSize="13sp"
+                                        android:focusable="false"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"/>
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone"
+                        >
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#b9101010">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:inputType="textPassword"
+                                android:hint="@string/Password"
+                                android:focusable="false"
+                                android:maxLength="6"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#b9101010">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/input_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/Email"
+                                android:textSize="13sp"
+                                android:focusable="false"
+                                android:inputType="textEmailAddress"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/post_hold_govt_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Govt_Type"
+                            android:textSize="13sp"
+
+                            />
+                        <Spinner
+                            android:id="@+id/spinner_adminmanager_posthold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="false"
+                            android:entries="@array/array_adminmanager_posthold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/layout_id_stategovt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/post_hold_stategovt_dept"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Department"
+                            android:textSize="13sp"
+
+                            />
+                        <Spinner
+                            android:id="@+id/spinner_adminmanager_posthold_stategovt_dept"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="false"
+                            android:entries="@array/array_adminmanager_posthold_stategovt_dept"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:padding="10dp"
+                            android:background="@drawable/rectangle_border"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Current_Post"
+                                android:textColor="@color/colorPrimary"
+                                />
+                            <TextView
+                                android:id="@+id/getPost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/AEE"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/posttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Select_New_Post"
+                            android:textSize="13sp"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/layout_agriculture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostAgriculture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/AEE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/AEE"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:id="@+id/EE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/EE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/DE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/DE"
+                                    android:textSize="18sp"/>
+
+
+
+                                <RadioButton
+                                    android:id="@+id/SE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/SE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/CE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/CE"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/CDAO"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/CDAO"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:id="@+id/JDA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/JDA"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/ADA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ADA"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/Director"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Director"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostHorticulture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ADH"
+
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/DDH"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/JDH"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostSoilConservation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/EE"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/JD"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostVeterinary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/CDVO"
+
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Joint_Director"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Director"
+                                    android:textSize="18sp"/>
+
+
+
+                            </RadioGroup>
+
+                            <RadioGroup
+                                android:visibility="gone"
+                                android:id="@+id/radioGroupPostFishery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Dist_Fishery_Officer"
+                                    android:textSize="18sp"
+
+                                    />
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/DDF"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/JDF"
+                                    android:textSize="18sp"/>
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ADF"
+                                    android:textSize="18sp"/>
+
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/Director"
+                                    android:textSize="18sp"/>
+
+
+
+
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/getJurisDistrict"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_border"
+                                android:layout_margin="10dp"
+                                android:padding="3dp"
+                                android:textColor="#255b25"
+                                android:textStyle="bold"
+                                android:text=""/>
+
+                            <LinearLayout
+
+                                android:id="@+id/layoutdistrictjuris"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/Jurisdiction"/>
+                                <EditText
+                                    android:visibility="gone"
+                                    android:id="@+id/editJurisdiction"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="14dp"
+                                    android:hint="Jurisdiction"
+                                    android:textStyle="italic"
+                                    android:paddingLeft="5dp"
+                                    android:background="@drawable/rectangle_border"
+                                    android:textSize="14sp"/>
+
+                                <Spinner
+                                    android:id="@+id/district"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:focusable="false"
+                                    android:entries="@array/array_district"/>
+
+                                <CheckBox
+                                    android:id="@+id/selectAll2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/selectall"
+                                    android:textColor="#000"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox1D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/angul" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox2D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/balangir" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox3D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/balasore" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox4D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/bargarh" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox5D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/baudh" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox6D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/bhadrak" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox7D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/cuttack" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox8D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/deogarh" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox9D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/dhenkanal" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox10D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/gajapati" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox11D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/ganjam" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox12D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/jagatsinghapur" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox13D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/jajpur" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox14D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/jharsuguda" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox15D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/kalahandi" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox16D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/kandhamal" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox17D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/kendrapara" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox18D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/kendujhar" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox19D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/khordha" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox20D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/koraput" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox21D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/malkangiri" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox22D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/mayurbhanj" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox23D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/nabarangpur" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox24D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/nayagarh" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox25D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/nuapada" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox26D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/puri" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox27D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/rayagada" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox28D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/sambalpur" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:weightSum="2"
+                                    android:orientation="horizontal">
+                                    <CheckBox
+                                        android:id="@+id/checkBox29D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/subarnapur" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox30D"
+                                        android:layout_width="0dip"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="@string/sundargarh" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/line"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#bcbcbc"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--LAYOUT CENTRAL GOVT-->
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/layout_id_centgovt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Post"/>
+
+                        <EditText
+                            android:id="@+id/editSpecifyPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="@string/specify_post"
+                            android:textStyle="italic"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Institute_Name"/>
+                        <EditText
+                            android:id="@+id/editSpecifyInstitution"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:focusable="false"
+                            android:paddingLeft="5dp"
+                            android:hint="@string/specify_institution"
+                            android:textStyle="italic"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Jurisdiction"/>
+                        <EditText
+                            android:id="@+id/editCGJurisdiction"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:visibility="gone"
+                            android:paddingLeft="5dp"
+                            android:hint="@string/Jurisdiction"
+                            android:textStyle="italic"
+                            android:background="@drawable/rectangle_border"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_marginTop="14dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Select_District"/>
+
+                        <Spinner
+                            android:id="@+id/districtCG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/array_district"
+                            android:visibility="gone"
+                            android:focusable="false"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/selectAll1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/selectall"
+                            android:textColor="#000"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/angul" />
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/balangir" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/balasore" />
+                            <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/bargarh" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox5"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/baudh" />
+                            <CheckBox
+                                android:id="@+id/checkBox6"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/bhadrak" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox7"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/cuttack" />
+                            <CheckBox
+                                android:id="@+id/checkBox8"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/deogarh" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox9"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/dhenkanal" />
+                            <CheckBox
+                                android:id="@+id/checkBox10"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/gajapati" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox11"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/ganjam" />
+                            <CheckBox
+                                android:id="@+id/checkBox12"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/jagatsinghapur" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox13"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/jajpur" />
+                            <CheckBox
+                                android:id="@+id/checkBox14"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/jharsuguda" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox15"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/kalahandi" />
+                            <CheckBox
+                                android:id="@+id/checkBox16"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/kandhamal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox17"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/kendrapara" />
+                            <CheckBox
+                                android:id="@+id/checkBox18"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/kendujhar" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox19"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/khordha" />
+                            <CheckBox
+                                android:id="@+id/checkBox20"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/koraput" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox21"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/malkangiri" />
+                            <CheckBox
+                                android:id="@+id/checkBox22"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/mayurbhanj" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox23"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/nabarangpur" />
+                            <CheckBox
+                                android:id="@+id/checkBox24"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/nayagarh" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox25"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/nuapada" />
+                            <CheckBox
+                                android:id="@+id/checkBox26"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/puri" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox27"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/rayagada" />
+                            <CheckBox
+                                android:id="@+id/checkBox28"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/sambalpur" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <CheckBox
+                                android:id="@+id/checkBox29"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/subarnapur" />
+                            <CheckBox
+                                android:id="@+id/checkBox30"
+                                android:layout_width="0dip"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="@string/sundargarh" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/line2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="#bcbcbc"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/UPDATE"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:onClick="onClickUpdate"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

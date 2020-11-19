@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never"
+     />
+</menu>
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:item="http://schemas.android.com/tools">
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always">
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/appTutorials"
+                android:title="@string/appTutorials"
+                />
+            <item android:id="@+id/editProfile"
+                android:title="@string/Profile"
+                />
+            <item android:id="@+id/changePassword"
+                android:title="Change Password"
+                />
+           <!-- <item android:id="@+id/theme"
+                android:title="@string/Theme" />-->
+            <item android:id="@+id/changelanguage"
+                android:title="@string/Change_Language" />
+            <!-- <item android:id="@+id/storagelocation"
+                 android:title="Storage Location" />-->
+            <item
+                android:visible="true"
+                android:id="@+id/logout"
+                android:title="@string/Log_Out" />
+        </menu>
+    </item>
+</menu>

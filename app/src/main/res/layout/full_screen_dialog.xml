@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_close" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Recording"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+
+                android:id="@+id/ticksave"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_tick" />
+</LinearLayout>
+</android.support.design.widget.AppBarLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/music"
+       android:orientation="vertical"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <Chronometer
+               android:id="@+id/chronometer"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="30dp"
+               android:gravity="center"
+               android:textSize="100sp"
+               android:textColor="#ad1457"
+               />
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:gravity="center|bottom"
+           android:layout_marginBottom="40dp"
+           >
+
+
+       <ToggleButton
+           android:id="@+id/recordBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:onClick="startRecording"
+           android:text="Start Recording"
+           android:textOff="Start Recording"
+           android:textOn="Stop Recording"
+            android:background="@color/colorPrimaryDark"
+           android:textColor="#fff"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           />
+
+       <Button
+           android:id="@+id/playBtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:onClick="startPlaying"
+           android:text="play"
+           android:background="@color/colorPrimaryDark"
+           android:textColor="#fff"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           />
+
+       </LinearLayout>
+
+      <!-- <ImageButton
+           android:id="@+id/playstop"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:srcCompat="@drawable/ic_start"
+           android:layout_marginTop="0dp"
+           android:background="?attr/selectableItemBackgroundBorderless"
+           android:layout_gravity="bottom|center"
+
+
+           />-->
+
+
+   </LinearLayout>
+    </LinearLayout>

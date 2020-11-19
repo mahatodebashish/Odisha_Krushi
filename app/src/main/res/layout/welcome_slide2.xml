@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5ace73">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Question_Answer"
+            android:textColor="@android:color/white"
+            android:layout_margin="20dp"
+            android:textSize="@dimen/slide_title"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+           app:srcCompat="@drawable/ic_questionanswer" />
+
+
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/welcome_text_2"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/slide_desc" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="କୃଷି, ପଶୁପାଳନ, ମତ୍ସ୍ୟଚାଷ, ଉଦ୍ୟାନକୃଷି, ମୃତ୍ତିକା ସଂରକ୍ଷଣ, ଋଣ, ବୀମା ଇତ୍ୟାଦି ବିଷୟରେ ବାର୍ତ୍ତା କରିବାର ଏହା ଏକ ମାଧ୍ୟମ / This is a medium for interaction on Agriculture, Horticulture, Veterinary, Fishery, Soil Conservation etc. along with Loan and Insurance matters."
+            />
+    </LinearLayout>
+
+</LinearLayout>

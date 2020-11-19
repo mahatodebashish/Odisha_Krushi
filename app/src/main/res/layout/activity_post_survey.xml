@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71d687"
+    android:orientation="vertical"
+    tools:context=".Survey.PostSurvey">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/MyDarkToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <EditText
+        android:id="@+id/txtPostMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingLeft="7dp"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:hint="@string/Type_here"
+        />
+
+    <TextView
+        android:id="@+id/s_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#DBE2DC"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/e_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:gravity="center"
+
+        android:textStyle="bold"
+        android:background="#DBE2DC"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/Submit"
+        />
+
+</LinearLayout>
