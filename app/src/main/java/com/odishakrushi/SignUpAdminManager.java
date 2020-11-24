@@ -108,7 +108,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
     Spinner typeOfControl,serviceStatus,depart_type,dcar,post,jurisdiction,state,districtSingle;
     ProgressDialog progressDialog;
     String str_gender="",str_typeOfControl="",str_serviceStatus="",str_depart_type="",str_jurisdictionName="",str_dcar="",str_post="";
-    LinearLayout layoutState,layoutDistrict,layoutMultiDistrict,layoutJurisdiction,layoutJurisdictionName;
+    LinearLayout layoutGender,layoutState,layoutDistrict,layoutMultiDistrict,layoutJurisdiction,layoutJurisdictionName;
 
     String isOdia="false";
     String str_group_id="";
@@ -220,6 +220,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
         districtSingle=findViewById(R.id.districtSingle);
         state=findViewById(R.id.state);
 
+        layoutGender=findViewById(R.id.layoutGender);
         layoutState=findViewById(R.id.layoutState);
         layoutDistrict=findViewById(R.id.layoutDistrict);
         layoutMultiDistrict=findViewById(R.id.layoutMultiDistrict);
@@ -231,9 +232,10 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
         if(bundle != null)
         {
             isEditProfile= bundle.getString("EDIT_PROFILE");
-            name.setText(bundle.getString("NAME")); name.setFocusable(false);
-            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false);
-            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false);
+            name.setText(bundle.getString("NAME")); name.setFocusable(false); name.setVisibility(View.GONE);
+            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false); input_mob_no.setVisibility(View.GONE);
+            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false); input_mail.setVisibility(View.GONE);
+            typs_control_id= bundle.getString("TYPE_OF_CONTROL_ID");
             typeOfControl.setFocusable(false);
 
             if(bundle.getString("GENDER").equalsIgnoreCase(getString(R.string.Male)))
@@ -257,6 +259,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
             //then hide the terms and condition views
             termcondition.setVisibility(View.INVISIBLE);
             readTermCondition.setVisibility(View.INVISIBLE);
+            layoutGender.setVisibility(View.GONE);
+            input_pass.setVisibility(View.GONE);
 
             register.setEnabled(true);
             register.setFocusable(true);
@@ -286,7 +290,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 str_typeOfControl= typeOfControl.getSelectedItem().toString();
 
                 if(isEditProfile.equals("1")){
-                    int selectionPosition= Integer.parseInt(typs_control_id);
+                    int selectionPosition= Integer.parseInt(typs_control_id)-1;
                     typeOfControl.setSelection(selectionPosition);
                     typeOfControl.setEnabled(false);
                     typeOfControl.setClickable(false);

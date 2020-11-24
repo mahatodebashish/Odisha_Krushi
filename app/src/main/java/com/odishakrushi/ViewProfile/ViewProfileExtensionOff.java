@@ -184,6 +184,8 @@ public class ViewProfileExtensionOff extends AppCompatActivity {
                                 if(typs_of_control_str.equals("")) cardTypeOfControl.setVisibility(View.GONE);
                                 typs_of_control.setText(typs_of_control_str);
 
+                                typs_of_control_id=jsonObject1.optString("typs_of_control");
+
                                 service_status_str= jsonObject1.optString("service_status");
                                 service_status_str= Utils.nullCheck(service_status_str);
                                 if(service_status_str.equals("")) cardServiceStatus.setVisibility(View.GONE);

@@ -20,6 +20,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -89,6 +90,7 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
     String user_id="";
 
     String isEditProfile="0";
+    LinearLayout layoutLocationOfFarm,layoutDistrictBlock;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -183,18 +185,20 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
         business_type=findViewById(R.id.business_type);
         dealsIn=findViewById(R.id.dealsIn);
 
+        layoutLocationOfFarm=findViewById(R.id.layoutLocationOfFarm);
+        layoutDistrictBlock=findViewById(R.id.layoutDistrictBlock);
+
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         if(bundle != null)
         {
             isEditProfile= bundle.getString("EDIT_PROFILE");
-            name_of_farm.setText(bundle.getString("NAME_OF_FARM")); name_of_farm.setFocusable(false);
-            properiter_name.setText(bundle.getString("NAME_OF_PROPERTIER")); properiter_name.setFocusable(false);
-            input_mob_no.setText(bundle.getString("PHONE")); input_mob_no.setFocusable(false);
-            input_mail.setText(bundle.getString("EMAIL")); input_mail.setFocusable(false);
-            idwebsite.setText(bundle.getString("WEBSITE")); idwebsite.setFocusable(false);
-
+            name_of_farm.setText(bundle.getString("NAME_OF_FARM")); name_of_farm.setFocusable(false); name_of_farm.setVisibility(View.GONE);
+            properiter_name.setText(bundle.getString("NAME_OF_PROPERTIER")); properiter_name.setFocusable(false); properiter_name.setVisibility(View.GONE);
+            input_mob_no.setText(bundle.getString("PHONE")); input_mob_no.setFocusable(false); input_mob_no.setVisibility(View.GONE);
+            input_mail.setText(bundle.getString("EMAIL")); input_mail.setFocusable(false); input_mail.setVisibility(View.GONE);
+            idwebsite.setText(bundle.getString("WEBSITE")); idwebsite.setFocusable(false); idwebsite.setVisibility(View.GONE);
 
             toolbar.setTitle("Edit Profile");
         }
@@ -203,8 +207,8 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
             //then hide the terms and condition views
             termcondition.setVisibility(View.INVISIBLE);
             readTermCondition.setVisibility(View.INVISIBLE);
-            district.setEnabled(false);
-            block.setEnabled(false);
+            district.setEnabled(false); layoutLocationOfFarm.setVisibility(View.GONE);
+            block.setEnabled(false); layoutDistrictBlock.setVisibility(View.GONE);
             input_pass.setVisibility(View.GONE);
 
 
@@ -309,9 +313,10 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
         dealsIn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                // str_business_type= business_type.getSelectedItem().toString();
+                //str_business_type= business_type.getSelectedItem().toString();
 
                 str_dealsIn=""+position;
+
 
             }
 
@@ -441,7 +446,7 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
                                 JSONObject o=array.getJSONObject(k);
                                 //  bid=o.getString("id");
                                 name =o.getString("name");
-                                bid =o.getString("district_id");
+                                bid =o.getString("block_id");
 
 
                                 al.add(name);

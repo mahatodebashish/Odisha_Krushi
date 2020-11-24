@@ -162,6 +162,13 @@
                         android:layout_marginRight="20dp"
                         android:orientation="vertical"
                         >
+
+                        <LinearLayout
+                            android:id="@+id/layoutGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -191,9 +198,11 @@
                                 android:textSize="18sp"/>
 
                         </RadioGroup>
+                        </LinearLayout>
 
                         <!--type of control-->
                         <LinearLayout
+                            android:id="@+id/layoutTypeOfControl"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"

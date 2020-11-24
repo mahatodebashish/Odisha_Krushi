@@ -120,6 +120,7 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
 
     LinearLayout sublayoutFisheryActivity,sublayoutVeterinaryActivity;
     EditText area_of_pond_acres;
+    LinearLayout layoutVillage;
 
     int j=0,k=0,l=0;
 
@@ -240,7 +241,7 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
         loanTakenVeterinary=findViewById(R.id.loanTakenVeterinary);
         insuranceDoneVeterinary=findViewById(R.id.insuranceDoneVeterinary);
 
-        //village=findViewById(R.id.village);
+        layoutVillage=findViewById(R.id.layoutVillage);
         iluc=findViewById(R.id.iluc);// irrigated land under cultivation
         niluc=findViewById(R.id.niluc);// non irrigated land under cultivation
         radioIrrigationSource=findViewById(R.id.radioIrrigationSource);
@@ -315,6 +316,7 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
             //then hide the terms and condition views
             termcondition.setVisibility(View.INVISIBLE);
             readTermCondition.setVisibility(View.INVISIBLE);
+            layoutVillage.setVisibility(View.GONE);
 
             register.setEnabled(true);
             register.setFocusable(true);
@@ -1158,61 +1160,117 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
                 progressDialog.setMessage(getString(R.string.pleasewait));
                 progressDialog.show();
 
-              AndroidNetworking.post(Config.farmersignup)
-                        .addBodyParameter("user_id", str_user_id)
-                        .addBodyParameter("village", autoTextView.getText().toString().trim())
-                        .addBodyParameter("irrigated_land_under_cultivation", iluc.getText().toString().trim())
-                        .addBodyParameter("irrigation_source", str_irrisource)
-                        .addBodyParameter("non_irrigated_land_under_cultivation", niluc.getText().toString().trim())
-                        .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
-                        .addBodyParameter("machine_tool_own", list_of_machines)
-                        .addBodyParameter("last_crop_grown_in", str_last_crop_grown_in)
-                        .addBodyParameter("soil_testing_done", str_soil_testing_done)
-                        .addBodyParameter("fertiliser_used", str_fertiliser_used)
-                        .addBodyParameter("pesticide_used", str_pesticide_used)
-                        .addBodyParameter("machines_used", str_machineUsed)
-                     //   .setBodyParameter("machines",machine_lists)
-                        .addBodyParameter("last_crop_insurane_done", str_insuranceDone)
-                        .addBodyParameter("loan_taken", str_loanTaken)
-                        .addBodyParameter("fishery_activity", str_fishery_activity)
-                        .addBodyParameter("area_of_pond_acres", str_area_of_pond_acres)
-                        .addBodyParameter("fingerling_from", str_fingerlingsFrom)
-                        .addBodyParameter("fishery_trained_for_farming", str_fishery_trained_for_farming)
-                        .addBodyParameter("fishery_medicine_used", str_fishery_medicine_used)
-                        .addBodyParameter("fishery_lone_taken", str_loanTakenFishery)
-                        .addBodyParameter("fishery_insurance_done", str_insuranceDoneFishery)
-                        .addBodyParameter("veterinary_activity", str_veterinary_activity)
-                      //  .setBodyParameter("covered_by_insurance", "xxxxxx")
-                        .addBodyParameter("animals", "")
-                        .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
-                        .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
-                        .addBodyParameter("veterinary_trained_for_farming", str_veterinary_trained_for_farming)
-                        .addBodyParameter("veterinary_medicine_used", str_veterinary_medicine_used)
-                        .build()
-                      .getAsString(new StringRequestListener() {
-                          @Override
-                          public void onResponse(String response) {
-                              progressDialog.hide();
-                              Toast.makeText(SignUpFarmer_2.this, response, Toast.LENGTH_SHORT).show();
 
-                              if(isEditProfile.equals("0")){
-                              Intent intent =new Intent (SignUpFarmer_2.this, Login.class);
-                              intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                              startActivity(intent);
-                              }
-                              else{
-                                  onBackPressed();
-                              }
-                          }
+                    if("1".equals(isEditProfile)) {
+                        AndroidNetworking.post(Config.farmersignup)
+                                .addBodyParameter("user_id", str_user_id)
+                                // .addBodyParameter("village", autoTextView.getText().toString().trim())
+                                .addBodyParameter("irrigated_land_under_cultivation", iluc.getText().toString().trim())
+                                .addBodyParameter("irrigation_source", str_irrisource)
+                                .addBodyParameter("non_irrigated_land_under_cultivation", niluc.getText().toString().trim())
+                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
+                                .addBodyParameter("machine_tool_own", list_of_machines)
+                                .addBodyParameter("last_crop_grown_in", str_last_crop_grown_in)
+                                .addBodyParameter("soil_testing_done", str_soil_testing_done)
+                                .addBodyParameter("fertiliser_used", str_fertiliser_used)
+                                .addBodyParameter("pesticide_used", str_pesticide_used)
+                                .addBodyParameter("machines_used", str_machineUsed)
+                                //   .setBodyParameter("machines",machine_lists)
+                                .addBodyParameter("last_crop_insurane_done", str_insuranceDone)
+                                .addBodyParameter("loan_taken", str_loanTaken)
+                                .addBodyParameter("fishery_activity", str_fishery_activity)
+                                .addBodyParameter("area_of_pond_acres", str_area_of_pond_acres)
+                                .addBodyParameter("fingerling_from", str_fingerlingsFrom)
+                                .addBodyParameter("fishery_trained_for_farming", str_fishery_trained_for_farming)
+                                .addBodyParameter("fishery_medicine_used", str_fishery_medicine_used)
+                                .addBodyParameter("fishery_lone_taken", str_loanTakenFishery)
+                                .addBodyParameter("fishery_insurance_done", str_insuranceDoneFishery)
+                                .addBodyParameter("veterinary_activity", str_veterinary_activity)
+                                //  .setBodyParameter("covered_by_insurance", "xxxxxx")
+                                .addBodyParameter("animals", "")
+                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
+                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
+                                .addBodyParameter("veterinary_trained_for_farming", str_veterinary_trained_for_farming)
+                                .addBodyParameter("veterinary_medicine_used", str_veterinary_medicine_used)
+                                .build()
+                                .getAsString(new StringRequestListener() {
+                                    @Override
+                                    public void onResponse(String response) {
+                                        progressDialog.hide();
+                                        Toast.makeText(SignUpFarmer_2.this, response, Toast.LENGTH_SHORT).show();
 
-                          @Override
-                          public void onError(ANError anError) {
-                              progressDialog.hide();
-                              Toast.makeText(SignUpFarmer_2.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
+                                        if (isEditProfile.equals("0")) {
+                                            Intent intent = new Intent(SignUpFarmer_2.this, Login.class);
+                                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                        } else {
+                                            onBackPressed();
+                                        }
+                                    }
 
-                          }
-                      });
+                                    @Override
+                                    public void onError(ANError anError) {
+                                        progressDialog.hide();
+                                        Toast.makeText(SignUpFarmer_2.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
 
+                                    }
+                                });
+                    }
+                    else{
+                        AndroidNetworking.post(Config.farmersignup)
+                                .addBodyParameter("user_id", str_user_id)
+                                .addBodyParameter("village", autoTextView.getText().toString().trim())
+                                .addBodyParameter("irrigated_land_under_cultivation", iluc.getText().toString().trim())
+                                .addBodyParameter("irrigation_source", str_irrisource)
+                                .addBodyParameter("non_irrigated_land_under_cultivation", niluc.getText().toString().trim())
+                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
+                                .addBodyParameter("machine_tool_own", list_of_machines)
+                                .addBodyParameter("last_crop_grown_in", str_last_crop_grown_in)
+                                .addBodyParameter("soil_testing_done", str_soil_testing_done)
+                                .addBodyParameter("fertiliser_used", str_fertiliser_used)
+                                .addBodyParameter("pesticide_used", str_pesticide_used)
+                                .addBodyParameter("machines_used", str_machineUsed)
+                                //   .setBodyParameter("machines",machine_lists)
+                                .addBodyParameter("last_crop_insurane_done", str_insuranceDone)
+                                .addBodyParameter("loan_taken", str_loanTaken)
+                                .addBodyParameter("fishery_activity", str_fishery_activity)
+                                .addBodyParameter("area_of_pond_acres", str_area_of_pond_acres)
+                                .addBodyParameter("fingerling_from", str_fingerlingsFrom)
+                                .addBodyParameter("fishery_trained_for_farming", str_fishery_trained_for_farming)
+                                .addBodyParameter("fishery_medicine_used", str_fishery_medicine_used)
+                                .addBodyParameter("fishery_lone_taken", str_loanTakenFishery)
+                                .addBodyParameter("fishery_insurance_done", str_insuranceDoneFishery)
+                                .addBodyParameter("veterinary_activity", str_veterinary_activity)
+                                //  .setBodyParameter("covered_by_insurance", "xxxxxx")
+                                .addBodyParameter("animals", "")
+                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
+                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
+                                .addBodyParameter("veterinary_trained_for_farming", str_veterinary_trained_for_farming)
+                                .addBodyParameter("veterinary_medicine_used", str_veterinary_medicine_used)
+                                .build()
+                                .getAsString(new StringRequestListener() {
+                                    @Override
+                                    public void onResponse(String response) {
+                                        progressDialog.hide();
+                                        Toast.makeText(SignUpFarmer_2.this, response, Toast.LENGTH_SHORT).show();
+
+                                        if (isEditProfile.equals("0")) {
+                                            Intent intent = new Intent(SignUpFarmer_2.this, Login.class);
+                                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                            startActivity(intent);
+                                        } else {
+                                            onBackPressed();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onError(ANError anError) {
+                                        progressDialog.hide();
+                                        Toast.makeText(SignUpFarmer_2.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
+
+                                    }
+                                });
+                    }
             }
 
     }

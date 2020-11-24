@@ -143,7 +143,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
     Spinner spinnerState;
 
     String isEditProfile="0";
-    LinearLayout layoutPassword;
+    LinearLayout layoutPassword,layoutGender,layoutTypeOfControl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -168,6 +168,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
         termcondition=findViewById(R.id.termcondition);
         btnRegister=findViewById(R.id.btnRegister);
         layoutPassword=findViewById(R.id.layoutPassword);
+        layoutGender=findViewById(R.id.layoutGender);
+        layoutTypeOfControl=findViewById(R.id.layoutTypeOfControl);
 
         readTermCondition=findViewById(R.id.readTermCondition);
         readTermCondition.setOnClickListener(new View.OnClickListener() {
@@ -262,9 +264,11 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
         if(bundle != null)
         {
             isEditProfile= bundle.getString("EDIT_PROFILE");
-            name.setText(bundle.getString("NAME")); name.setFocusable(false);
-            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false);
-            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false);
+            name.setText(bundle.getString("NAME")); name.setFocusable(false); name.setVisibility(View.GONE);
+            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false); input_mob_no.setVisibility(View.GONE);
+            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false);  input_mail.setVisibility(View.GONE);
+            typs_control_id= bundle.getString("TYPE_OF_CONTROL_ID");
+
             typeOfControl.setFocusable(false);
 
             if(bundle.getString("GENDER").equalsIgnoreCase(getString(R.string.Male)))
@@ -289,6 +293,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             termcondition.setVisibility(View.INVISIBLE);
             readTermCondition.setVisibility(View.INVISIBLE);
             layoutPassword.setVisibility(View.GONE);
+            layoutGender.setVisibility(View.GONE);
+            layoutTypeOfControl.setVisibility(View.INVISIBLE);
 
             btnRegister.setEnabled(true);
             btnRegister.setFocusable(true);
@@ -317,8 +323,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 str_typeOfControl= typeOfControl.getSelectedItem().toString();
 
-                // TODO: 11/7/2020  commented temporarily
-                if(isEditProfile.equals("1")){
+
+                if("1".equals(isEditProfile)){
                     int selectionPosition= Integer.parseInt(typs_control_id)-1;
                     typeOfControl.setSelection(selectionPosition);
                     typeOfControl.setEnabled(false);

@@ -222,10 +222,13 @@ public class ViewProfileBusinessMAn extends AppCompatActivity {
                                 if(business_type_str.equals("")) cardTypeOfBusiness.setVisibility(View.GONE);
                                 business_type.setText(business_type_str);
 
-                                deals_in_product_str= jsonObject1.optString("deals_in_product");
+                                deals_in_product_str= jsonObject1.optString("deals_in");
                                 deals_in_product_str= Utils.nullCheck(deals_in_product_str);
                                 if(deals_in_product_str.equals("")) cardDealsIn.setVisibility(View.GONE);
-                                deals_in_product.setText(deals_in_product_str);
+
+                                String value = getResources().getStringArray(R.array.array_deals_in)[Integer.parseInt(deals_in_product_str)];
+                                Log.d("deals_in",value);
+                                deals_in_product.setText(value);
 
                                 deals_in_product_other_str= jsonObject1.optString("deals_in_product_other");
                                 deals_in_product_other_str= Utils.nullCheck(deals_in_product_other_str);

@@ -86,7 +86,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
     String str_edu_status="",str_gender="",str_qualification="",str_specialization="",str_institute="",str_other_detail="";
     LinearLayout layoutstudycontinuing;
     AppCompatEditText fname,/*lname,*/input_mob_no,input_mail,input_pass;
-    LinearLayout layoutDistrict,layoutDistrictOnlyForEditProfile,layoutGender;
+    LinearLayout layoutMainDistrict,layoutDistrict,layoutDistrictOnlyForEditProfile,layoutGender;
     Spinner spinnerspecialization, district;
     EditText editinsitutename,editotherdetails;
     TextView txtDistrict;
@@ -189,6 +189,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
         editotherdetails=findViewById(R.id.editotherdetails);
         spinnerhq=findViewById(R.id.spinnerhq);
         district=(Spinner) findViewById(R.id.district);
+        layoutMainDistrict= findViewById(R.id.layoutMainDistrict);
         layoutDistrict= findViewById(R.id.layoutDistrict);
         layoutDistrictOnlyForEditProfile= findViewById(R.id.layoutDistrictOnlyForEditProfile);
         layoutGender= findViewById(R.id.layoutGender);
@@ -203,9 +204,9 @@ public class SignUpStudentResearcher extends AppCompatActivity {
         {
 
             isEditProfile= bundle.getString("EDIT_PROFILE");
-            fname.setText(bundle.getString("NAME")); fname.setFocusable(false);
-            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false);
-            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false);
+            fname.setText(bundle.getString("NAME")); fname.setFocusable(false); fname.setVisibility(View.GONE);
+            input_mob_no.setText(bundle.getString("MOBILE")); input_mob_no.setFocusable(false); input_mob_no.setVisibility(View.GONE);
+            input_mail.setText(bundle.getString("EMAIL_ID")); input_mail.setFocusable(false); input_mail.setVisibility(View.GONE);
             txtDistrict.setText(bundle.getString("DISTRICT"));
 
             if(bundle.getString("GENDER").equalsIgnoreCase(getString(R.string.Male)))
@@ -222,6 +223,8 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                 }
             }
 
+
+
             toolbar.setTitle("Edit Profile");
         }
 
@@ -230,8 +233,12 @@ public class SignUpStudentResearcher extends AppCompatActivity {
             termcondition.setVisibility(View.INVISIBLE);
             readTermCondition.setVisibility(View.INVISIBLE);
             layoutDistrict.setVisibility(View.GONE);
-            layoutDistrictOnlyForEditProfile.setVisibility(View.VISIBLE);
+            layoutDistrictOnlyForEditProfile.setVisibility(View.GONE);
+            layoutMainDistrict.setVisibility(View.GONE);
+
             input_pass.setVisibility(View.GONE);
+            layoutGender.setVisibility(View.GONE);
+            layoutDistrict.setVisibility(View.GONE);
 
             register.setEnabled(true);
             register.setFocusable(true);
