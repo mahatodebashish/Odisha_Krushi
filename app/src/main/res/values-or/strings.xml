@@ -355,6 +355,8 @@
     <string name="Medicine_for">ଔଷଧ ଆବଶ୍ୟକ</string>
     <string name="Maker">ନିର୍ମାତାଙ୍କ ନାମ</string>
     <string name="Machine_Condition">ଯନ୍ତ୍ର ର ଅବସ୍ଥା</string>
+    <string name="trust_name">Trust Name</string>
+    <string name="ngo_name">NGO Name</string>
 
     <string-array name="knowledgebankfilters">
         <item>ମୋ କାହାଣୀ</item>
@@ -842,6 +844,15 @@
         <item>ଗ୍ରାମ ପଞ୍ଚାୟତ(s)</item>
         <item>ବ୍ଲକ</item>
         <item>ବ୍ଲକ ସମୂହ</item>
+    </string-array>
+
+
+    <string-array name="fingerlingsfrom">
+
+        <item>ବେସରକାରୀ</item>
+        <item>ସରକାର</item>
+        <item>ନିଜର</item>
+
     </string-array>
 
     <string-array name="array_expertise_in">

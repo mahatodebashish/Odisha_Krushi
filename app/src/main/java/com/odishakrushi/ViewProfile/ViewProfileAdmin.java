@@ -34,14 +34,17 @@ import static com.odishakrushi.Config.getAdminManagerProfileData;
 public class ViewProfileAdmin extends AppCompatActivity {
 
     ImageView editProfile;
-    TextView /*district_name,*/jurisdiction_name,jurisdiction,dcar,department,serviceStatus,typeOfControl,post/*,govt_department*//*,govt_type*/,email,phone,first_name,gender;
+    TextView /*district_name,*/jurisdiction_name,jurisdiction,dcar,department,serviceStatus,typeOfControl,
+            post/*,govt_department*//*,govt_type*/,email,phone,first_name,gender,trust_name,ngo_name;
     ACProgressCustom dialog;
     SharedPreferences sharedpreferences;
     public static final String mypreference = "mypref";
     String user_id;
-    String jurisdiction_name_str="",jurisdiction_str="",dcarci_name_str="",department_name_str="",typs_control_id="",service_status_name_str="",typs_control_name_str="",gender_str="",email_str="",phone_str="",first_name_str;
+    String jurisdiction_name_str="",jurisdiction_str="",dcarci_name_str="",department_name_str="",typs_control_id="",service_status_name_str="",
+            typs_control_name_str="",gender_str="",email_str="",phone_str="",first_name_str,trust_name_str="",ngo_name_str="";
     CardView cardName , cardPhone , cardEmail ,cardGender,cardDepartment,cardServiceStatus/*, cardGovtType*/
-           /* , cardGovtDept */, cardPost , cardTypeOfControl,cardDcar ,cardJurisdiction,cardJurisdictionName;
+           /* , cardGovtDept */, cardPost , cardTypeOfControl,cardDcar ,cardJurisdiction,cardJurisdictionName,
+            cardTrustName,cardNGOName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +113,8 @@ public class ViewProfileAdmin extends AppCompatActivity {
         dcar =findViewById(R.id.dcar);
         jurisdiction =findViewById(R.id.jurisdiction);
         jurisdiction_name =findViewById(R.id.jurisdiction_name);
+        trust_name =findViewById(R.id.trust_name);
+        ngo_name =findViewById(R.id.ngo_name);
 
         cardName =findViewById(R.id.cardName);
         cardPhone =findViewById(R.id.cardPhone);
@@ -120,6 +125,8 @@ public class ViewProfileAdmin extends AppCompatActivity {
         cardDepartment =findViewById(R.id.cardDepartment);
         cardDcar =findViewById(R.id.cardDcar);
         cardJurisdictionName =findViewById(R.id.cardJurisdictionName);
+        cardTrustName =findViewById(R.id.cardTrustName);
+        cardNGOName =findViewById(R.id.cardNGOName);
         //cardGovtType =findViewById(R.id.cardGovtType);
       //  cardGovtDept =findViewById(R.id.cardGovtDept);
         cardPost =findViewById(R.id.cardPost);
@@ -225,6 +232,16 @@ public class ViewProfileAdmin extends AppCompatActivity {
                                 phone_str=Utils.nullCheck(phone_str);
                                 if(phone_str.equals("")) cardPhone.setVisibility(View.GONE);
                                 phone.setText(phone_str);
+
+                                trust_name_str= jsonObject1.optString("department_id");
+                                trust_name_str=Utils.nullCheck(trust_name_str);
+                                if(trust_name_str.equals("")) cardTrustName.setVisibility(View.GONE);
+                                trust_name.setText(trust_name_str);
+
+                                ngo_name_str= jsonObject1.optString("dcarci_id");
+                                ngo_name_str=Utils.nullCheck(ngo_name_str);
+                                if(ngo_name_str.equals("")) cardNGOName.setVisibility(View.GONE);
+                                ngo_name.setText(ngo_name_str);
 
                                 gender_str= jsonObject1.optString("gender");
                                /* gender_str= Utils.nullCheck(gender_str);

@@ -553,8 +553,12 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                         @Override
                         public void onError(ANError anError) {
                             progressDialog.hide();
-                            Toast.makeText(SignUpStudentResearcher.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
-                            onBackPressed();
+
+                            //Toast.makeText(SignUpStudentResearcher.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
+                            //onBackPressed();
+                            Log.d( "Error",anError.getErrorBody());
+                            Log.d( "Error",anError.getErrorDetail());
+                            Log.d( "Error", String.valueOf(anError.getResponse()));
                         }
                     });
 

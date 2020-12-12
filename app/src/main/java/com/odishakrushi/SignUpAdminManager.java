@@ -308,6 +308,17 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                     break;
                 }
 
+                if(position==2){ // i.e. NGO
+
+                    layoutJurisdiction.setVisibility(View.VISIBLE);
+                    layoutJurisdictionName.setVisibility(View.VISIBLE);
+                }
+                else {
+
+                    layoutJurisdiction.setVisibility(View.GONE);
+                    layoutJurisdictionName.setVisibility(View.GONE);
+                    str_jurisdictionName="";
+                }
                 //When type of control is selected , then it will call getDepartment API
                 // callGetDepartmentApi(String.valueOf(position+1));
                 callGetDepartmentApi(arrayList_typs_control_id.get(position));
@@ -382,7 +393,6 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 }
 
 
-                // calldcarApi(arrayList_department_id.get(position));
                 calldcarApi(arrayList_department_id.get(position));
             }
 
@@ -472,7 +482,12 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                     break;
                 }
 
-                if(arrayList_jurisdiction_id.get(position).equals("120"))// i.e State
+                if(arrayList_jurisdiction_id.get(position).equals("120")||
+                        arrayList_jurisdiction_id.get(position).equals("123") ||
+                        arrayList_jurisdiction_id.get(position).equals("127") ||
+                        arrayList_jurisdiction_id.get(position).equals("128") ||
+                        arrayList_jurisdiction_id.get(position).equals("131")||
+                        arrayList_jurisdiction_id.get(position).equals("24"))// i.e State
                 {
                     layoutState.setVisibility(View.VISIBLE);
                     layoutDistrict.setVisibility(View.GONE);

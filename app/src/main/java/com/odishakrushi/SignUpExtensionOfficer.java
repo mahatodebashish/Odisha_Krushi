@@ -443,6 +443,15 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 str_jurisdiction=jurisdiction.getSelectedItem().toString();
 
+                if(getString(R.string.Block).equals(str_jurisdiction)){
+                    layoutGPs.setVisibility(View.GONE);
+                    if(rootContainer!=null)
+                        rootContainer.removeAllViews();
+
+                    if(rootContainerGP!=null)
+                        rootContainerGP.removeAllViews();
+                }
+
                 if(arrayList_jurisdiction_id.get(position).equals("3"))// i.e GP
                 {
                     layoutState.setVisibility(View.GONE);

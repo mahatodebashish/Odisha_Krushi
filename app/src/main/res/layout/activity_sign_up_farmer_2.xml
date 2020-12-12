@@ -868,7 +868,7 @@
                                         android:id="@+id/fingerlingsFrom"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:entries="@array/yes_no"
+                                        android:entries="@array/fingerlingsfrom"
                                         />
 
 

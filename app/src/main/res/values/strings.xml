@@ -652,6 +652,8 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
     <string name="for_any_doubt">For Any Doubt</string>
     <string name="something_went_wrong">Something went wrong</string>
     <string name="pleasewait">Please Wait..</string>
+    <string name="trust_name">Trust Name</string>
+    <string name="ngo_name">NGO Name</string>
 
     <string name="dcari">Directorate/Corporation/Agency/Research Center/Institution</string>
     <string-array name="spinnerarray">
@@ -1150,6 +1152,15 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
         <item>Others</item>
 
     </string-array>
+
+    <string-array name="fingerlingsfrom">
+
+        <item>Private</item>
+        <item>Govt</item>
+        <item>Own</item>
+
+    </string-array>
+
     <string-array name="arrayqualification">
 
         <item>Matriculation</item>

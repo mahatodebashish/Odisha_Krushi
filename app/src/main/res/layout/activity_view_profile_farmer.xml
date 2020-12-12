@@ -595,16 +595,24 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agriculture"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
     <android.support.v7.widget.CardView
         android:id="@+id/cardIluc"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -654,11 +662,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -709,11 +716,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -765,11 +771,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -813,16 +818,16 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+
     <android.support.v7.widget.CardView
         android:id="@+id/cardLastCropGrownIn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -872,10 +877,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -925,10 +930,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -978,10 +983,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1031,10 +1036,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+       android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1084,10 +1089,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1137,10 +1142,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1190,10 +1195,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1243,10 +1248,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
+        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
-        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1290,16 +1295,81 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--fishery_lone_taken-->
+
+    <!--any special crop grown-->
     <android.support.v7.widget.CardView
-        android:id="@+id/cardFisheryLoneTaken"
+        android:id="@+id/cardAnySpecialCropGrown"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
+
         android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/crops"
+                   android:layout_weight="2"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="15dp"
+                   android:textSize="30sp"
+                   android:layout_weight="2.5"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Any_special_crop_grown"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/any_special_crop_grown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Fishery"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+
+    <!--fishery_lone_taken-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFisheryLoneTaken"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1547,60 +1617,6 @@
                     android:textColor="@color/colorPrimary"/>
                 <TextView
                     android:id="@+id/fishery_lone_taken_for"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-
-    <!--veterinary_activity-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardVeterinaryActivity"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-         <!--   <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/veterinary_dog"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/veterinary_activity"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/veterinary_activity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="left"
@@ -1875,58 +1891,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardAnySpecialCropGrown"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
 
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-         <!--   <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/crops"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Any_special_crop_grown"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/any_special_crop_grown"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 
     <!--fishery_activity-->
     <android.support.v7.widget.CardView
@@ -2025,6 +1990,71 @@
                     android:textColor="@color/colorPrimary"/>
                 <TextView
                     android:id="@+id/area_of_pond_acres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Veterinary"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+
+
+
+    <!--veterinary_activity-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVeterinaryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/veterinary_dog"
+                   android:layout_weight="2"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="15dp"
+                   android:textSize="30sp"
+                   android:layout_weight="2.5"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veterinary_activity"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/veterinary_activity"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="left"
