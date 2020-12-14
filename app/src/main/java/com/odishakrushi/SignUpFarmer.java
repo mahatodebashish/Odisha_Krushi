@@ -305,24 +305,17 @@ public class SignUpFarmer extends AppCompatActivity {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpFarmer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-                /* progressDialog.dismiss();*/
-                // Toast.makeText(getApplicationContext(),"Error while loading",Toast.LENGTH_LONG).show();
-               /* Snackbar snackbar = Snackbar
-                        .make(findViewById(android.R.id.content), "Error while loading", Snackbar.LENGTH_LONG);
-
-                snackbar.show();*/
-
-                Alerter.create(SignUpFarmer.this)
-                        .setTitle(getString(R.string.Network_Error))
-                        .show();
-
+                Toast.makeText(SignUpFarmer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
                 onBackPressed();
+
             }
         });
 
@@ -398,18 +391,15 @@ public class SignUpFarmer extends AppCompatActivity {
 
                         } catch (JSONException e) {//JSONException
                             e.printStackTrace();
+                            Toast.makeText(SignUpFarmer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-                /* progressDialog.dismiss();*/
-                //  Toast.makeText(getApplicationContext(),"Error while loading",Toast.LENGTH_LONG).show();
-                Alerter.create(SignUpFarmer.this)
-                        .setTitle(getString(R.string.Network_Error))
-                        .show();
-
+                Toast.makeText(SignUpFarmer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
                 onBackPressed();
             }
         });

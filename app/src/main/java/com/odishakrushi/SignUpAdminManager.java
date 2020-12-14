@@ -832,6 +832,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpAdminManager.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -912,6 +914,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpAdminManager.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1064,6 +1068,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpAdminManager.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 

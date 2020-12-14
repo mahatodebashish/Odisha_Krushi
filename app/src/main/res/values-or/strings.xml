@@ -846,13 +846,23 @@
         <item>ବ୍ଲକ ସମୂହ</item>
     </string-array>
 
-
     <string-array name="fingerlingsfrom">
-
-        <item>ବେସରକାରୀ</item>
-        <item>ସରକାର</item>
+        <item>ବେସରକାରୀ ସଂସ୍ଥା</item>
+        <item>ସରକାରୀ ସଂସ୍ଥା</item>
         <item>ନିଜର</item>
+    </string-array>
 
+    <string-array name="array_any_special_crop_grown">
+        <item>ମକା</item>
+        <item>କପା</item>
+        <item>ଆଖୁ</item>
+        <item>ଅନ୍ୟାନ୍ୟ</item>
+    </string-array>
+
+
+    <string-array name="array_owner_of_pond">
+        <item>ନିଜର</item>
+        <item>ଭଡାରେ</item>
     </string-array>
 
     <string-array name="array_expertise_in">

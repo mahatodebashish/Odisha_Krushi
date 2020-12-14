@@ -865,22 +865,16 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpFarmer_2.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-               /* progressDialog.dismiss();*/
-               // Toast.makeText(getApplicationContext(),"Error while loading",Toast.LENGTH_LONG).show();
-               /* Snackbar snackbar = Snackbar
-                        .make(findViewById(android.R.id.content), "Error while loading", Snackbar.LENGTH_LONG);
-
-                snackbar.show();*/
-
-                Alerter.create(SignUpFarmer_2.this)
-                        .setTitle(getString(R.string.Network_Error))
-                        .show();
+                Toast.makeText(SignUpFarmer_2.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                onBackPressed();
             }
         });
 
@@ -959,11 +953,8 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
-               /* progressDialog.dismiss();*/
-              //  Toast.makeText(getApplicationContext(),"Error while loading",Toast.LENGTH_LONG).show();
-                Alerter.create(SignUpFarmer_2.this)
-                        .setTitle(getString(R.string.Network_Error))
-                        .show();
+                Toast.makeText(SignUpFarmer_2.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                onBackPressed();
             }
         });
 
@@ -1135,7 +1126,8 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
 
                             } catch (Exception ex) {
                                 ex.printStackTrace();
-
+                                Toast.makeText(SignUpFarmer_2.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                                onBackPressed();
                             }
 
 

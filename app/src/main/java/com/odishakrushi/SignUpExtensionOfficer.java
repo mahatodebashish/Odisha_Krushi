@@ -1446,6 +1446,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1519,6 +1521,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1598,6 +1602,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1678,6 +1684,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1758,6 +1766,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 
@@ -1839,6 +1849,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpExtensionOfficer.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
 

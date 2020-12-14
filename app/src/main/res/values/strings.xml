@@ -1155,10 +1155,25 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
 
     <string-array name="fingerlingsfrom">
 
-        <item>Private</item>
-        <item>Govt</item>
-        <item>Own</item>
+        <item>Private farm</item>
+        <item>Govt. farm</item>
+        <item>Local</item>
 
+    </string-array>
+
+
+    <string-array name="array_any_special_crop_grown">
+
+        <item>Maize</item>
+        <item>Cotton</item>
+        <item>Sugarcane</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="array_owner_of_pond">
+        <item>Own</item>
+        <item>Lease</item>
     </string-array>
 
     <string-array name="arrayqualification">

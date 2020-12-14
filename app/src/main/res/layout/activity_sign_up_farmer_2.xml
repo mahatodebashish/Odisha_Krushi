@@ -686,7 +686,7 @@
                                         android:id="@+id/any_special_crop_grown"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:entries="@array/yes_no"
+                                        android:entries="@array/array_any_special_crop_grown"
                                         />
 
 
@@ -827,7 +827,7 @@
                                         android:id="@+id/area_of_pond_own_lease"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:entries="@array/yes_no"
+                                        android:entries="@array/array_owner_of_pond"
                                         />
 
 

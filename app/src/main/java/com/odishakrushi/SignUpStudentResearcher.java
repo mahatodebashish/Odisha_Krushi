@@ -456,6 +456,8 @@ public class SignUpStudentResearcher extends AppCompatActivity {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(SignUpStudentResearcher.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
+                            onBackPressed();
                         }
 
                     }
@@ -463,16 +465,8 @@ public class SignUpStudentResearcher extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 /* progressDialog.dismiss();*/
-                // Toast.makeText(getApplicationContext(),"Error while loading",Toast.LENGTH_LONG).show();
-               /* Snackbar snackbar = Snackbar
-                        .make(findViewById(android.R.id.content), "Error while loading", Snackbar.LENGTH_LONG);
 
-                snackbar.show();*/
-
-                Alerter.create(SignUpStudentResearcher.this)
-                        .setTitle(getString(R.string.Network_Error))
-                        .show();
-
+                Toast.makeText(SignUpStudentResearcher.this,getString(R.string.something_went_wrong),Toast.LENGTH_LONG);
                 onBackPressed();
             }
         });
