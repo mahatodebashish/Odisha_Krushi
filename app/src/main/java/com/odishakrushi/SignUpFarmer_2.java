@@ -119,7 +119,7 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
     Spinner veterinary_activity,veterinary_trained_for_farming,veterinary_medicine_used,loanTakenVeterinary,insuranceDoneVeterinary;
 
     LinearLayout sublayoutFisheryActivity,sublayoutVeterinaryActivity;
-    EditText area_of_pond_acres;
+    EditText area,area_of_pond_acres,animal_variety_number;
     LinearLayout layoutVillage;
 
     int j=0,k=0,l=0;
@@ -214,6 +214,8 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
         block=findViewById(R.id.block);
         gp=findViewById(R.id.gp);
 
+        area=findViewById(R.id.area);
+        animal_variety_number=findViewById(R.id.animal_variety_number);
         last_crop_grown_in=findViewById(R.id.last_crop_grown_in);
         soil_testing_done=findViewById(R.id.soil_testing_done);
         fertiliser_used=findViewById(R.id.fertiliser_used);
@@ -524,6 +526,7 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
                 }
                 else{
                     sublayoutFisheryActivity.setVisibility(View.VISIBLE);
+
                 }
 
             }
@@ -1156,34 +1159,34 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
                     if("1".equals(isEditProfile)) {
                         AndroidNetworking.post(Config.farmersignup)
                                 .addBodyParameter("user_id", str_user_id)
-                                // .addBodyParameter("village", autoTextView.getText().toString().trim())
+                               // .addBodyParameter("village", autoTextView.getText().toString().trim())
                                 .addBodyParameter("irrigated_land_under_cultivation", iluc.getText().toString().trim())
                                 .addBodyParameter("irrigation_source", str_irrisource)
                                 .addBodyParameter("non_irrigated_land_under_cultivation", niluc.getText().toString().trim())
-                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
                                 .addBodyParameter("machine_tool_own", list_of_machines)
                                 .addBodyParameter("last_crop_grown_in", str_last_crop_grown_in)
+                                .addBodyParameter("area", area.getText().toString())  // <---------------
                                 .addBodyParameter("soil_testing_done", str_soil_testing_done)
                                 .addBodyParameter("fertiliser_used", str_fertiliser_used)
                                 .addBodyParameter("pesticide_used", str_pesticide_used)
                                 .addBodyParameter("machines_used", str_machineUsed)
-                                //   .setBodyParameter("machines",machine_lists)
                                 .addBodyParameter("last_crop_insurane_done", str_insuranceDone)
                                 .addBodyParameter("loan_taken", str_loanTaken)
+                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
                                 .addBodyParameter("fishery_activity", str_fishery_activity)
-                                .addBodyParameter("area_of_pond_acres", str_area_of_pond_acres)
+                                .addBodyParameter("area_of_pond_acres", area_of_pond_acres.getText().toString())
+                                .addBodyParameter("owner_of_pond", str_area_of_pond_own_lease) // <---------------------
                                 .addBodyParameter("fingerling_from", str_fingerlingsFrom)
                                 .addBodyParameter("fishery_trained_for_farming", str_fishery_trained_for_farming)
                                 .addBodyParameter("fishery_medicine_used", str_fishery_medicine_used)
                                 .addBodyParameter("fishery_lone_taken", str_loanTakenFishery)
                                 .addBodyParameter("fishery_insurance_done", str_insuranceDoneFishery)
                                 .addBodyParameter("veterinary_activity", str_veterinary_activity)
-                                //  .setBodyParameter("covered_by_insurance", "xxxxxx")
-                                .addBodyParameter("animals", "")
-                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
-                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
+                                .addBodyParameter("animals", animal_variety_number.getText().toString())
                                 .addBodyParameter("veterinary_trained_for_farming", str_veterinary_trained_for_farming)
                                 .addBodyParameter("veterinary_medicine_used", str_veterinary_medicine_used)
+                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
+                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
                                 .build()
                                 .getAsString(new StringRequestListener() {
                                     @Override
@@ -1215,30 +1218,30 @@ public class SignUpFarmer_2 extends AppCompatActivity implements MultiSpinner.Mu
                                 .addBodyParameter("irrigated_land_under_cultivation", iluc.getText().toString().trim())
                                 .addBodyParameter("irrigation_source", str_irrisource)
                                 .addBodyParameter("non_irrigated_land_under_cultivation", niluc.getText().toString().trim())
-                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
                                 .addBodyParameter("machine_tool_own", list_of_machines)
                                 .addBodyParameter("last_crop_grown_in", str_last_crop_grown_in)
+                                .addBodyParameter("area", area.getText().toString())  // <---------------
                                 .addBodyParameter("soil_testing_done", str_soil_testing_done)
                                 .addBodyParameter("fertiliser_used", str_fertiliser_used)
                                 .addBodyParameter("pesticide_used", str_pesticide_used)
                                 .addBodyParameter("machines_used", str_machineUsed)
-                                //   .setBodyParameter("machines",machine_lists)
                                 .addBodyParameter("last_crop_insurane_done", str_insuranceDone)
                                 .addBodyParameter("loan_taken", str_loanTaken)
+                                .addBodyParameter("any_special_crop_grown", str_any_special_crop_grown)
                                 .addBodyParameter("fishery_activity", str_fishery_activity)
-                                .addBodyParameter("area_of_pond_acres", str_area_of_pond_acres)
+                                .addBodyParameter("area_of_pond_acres", area_of_pond_acres.getText().toString())
+                                .addBodyParameter("owner_of_pond", str_area_of_pond_own_lease) // <---------------------
                                 .addBodyParameter("fingerling_from", str_fingerlingsFrom)
                                 .addBodyParameter("fishery_trained_for_farming", str_fishery_trained_for_farming)
                                 .addBodyParameter("fishery_medicine_used", str_fishery_medicine_used)
                                 .addBodyParameter("fishery_lone_taken", str_loanTakenFishery)
                                 .addBodyParameter("fishery_insurance_done", str_insuranceDoneFishery)
                                 .addBodyParameter("veterinary_activity", str_veterinary_activity)
-                                //  .setBodyParameter("covered_by_insurance", "xxxxxx")
-                                .addBodyParameter("animals", "")
-                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
-                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
+                                .addBodyParameter("animals", animal_variety_number.getText().toString())
                                 .addBodyParameter("veterinary_trained_for_farming", str_veterinary_trained_for_farming)
                                 .addBodyParameter("veterinary_medicine_used", str_veterinary_medicine_used)
+                                .addBodyParameter("veterinary_lone_taken", str_loanTakenVeterinary)
+                                .addBodyParameter("veterinary_insurance_done", str_insuranceDoneVeterinary)
                                 .build()
                                 .getAsString(new StringRequestListener() {
                                     @Override

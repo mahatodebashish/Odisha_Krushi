@@ -1131,8 +1131,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:weightSum="2"
-
-                                    android:orientation="horizontal">
+                                    android:orientation="vertical">
                                     <TextView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -1140,8 +1139,17 @@
                                         android:layout_weight="1"
                                         android:textSize="15sp"
                                         android:textAllCaps="true"
+
+                                        />
+
+                                    <EditText
+                                        android:id="@+id/animal_variety_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/animal_hint"
                                         />
                                     <ImageView
+                                        android:visibility="gone"
                                         android:id="@+id/addRow"
                                         android:onClick="addOneRow"
                                         android:layout_width="match_parent"
@@ -1153,6 +1161,7 @@
 
 
                                 <android.support.v7.widget.RecyclerView
+                                    android:visibility="gone"
                                     android:id="@+id/recyclerViewAnimals"
                                     android:layout_width="match_parent"
                                     android:layout_height="100dp"/>

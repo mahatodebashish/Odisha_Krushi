@@ -604,6 +604,8 @@
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-condensed-medium"
         />
+
+    <!--irrigated_land_under_cultivation-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardIluc"
         android:layout_width="match_parent"
@@ -657,6 +659,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--irrigation_source-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardIrrigationSource"
         android:layout_width="match_parent"
@@ -711,6 +714,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--non_irrigated_land_under_cultivation-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardNiluc"
         android:layout_width="match_parent"
@@ -766,6 +770,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--machine_tool_own-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardMachineAndToolOwn"
         android:layout_width="match_parent"
@@ -818,7 +823,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-
+    <!--last_crop_grown_in-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardLastCropGrownIn"
         android:layout_width="match_parent"
@@ -871,7 +876,60 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--area-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardArea"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/area"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
+    <!--soil testing-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardSoilTestingDone"
         android:layout_width="match_parent"
@@ -1136,7 +1194,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--lcp_machines_used-->
+    <!--machines_used-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardLcpUsed"
         android:layout_width="match_parent"
@@ -1189,7 +1247,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--covered_by_insuarnce-->
+    <!--last_crop_insurane_done-->
     <android.support.v7.widget.CardView
         android:id="@+id/cardCoveredByInsurance"
         android:layout_width="match_parent"
@@ -1232,7 +1290,7 @@
                     android:textSize="13sp"
                     android:textColor="@color/colorPrimary"/>
                 <TextView
-                    android:id="@+id/covered_by_insuarnce"
+                    android:id="@+id/last_crop_insurane_done"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="left"
@@ -1242,16 +1300,16 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-
+    <!--loan_taken-->
     <android.support.v7.widget.CardView
-        android:id="@+id/cardArea"
+        android:id="@+id/cardLoanTaken"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
-        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
+        android:padding="5dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -1259,39 +1317,39 @@
             android:orientation="horizontal"
             android:layout_gravity="center"
             >
-          <!--  <ImageView
+            <!--    <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/loan_taken"
+                    android:layout_weight="2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:textSize="30sp"
+                    android:layout_weight="2.5"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="|"/>-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/area"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/area"
-                android:textSize="13sp"
-                android:textColor="@color/colorPrimary"/>
-            <TextView
-                android:id="@+id/area"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="left"
-                android:text="---"
-                android:layout_weight="1"/>
-        </LinearLayout>
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lcp_loan_taken"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/loan_taken"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
@@ -1350,6 +1408,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -1359,6 +1418,326 @@
         android:layout_margin="10dp"
         android:fontFamily="sans-serif-condensed-medium"
         />
+
+
+    <!--fishery_activity-->
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cardFisheryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/fisherman"
+                   android:layout_weight="2"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="15dp"
+                   android:textSize="30sp"
+                   android:layout_weight="2.5"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fisheryActivity"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/fishery_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--area_of_pond_acres-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardAreaOfPond"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/pond_area"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area_of_pond_acres"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/area_of_pond_acres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--owner_of_pond-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardOwnerOfPond"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/pond_area"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/owner_of_pond"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/owner_of_pond"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--fingerling_from-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFingerlingFrom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/pond_area"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fingerling_from"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/fingerling_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--fishery_trained_for_farming-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFisheryTrainedForFarming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/training_fishery"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fishery_trained_for_farming"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/fishery_trained_for_farming"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--fishery_medicine_used-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFisheryMedicineUsed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:src="@drawable/medicine_fishery"
+                  android:layout_weight="2"/>
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:textSize="30sp"
+                  android:layout_weight="2.5"
+                  android:textColor="@android:color/darker_gray"
+                  android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fishery_medicine_used"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/fishery_medicine_used"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
     <!--fishery_lone_taken-->
     <android.support.v7.widget.CardView
@@ -1413,9 +1792,62 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--fishery_insurance_done-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardFisheryInsuranceDone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/loan_taken"
+                 android:layout_weight="2"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="15dp"
+                 android:textSize="30sp"
+                 android:layout_weight="2.5"
+                 android:textColor="@android:color/darker_gray"
+                 android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fishery_insurance_done"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/fishery_insurance_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
     <!--area_of_pond_own_lease-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardAreaOfPondOwnLease"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1467,114 +1899,9 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--fishery_trained_for_farming-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardFisheryTrainedForFarming"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-          <!--  <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/training_fishery"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fishery_trained_for_farming"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/fishery_trained_for_farming"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-    <!--fishery_medicine_used-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardFisheryMedicineUsed"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-          <!--  <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/medicine_fishery"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fishery_medicine_used"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/fishery_medicine_used"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
     <!--fishery_lone_taken_for-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardFisheryLoanTakenFor"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1626,8 +1953,65 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+
+    <!--veterinary_activity-->
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cardVeterinaryActivity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/veterinary_dog"
+                   android:layout_weight="2"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="15dp"
+                   android:textSize="30sp"
+                   android:layout_weight="2.5"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veterinary_activity"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/veterinary_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
     <!--animal_type-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardAnimalType"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1681,6 +2065,7 @@
 
     <!--animal_variety-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardAnimalVariety"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1734,6 +2119,7 @@
 
     <!--animal_numbers-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardAnimalNumbers"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1787,6 +2173,7 @@
 
     <!--covered_by_insurance-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardCoveredByInsuranceAnimal"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1838,166 +2225,7 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--lcp_loan_taken-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardLcpLoanTaken"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-        <!--    <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/loan_taken"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lcp_loan_taken"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/lcp_loan_taken"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 
-
-
-    <!--fishery_activity-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardFisheryActivity"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-         <!--   <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/fisherman"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fisheryActivity"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/fishery_activity"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-    <!--area_of_pond_acres-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardAreaOfPond"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-          <!--  <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/pond_area"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/area_of_pond_acres"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/area_of_pond_acres"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
@@ -2010,10 +2238,9 @@
         />
 
 
-
-    <!--veterinary_activity-->
+    <!--animals-->
     <android.support.v7.widget.CardView
-        android:id="@+id/cardVeterinaryActivity"
+        android:id="@+id/cardAnimals"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:elevation="10dp"
@@ -2031,7 +2258,7 @@
             <!--   <ImageView
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
-                   android:src="@drawable/veterinary_dog"
+                   android:src="@drawable/animal_type"
                    android:layout_weight="2"/>
                <TextView
                    android:layout_width="match_parent"
@@ -2050,11 +2277,116 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/veterinary_activity"
+                    android:text="@string/animals"
                     android:textSize="13sp"
                     android:textColor="@color/colorPrimary"/>
                 <TextView
-                    android:id="@+id/veterinary_activity"
+                    android:id="@+id/animals"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--veterinary_trained_for_farming-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVeterinaryTrainedForFarming"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!--   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/training_fishery"
+                   android:layout_weight="2"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="15dp"
+                   android:textSize="30sp"
+                   android:layout_weight="2.5"
+                   android:textColor="@android:color/darker_gray"
+                   android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veterinary_trained_for_farming"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/veterinary_trained_for_farming"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--veterinary_medicine_used-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVeterinaryMedicineUsed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/medicine_fishery"
+                 android:layout_weight="2"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="15dp"
+                 android:textSize="30sp"
+                 android:layout_weight="2.5"
+                 android:textColor="@android:color/darker_gray"
+                 android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veterinary_medicine_used"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/veterinary_medicine_used"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="left"
@@ -2117,8 +2449,62 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+    <!--veterinary_insurance_done-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVeterinaryInsuranceDone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+          <!--  <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/loan_taken"
+                android:layout_weight="2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:textSize="30sp"
+                android:layout_weight="2.5"
+                android:textColor="@android:color/darker_gray"
+                android:text="|"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/veterinary_insurance_done"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/veterinary_insurance_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:text="---"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
     <!--veterinary_lone_taken_for-->
     <android.support.v7.widget.CardView
+        android:visibility="gone"
         android:id="@+id/cardVeterinaryLoneTakenFor"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2170,110 +2556,8 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-    <!--veterinary_trained_for_farming-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardVeterinaryTrainedForFarming"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-         <!--   <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/training_fishery"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/veterinary_trained_for_farming"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/veterinary_trained_for_farming"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 
-    <!--veterinary_medicine_used-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardVeterinaryMedicineUsed"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:elevation="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            >
-           <!-- <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/medicine_fishery"
-                android:layout_weight="2"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
-                android:textSize="30sp"
-                android:layout_weight="2.5"
-                android:textColor="@android:color/darker_gray"
-                android:text="|"/>-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/veterinary_medicine_used"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorPrimary"/>
-                <TextView
-                    android:id="@+id/veterinary_medicine_used"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="left"
-                    android:text="---"
-                    android:layout_weight="1"/>
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>
 </ScrollView>

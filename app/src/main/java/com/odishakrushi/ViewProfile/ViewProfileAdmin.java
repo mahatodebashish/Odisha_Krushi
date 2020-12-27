@@ -235,12 +235,14 @@ public class ViewProfileAdmin extends AppCompatActivity {
 
                                 trust_name_str= jsonObject1.optString("department_id");
                                 trust_name_str=Utils.nullCheck(trust_name_str);
-                                if(trust_name_str.equals("")) cardTrustName.setVisibility(View.GONE);
+                                boolean isNumericTrustName=Utils.isNumeric(trust_name_str);
+                                if(trust_name_str.equals("")||isNumericTrustName) cardTrustName.setVisibility(View.GONE);
                                 trust_name.setText(trust_name_str);
 
                                 ngo_name_str= jsonObject1.optString("dcarci_id");
                                 ngo_name_str=Utils.nullCheck(ngo_name_str);
-                                if(ngo_name_str.equals("")) cardNGOName.setVisibility(View.GONE);
+                                boolean isNumericNgoName=Utils.isNumeric(ngo_name_str);
+                                if(ngo_name_str.equals("")||isNumericNgoName) cardNGOName.setVisibility(View.GONE);
                                 ngo_name.setText(ngo_name_str);
 
                                 gender_str= jsonObject1.optString("gender");

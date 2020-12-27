@@ -48,21 +48,21 @@ public class ViewProfileFarmer extends AppCompatActivity {
             irrigated_land_under_cultivation,irrigation_source,non_irrigated_land_under_cultivation
             ,village,machine_tool_own,any_special_crop_grown,caste,last_crop_grown_in,
             area,soil_testing_done,crop,seed_seedling_variety,fertiliser_used,
-            pesticide_used,lcp_machines_used,covered_by_insuarnce,lcp_loan_taken,
-            fishery_activity,area_of_pond_acres,fingerling_from,fishery_trained_for_farming,
+            pesticide_used,lcp_machines_used,last_crop_insurane_done,loan_taken,fishery_insurance_done,
+            fishery_activity,owner_of_pond,area_of_pond_acres,fingerling_from,fishery_trained_for_farming,
             fishery_medicine_used,fishery_lone_taken,area_of_pond_own_lease,fishery_lone_taken_for,
-            veterinary_activity,animal_type,covered_by_insurance,veterinary_lone_taken,
-            veterinary_lone_taken_for,veterinary_trained_for_farming,veterinary_medicine_used,
+            veterinary_activity, animals, animal_type,covered_by_insurance,veterinary_lone_taken,
+            veterinary_lone_taken_for,veterinary_insurance_done,veterinary_trained_for_farming,veterinary_medicine_used,
             animal_variety,animal_numbers;
 
     CardView cardName, cardFatherName , cardGender , cardCaste , cardDistrict , cardBlock ,
             cardGp , cardVillage , cardPhone , cardEmail , cardIluc , cardIrrigationSource ,
             cardNiluc ,cardMachineAndToolOwn , cardLastCropGrownIn , cardSoilTestingDone ,
             cardCrop , cardSeedSeedlingVariety ,cardFertiliserUsed, cardPesticidesUsed ,
-            cardLcpUsed , cardCoveredByInsurance , cardArea, cardFisheryLoneTaken ,
-            cardAreaOfPondOwnLease , cardFisheryTrainedForFarming , cardFisheryMedicineUsed ,
-            cardFisheryLoanTakenFor , cardVeterinaryActivity , cardAnimalType , cardAnimalVariety
-            , cardAnimalNumbers , cardCoveredByInsuranceAnimal , cardLcpLoanTaken ,
+            cardLcpUsed , cardCoveredByInsurance , cardArea, cardOwnerOfPond, cardFingerlingFrom ,cardFisheryLoneTaken ,
+            cardFisheryInsuranceDone,   cardAreaOfPondOwnLease , cardFisheryTrainedForFarming , cardFisheryMedicineUsed ,
+            cardFisheryLoanTakenFor , cardVeterinaryInsuranceDone ,cardVeterinaryActivity ,cardAnimals , cardAnimalType , cardAnimalVariety
+            , cardAnimalNumbers , cardCoveredByInsuranceAnimal , cardLoanTaken ,
             cardAnySpecialCropGrown , cardFisheryActivity , cardAreaOfPond , cardVeterinaryLoneTaken
             , cardVeterinaryLoneTakenFor , cardVeterinaryTrainedForFarming , cardVeterinaryMedicineUsed ;
     @Override
@@ -70,6 +70,7 @@ public class ViewProfileFarmer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_profile_farmer);// constraint_test
 
+        Log.d("lifecycle", "onCreate: ");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -104,6 +105,8 @@ public class ViewProfileFarmer extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        getProfileData();
     }
 
     private void findViewById(){
@@ -132,19 +135,23 @@ public class ViewProfileFarmer extends AppCompatActivity {
         fertiliser_used=findViewById(R.id.fertiliser_used);
         pesticide_used=findViewById(R.id.pesticide_used);
         lcp_machines_used=findViewById(R.id.lcp_machines_used);
-        covered_by_insuarnce=findViewById(R.id.covered_by_insuarnce);
-        lcp_loan_taken=findViewById(R.id.lcp_loan_taken);
+        last_crop_insurane_done=findViewById(R.id.last_crop_insurane_done);
+        loan_taken=findViewById(R.id.loan_taken);
         fishery_activity=findViewById(R.id.fishery_activity);
+        owner_of_pond=findViewById(R.id.owner_of_pond);
+        fishery_insurance_done=findViewById(R.id.fishery_insurance_done);
         area_of_pond_acres=findViewById(R.id.area_of_pond_acres);
-        //fingerling_from=findViewById(R.id.fingerling_from);
+        fingerling_from=findViewById(R.id.fingerling_from);
         fishery_trained_for_farming=findViewById(R.id.fishery_trained_for_farming);
         fishery_medicine_used=findViewById(R.id.fishery_medicine_used);
         fishery_lone_taken=findViewById(R.id.fishery_lone_taken);
         area_of_pond_own_lease=findViewById(R.id.area_of_pond_own_lease);
         fishery_lone_taken_for=findViewById(R.id.fishery_lone_taken_for);
         veterinary_activity=findViewById(R.id.veterinary_activity);
+        animals=findViewById(R.id.animals);
         animal_type=findViewById(R.id.animal_type);
         covered_by_insurance=findViewById(R.id.covered_by_insurance);
+        veterinary_insurance_done=findViewById(R.id.veterinary_insurance_done);
         veterinary_lone_taken=findViewById(R.id.veterinary_lone_taken);
         veterinary_lone_taken_for=findViewById(R.id.veterinary_lone_taken_for);
         veterinary_trained_for_farming=findViewById(R.id.veterinary_trained_for_farming);
@@ -176,16 +183,21 @@ public class ViewProfileFarmer extends AppCompatActivity {
         cardCoveredByInsurance=findViewById(R.id.cardCoveredByInsurance);
         cardArea=findViewById(R.id.cardArea);
         cardFisheryLoneTaken=findViewById(R.id.cardFisheryLoneTaken);
+        cardFingerlingFrom=findViewById(R.id.cardFingerlingFrom);
+        cardOwnerOfPond=findViewById(R.id.cardOwnerOfPond);
+        cardFisheryInsuranceDone=findViewById(R.id.cardFisheryInsuranceDone);
         cardAreaOfPondOwnLease=findViewById(R.id.cardAreaOfPondOwnLease);
         cardFisheryTrainedForFarming=findViewById(R.id.cardFisheryTrainedForFarming);
         cardFisheryMedicineUsed=findViewById(R.id.cardFisheryMedicineUsed);
         cardFisheryLoanTakenFor=findViewById(R.id.cardFisheryLoanTakenFor);
+        cardVeterinaryInsuranceDone=findViewById(R.id.cardVeterinaryInsuranceDone);
         cardVeterinaryActivity=findViewById(R.id.cardVeterinaryActivity);
+        cardAnimals=findViewById(R.id.cardAnimals);
         cardAnimalType=findViewById(R.id.cardAnimalType);
         cardAnimalVariety=findViewById(R.id.cardAnimalVariety);
         cardAnimalNumbers=findViewById(R.id.cardAnimalNumbers);
         cardCoveredByInsuranceAnimal=findViewById(R.id.cardCoveredByInsuranceAnimal);
-        cardLcpLoanTaken=findViewById(R.id.cardLcpLoanTaken);
+        cardLoanTaken=findViewById(R.id.cardLoanTaken);
         cardAnySpecialCropGrown=findViewById(R.id.cardAnySpecialCropGrown);
         cardFisheryActivity=findViewById(R.id.cardFisheryActivity);
         cardAreaOfPond=findViewById(R.id.cardAreaOfPond);
@@ -201,7 +213,42 @@ public class ViewProfileFarmer extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        getProfileData();
+        Log.d("lifecycle", "onResume: ");
+        //getProfileData();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("lifecycle", "onStart: ");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("lifecycle", "onPause: ");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("lifecycle", "onRestart: ");
+        //getProfileData();
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("lifecycle", "onStop: ");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("lifecycle", "onDestroy: ");
     }
 
     private void getProfileData() {
@@ -343,15 +390,15 @@ public class ViewProfileFarmer extends AppCompatActivity {
                                 if(lcp_machines_used_str.equals("")) cardLcpUsed.setVisibility(View.GONE);
                                 lcp_machines_used.setText(lcp_machines_used_str);
 
-                                String covered_by_insuarnce_str= jsonObject1.optString("covered_by_insuarnce");
-                                covered_by_insuarnce_str=Utils.nullCheck(covered_by_insuarnce_str);
-                                if(covered_by_insuarnce_str.equals("")) cardCoveredByInsurance.setVisibility(View.GONE);
-                                covered_by_insuarnce.setText(covered_by_insuarnce_str);
+                                String last_crop_insurane_done_str= jsonObject1.optString("last_crop_insurane_done");
+                                last_crop_insurane_done_str=Utils.nullCheck(last_crop_insurane_done_str);
+                                if(last_crop_insurane_done_str.equals("")) cardCoveredByInsurance.setVisibility(View.GONE);
+                                last_crop_insurane_done.setText(last_crop_insurane_done_str);
 
-                                String lcp_loan_taken_str= jsonObject1.optString("lcp_loan_taken");
-                                lcp_loan_taken_str=Utils.nullCheck(lcp_loan_taken_str);
-                                if(lcp_loan_taken_str.equals("")) cardLcpLoanTaken.setVisibility(View.GONE);
-                                lcp_loan_taken.setText(lcp_loan_taken_str);
+                                String loan_taken_str= jsonObject1.optString("loan_taken");
+                                loan_taken_str=Utils.nullCheck(loan_taken_str);
+                                if(loan_taken_str.equals("")) cardLoanTaken.setVisibility(View.GONE);
+                                loan_taken.setText(loan_taken_str);
 
                                 String fishery_activity_str= jsonObject1.optString("fishery_activity");
                                 fishery_activity_str=Utils.nullCheck(fishery_activity_str);
@@ -363,8 +410,20 @@ public class ViewProfileFarmer extends AppCompatActivity {
                                 if(area_of_pond_acres_str.equals("")) cardAreaOfPond.setVisibility(View.GONE);
                                 area_of_pond_acres.setText(area_of_pond_acres_str);
 
-                             /*   String fingerling_from_str= jsonObject1.optString("fingerling_from");
-                                fingerling_from.setText(fingerling_from_str);*/
+                                String owner_of_pond_str= jsonObject1.optString("owner_of_pond");
+                                owner_of_pond_str=Utils.nullCheck(owner_of_pond_str);
+                                if(owner_of_pond_str.equals("")) cardOwnerOfPond.setVisibility(View.GONE);
+                                owner_of_pond.setText(owner_of_pond_str);
+
+                                String fingerling_from_str= jsonObject1.optString("fingerling_from");
+                                fingerling_from_str=Utils.nullCheck(fingerling_from_str);
+                                if(fingerling_from_str.equals("")) cardFingerlingFrom.setVisibility(View.GONE);
+                                fingerling_from.setText(fingerling_from_str);
+
+                                String fishery_insurance_done_str= jsonObject1.optString("fishery_insurance_done");
+                                fishery_insurance_done_str=Utils.nullCheck(fishery_insurance_done_str);
+                                if(fishery_insurance_done_str.equals("")) cardFisheryInsuranceDone.setVisibility(View.GONE);
+                                fishery_insurance_done.setText(fishery_insurance_done_str);
 
                                 String fishery_trained_for_farming_str= jsonObject1.optString("fishery_trained_for_farming");
                                 fishery_trained_for_farming_str=Utils.nullCheck(fishery_trained_for_farming_str);
@@ -395,6 +454,16 @@ public class ViewProfileFarmer extends AppCompatActivity {
                                 veterinary_activity_str=Utils.nullCheck(veterinary_activity_str);
                                 if(veterinary_activity_str.equals("")) cardVeterinaryActivity.setVisibility(View.GONE);
                                 veterinary_activity.setText(veterinary_activity_str);
+
+                                String animals_str= jsonObject1.optString("animals");
+                                animals_str=Utils.nullCheck(animals_str);
+                                if(animals_str.equals("")) cardAnimals.setVisibility(View.GONE);
+                                animals.setText(animals_str);
+
+                                String veterinary_insurance_done_str= jsonObject1.optString("veterinary_insurance_done");
+                                veterinary_insurance_done_str=Utils.nullCheck(veterinary_insurance_done_str);
+                                if(veterinary_insurance_done_str.equals("")) cardVeterinaryInsuranceDone.setVisibility(View.GONE);
+                                veterinary_insurance_done.setText(veterinary_insurance_done_str);
 
                                 String animal_type_str= jsonObject1.optString("animal_type");
                                 animal_type_str=Utils.nullCheck(animal_type_str);

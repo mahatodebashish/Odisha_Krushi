@@ -1298,9 +1298,9 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
     private void signupCall() {
 
         if(Utils.hasNetwork(this)) {
-            /*progressDialog = new ProgressDialog(this);
+            progressDialog = new ProgressDialog(this);
             progressDialog.setMessage(getString(R.string.pleasewait));
-            progressDialog.show();*/
+            progressDialog.show();
 
             usingFastNetworkingLibrary();
 
@@ -1338,20 +1338,33 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 .getAsString(new StringRequestListener() {
                     @Override
                     public void onResponse(String response) {
-                        /*  progressDialog.hide();*/
-                        Toast.makeText(SignUpAdminManager.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                          progressDialog.hide();
+                        try {
+                            JSONObject jsonObject =new JSONObject(response);
+                            boolean status = jsonObject.optBoolean("status");
+                            String message = jsonObject.optString("message");
+                            if(status)
+                            {
+                                Toast.makeText(SignUpAdminManager.this, message, Toast.LENGTH_SHORT).show();
+                                Intent intent =new Intent (SignUpAdminManager.this, Login.class);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                            }
+                            else{
+                                Toast.makeText(SignUpAdminManager.this, message, Toast.LENGTH_SHORT).show();
+                            }
 
-                        Intent intent =new Intent (SignUpAdminManager.this, Login.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(intent);
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
 
                     @Override
                     public void onError(ANError anError) {
-                        /* progressDialog.hide();*/
+                         progressDialog.hide();
                         Toast.makeText(SignUpAdminManager.this, getString(R.string.something_went_wrong), Toast.LENGTH_SHORT).show();
-
-                        //onBackPressed();
+                        onBackPressed();
                     }
                 });
 

@@ -111,13 +111,15 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
 
     <string name="Breed">Breed</string>
 
+    <string name="fishery_insurance_done">Fishery Insurance Done</string>
+
     <string name="Buffalo">Buffalo</string>
 
 
     <string name="Caste">Caste</string>
 
     <string name="Cereal">Cereal</string>
-    arrayhire
+
 
     <string name="Chick">Chick</string>
     <string name="Choose_Language">Choose Language</string>
@@ -131,9 +133,15 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
 
     <string name="Cotton">Cotton</string>
 
-    <string name="Covered_By_Insurance">Covered By Insurance</string>
+    <string name="Covered_By_Insurance">Last Crop Insurance done</string>
+
+    <string name="veterinary_insurance_done">Veterinary Insurance done</string>
 
     <string name="Cow">Cow</string>
+
+    <string name="animals">Animals</string>
+
+    <string name="owner_of_pond">Owner Of Pond</string>
 
 
     <string name="Crop">Crop</string>
@@ -342,7 +350,8 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
     <string name="Type_Of_Business">Type Of Business</string>
     <string name="Business_Type_Deals_In">Business Type Deals In</string>
     <string name="Other_Product">Other Product</string>
-    <string name="Animal_Category">Animal Category</string>
+    <string name="Animal_Category">Animal Category [ Animal , Variety , Number ]</string>
+    <string name="animal_hint">Cow , Bargur ,5 </string>
     <string name="Agril_Product_Category">Agril Product Category</string>
     <string name="After_Sale_Service_Spare_Parts_Available">After Sale Service Spare Parts Available ?</string>
     <string name="Status">Status</string>
@@ -506,7 +515,7 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
     <string name="fertiliserUsed">Fertiliser Used</string>
     <string name="pesticidesUsed">Pesticides Used</string>
     <string name="lcp_machines_used">LCP Machines Used</string>
-    <string name="lcp_loan_taken">LCP Loan Taken</string>
+    <string name="lcp_loan_taken">Loan Taken</string>
     <string name="fisheryActivity">Fishery Activity</string>
     <string name="area_of_pond_acres">Area of Ponds in (Acres)</string>
     <string name="fingerling_from">Fingerlings From</string>

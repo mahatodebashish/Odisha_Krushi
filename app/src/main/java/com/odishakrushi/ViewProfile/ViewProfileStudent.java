@@ -37,7 +37,7 @@ public class ViewProfileStudent extends AppCompatActivity {
 
     ImageView editProfile;
     TextView first_name,last_name,phone,email,gender,district,education_status,highest_qualification,txtSpecialization,university_college,other_detail,other_highest_qualification,other_specialization;
-    CardView cardName,cardLastname,cardPhone,cardEmail,cardGender,cardEducationStatus,cardHighestQualification,
+    CardView cardName,cardLastname,cardPhone,cardDistrict,cardEmail,cardGender,cardEducationStatus,cardHighestQualification,
             cardSpecialization,cardCollege,cardOtherDetails,cardOtherHighestQualification,cardOtherSpecialization;
     String email_str="",first_name_str="",phone_str="",gender_str="",district_str="";
     ACProgressCustom dialog;
@@ -112,6 +112,7 @@ public class ViewProfileStudent extends AppCompatActivity {
         cardPhone=findViewById(R.id.cardPhone);
         cardEmail=findViewById(R.id.cardEmail);
         cardGender=findViewById(R.id.cardGender);
+        cardDistrict=findViewById(R.id.cardDistrict);
         cardEducationStatus=findViewById(R.id.cardEducationStatus);
         cardHighestQualification=findViewById(R.id.cardHighestQualification);
         cardCollege=findViewById(R.id.cardCollege);
@@ -180,7 +181,16 @@ public class ViewProfileStudent extends AppCompatActivity {
 
                                 district_str= jsonObject1.optString("district_name");
                                 district_str= Utils.nullCheck(district_str);
+                                if(district_str.equals("")) cardDistrict.setVisibility(View.GONE);
                                 district.setText(district_str);
+
+                                /*String[] district_array = getResources().getStringArray(R.array.array_district);
+
+                                try{
+                                    district.setText(district_array[Integer.parseInt(district_str)]);
+                                }catch (NumberFormatException e){
+
+                                }*/
 
                                 String education_status_str= jsonObject1.optString("education_status");
                                 education_status_str= Utils.nullCheck(education_status_str);

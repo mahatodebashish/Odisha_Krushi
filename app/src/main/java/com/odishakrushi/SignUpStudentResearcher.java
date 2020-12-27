@@ -538,10 +538,27 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                         public void onResponse(String response) {
                             progressDialog.hide();
 
-                            Toast.makeText(SignUpStudentResearcher.this, response, Toast.LENGTH_SHORT).show();
-                            Intent intent =new Intent (SignUpStudentResearcher.this, Login.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
+
+                            try {
+                                JSONObject jsonObject =new JSONObject(response);
+                                boolean status = jsonObject.optBoolean("status");
+                                String message = jsonObject.optString("message");
+                                if(status)
+                                {
+                                    Toast.makeText(SignUpStudentResearcher.this, message, Toast.LENGTH_SHORT).show();
+                                    Intent intent =new Intent (SignUpStudentResearcher.this, Login.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                                else{
+                                    Toast.makeText(SignUpStudentResearcher.this, message, Toast.LENGTH_SHORT).show();
+                                }
+
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
                         }
 
                         @Override
@@ -587,8 +604,21 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                         public void onResponse(String response) {
                             progressDialog.hide();
 
-                            Toast.makeText(SignUpStudentResearcher.this, response, Toast.LENGTH_SHORT).show();
-                            onBackPressed();
+
+                            try {
+                                JSONObject jsonObject =new JSONObject(response);
+                                boolean status = jsonObject.optBoolean("status");
+                                String message = jsonObject.optString("message");
+
+                                Toast.makeText(SignUpStudentResearcher.this, message, Toast.LENGTH_SHORT).show();
+                                onBackPressed();
+
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+
+
                         }
 
                         @Override

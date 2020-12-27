@@ -597,11 +597,25 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
                         @Override
                         public void onResponse(String response) {
                             progressDialog.hide();
-                            Toast.makeText(SignUpBusiness.this, response, Toast.LENGTH_SHORT).show();
+                            try {
+                                JSONObject jsonObject =new JSONObject(response);
+                                boolean status = jsonObject.optBoolean("status");
+                                String message = jsonObject.optString("message");
+                                if(status)
+                                {
+                                    Toast.makeText(SignUpBusiness.this, message, Toast.LENGTH_SHORT).show();
+                                    Intent intent =new Intent (SignUpBusiness.this, Login.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                                else{
+                                    Toast.makeText(SignUpBusiness.this, message, Toast.LENGTH_SHORT).show();
+                                }
 
-                            Intent intent =new Intent (SignUpBusiness.this, Login.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                         }
 
                         @Override

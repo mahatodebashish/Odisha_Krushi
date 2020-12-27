@@ -45,7 +45,9 @@
     <string name="Contact_Us">ଯୋଗାଯୋଗ </string>
     <string name="Cotton">କପା</string>
     <string name="Covered_By_Insurance">ଇନ୍ସୁରାନ୍ସ ହେଇଛି କି?</string>
+    <string name="veterinary_insurance_done">ପଶୁ ସମ୍ପଦ ବୀମା</string>
     <string name="Cow">ଗାଈ </string>
+    <string name="animals">ପଶୁ</string>
     <string name="Crop">ଫସଲ</string>
     <string name="Cultivation_Practice">ଚାଷ ପ୍ରଣାଳୀ</string>
 
@@ -61,8 +63,10 @@
     <string name="Female">ମହିଳା</string>
     <string name="Fertiliser">ସାର </string>
     <string name="Fingerlings">ଜାଅଁଳା</string>
+    <string name="owner_of_pond">ର ମାଲିକ ପୋଖରୀ</string>
     <string name="Fish">ମାଛ</string>
     <string name="Fishery">ମାଛ ଚାଷ</string>
+    <string name="fishery_insurance_done">ମତ୍ସ୍ୟଚାଷ ବୀମା</string>
     <string name="Floriculture">ଫୁଲଚାଷ</string>
     <string name="Flower">ଫୁଲ</string>
     <string name="Fodder">ପଶୁ ଚାରା</string>
@@ -243,7 +247,8 @@
     <string name="Type_Of_Business">ବ୍ୟବସାୟ ପ୍ରକାର</string>
     <string name="Business_Type_Deals_In">କଣ ବ୍ୟବସାୟ</string>
     <string name="Other_Product">ଅନ୍ୟାନ୍ୟ ଉତ୍ପାଦ</string>
-    <string name="Animal_Category">ପଶୁ ବର୍ଗ</string>
+    <string name="Animal_Category">ପଶୁ ବର୍ଗ [ ପଶୁ , ବିଭିନ୍ନତା , ସଂଖ୍ୟା ]</string>
+    <string name="animal_hint">ଗା , ବରଗୁର  ,5 </string>
     <string name="Agril_Product_Category">କୃଷିଉତ୍ପାଦ ବର୍ଗ</string>
     <string name="After_Sale_Service_Spare_Parts_Available">ବିକ୍ରି ପର ସେବା ଉପଲବ୍ଧ?</string>
     <string name="Status">ସ୍ତର</string>
