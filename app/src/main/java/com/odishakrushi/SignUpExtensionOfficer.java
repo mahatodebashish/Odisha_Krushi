@@ -555,6 +555,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 // strdistrict= district.getSelectedItem().toString();
+                // strdistrict= district.getSelectedItem().toString();
               //  str_district_id= String.valueOf(position+1);
                 str_jurisdictionName=spinnerState.getSelectedItem().toString();
 
@@ -779,7 +780,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                                 JSONObject o=array.getJSONObject(k);
                                 //  bid=o.getString("id");
                                 name =o.getString("name");
-                                bid =o.getString("district_id");
+                                //bid =o.getString("district_id");
+                                bid =o.getString("block_id");
 
 
                                 al.add(name);
@@ -966,7 +968,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                                 JSONObject o=array.getJSONObject(k);
                                 //  bid=o.getString("id");
                                 name =o.getString("name");
-                                bid =o.getString("district_id");
+                                //bid =o.getString("district_id");
+                                bid =o.getString("block_id");
 
 
                                 al.add(name);
