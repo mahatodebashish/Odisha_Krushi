@@ -483,27 +483,46 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 }
 
                 if(arrayList_jurisdiction_id.get(position).equals("120")||
+                        arrayList_jurisdiction_id.get(position).equals("122") ||
                         arrayList_jurisdiction_id.get(position).equals("123") ||
+                        arrayList_jurisdiction_id.get(position).equals("125") ||
                         arrayList_jurisdiction_id.get(position).equals("127") ||
                         arrayList_jurisdiction_id.get(position).equals("128") ||
                         arrayList_jurisdiction_id.get(position).equals("131")||
+                        arrayList_jurisdiction_id.get(position).equals("137")||
+                        arrayList_jurisdiction_id.get(position).equals("51")||
+                        arrayList_jurisdiction_id.get(position).equals("52")||
+                        arrayList_jurisdiction_id.get(position).equals("45")||
                         arrayList_jurisdiction_id.get(position).equals("24"))// i.e State
                 {
                     layoutState.setVisibility(View.VISIBLE);
                     layoutDistrict.setVisibility(View.GONE);
                     layoutMultiDistrict.setVisibility(View.GONE);
                 }
-/*
 
-                if(position==0)// i.e District
+                if(arrayList_jurisdiction_id.get(position).equals("84")||
+                        arrayList_jurisdiction_id.get(position).equals("83")||
+                        arrayList_jurisdiction_id.get(position).equals("82")||
+                        arrayList_jurisdiction_id.get(position).equals("81")||
+                        arrayList_jurisdiction_id.get(position).equals("80")||
+                        arrayList_jurisdiction_id.get(position).equals("61")||
+                        arrayList_jurisdiction_id.get(position).equals("62")||
+                        arrayList_jurisdiction_id.get(position).equals("63")||
+                        arrayList_jurisdiction_id.get(position).equals("64")||
+                        arrayList_jurisdiction_id.get(position).equals("79"))// i.e District
                 {
                     layoutState.setVisibility(View.GONE);
                     layoutDistrict.setVisibility(View.VISIBLE);
                     layoutMultiDistrict.setVisibility(View.GONE);
                 }
 
-*/
-                if(arrayList_jurisdiction_id.get(position).equals("85")) // i.e. Districts
+                if(arrayList_jurisdiction_id.get(position).equals("85")||
+                        arrayList_jurisdiction_id.get(position).equals("30")||
+                        arrayList_jurisdiction_id.get(position).equals("31")||
+                        arrayList_jurisdiction_id.get(position).equals("32")||
+                        arrayList_jurisdiction_id.get(position).equals("33")||
+                        arrayList_jurisdiction_id.get(position).equals("38")||
+                        arrayList_jurisdiction_id.get(position).equals("87")) // i.e. Districts
                 {
                     layoutState.setVisibility(View.GONE);
                     layoutDistrict.setVisibility(View.GONE);
