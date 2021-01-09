@@ -407,7 +407,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 str_dcar= dcar.getSelectedItem().toString();
 
-                if(arrayList_dcarci_id.get(position).equals("14") || arrayList_dcarci_id.get(position).equals("15")){
+                if(arrayList_dcarci_id.get(position).equals("14") || arrayList_dcarci_id.get(position).equals("15")||
+                        arrayList_dcarci_id.get(position).equals("16")){
                     txtDcar.setVisibility(View.VISIBLE);
 
                 }
@@ -522,7 +523,12 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("32")||
                         arrayList_jurisdiction_id.get(position).equals("33")||
                         arrayList_jurisdiction_id.get(position).equals("38")||
-                        arrayList_jurisdiction_id.get(position).equals("87")) // i.e. Districts
+                        arrayList_jurisdiction_id.get(position).equals("87")||
+                        arrayList_jurisdiction_id.get(position).equals("137")||
+                        arrayList_jurisdiction_id.get(position).equals("138")||
+                        arrayList_jurisdiction_id.get(position).equals("139")||
+                        arrayList_jurisdiction_id.get(position).equals("140")
+                ) // i.e. Districts
                 {
                     layoutState.setVisibility(View.GONE);
                     layoutDistrict.setVisibility(View.GONE);
@@ -1014,6 +1020,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            onBackPressed();
                         }
 
 

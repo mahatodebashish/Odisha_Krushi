@@ -407,7 +407,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 str_dcar= dcar.getSelectedItem().toString();
 
-                if(arrayList_dcarci_id.get(position).equals("14") || arrayList_dcarci_id.get(position).equals("15")){
+                if(arrayList_dcarci_id.get(position).equals("14") || arrayList_dcarci_id.get(position).equals("15")||
+                        arrayList_dcarci_id.get(position).equals("16")){
                     txtDcar.setVisibility(View.VISIBLE);
 
                 }
