@@ -450,9 +450,15 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                     if(rootContainerGP!=null)
                         rootContainerGP.removeAllViews();
+
+                    str_jurisdiction="Block";
                 }
 
-                if(arrayList_jurisdiction_id.get(position).equals("3"))// i.e GP
+                if(arrayList_jurisdiction_id.get(position).equals("3")||arrayList_jurisdiction_id.get(position).equals("88")||
+                        arrayList_jurisdiction_id.get(position).equals("89")||arrayList_jurisdiction_id.get(position).equals("90")||
+                        arrayList_jurisdiction_id.get(position).equals("91")||arrayList_jurisdiction_id.get(position).equals("92")||
+                        arrayList_jurisdiction_id.get(position).equals("93")||arrayList_jurisdiction_id.get(position).equals("94")
+                )// i.e GP
                 {
                     layoutState.setVisibility(View.GONE);
                     layoutMultiDistrict.setVisibility(View.GONE);
@@ -464,9 +470,20 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                     if(rootContainerGP!=null)
                         rootContainerGP.removeAllViews();
+
+                    loadGpsInCheckbox(str_block_id);
+                    str_jurisdiction="GP";
                 }
 
-                if(arrayList_jurisdiction_id.get(position).equals("4")||arrayList_jurisdiction_id.get(position).equals("109") )// i.e Block
+                if(arrayList_jurisdiction_id.get(position).equals("4")||arrayList_jurisdiction_id.get(position).equals("95")||
+                        arrayList_jurisdiction_id.get(position).equals("96")||arrayList_jurisdiction_id.get(position).equals("97")||
+                        arrayList_jurisdiction_id.get(position).equals("98")||arrayList_jurisdiction_id.get(position).equals("99")||
+                        arrayList_jurisdiction_id.get(position).equals("100")||arrayList_jurisdiction_id.get(position).equals("101")||
+                        arrayList_jurisdiction_id.get(position).equals("102")||arrayList_jurisdiction_id.get(position).equals("103")||
+                        arrayList_jurisdiction_id.get(position).equals("104")||arrayList_jurisdiction_id.get(position).equals("105")||
+                        arrayList_jurisdiction_id.get(position).equals("106")||arrayList_jurisdiction_id.get(position).equals("107")||
+                        arrayList_jurisdiction_id.get(position).equals("108")||arrayList_jurisdiction_id.get(position).equals("109")
+                ) // i.e Block
                 {
                     layoutMultiDistrict.setVisibility(View.GONE);
                     layoutBlock.setVisibility(View.VISIBLE);
@@ -475,10 +492,17 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     layoutBlocks.setVisibility(View.GONE);
                     str_jurisdictionName=str_block_id;
                     layoutState.setVisibility(View.GONE);
+
+                    str_jurisdiction="Block";
                 }
 
-                if(arrayList_jurisdiction_id.get(position).equals("5")||arrayList_jurisdiction_id.get(position).equals("111")
-                || arrayList_jurisdiction_id.get(position).equals("118")) // i.e. Blocks
+                if(arrayList_jurisdiction_id.get(position).equals("5")||arrayList_jurisdiction_id.get(position).equals("15")||
+                        arrayList_jurisdiction_id.get(position).equals("16")||arrayList_jurisdiction_id.get(position).equals("17")||
+                        arrayList_jurisdiction_id.get(position).equals("110")||arrayList_jurisdiction_id.get(position).equals("111")||
+                        arrayList_jurisdiction_id.get(position).equals("112")||arrayList_jurisdiction_id.get(position).equals("113")||arrayList_jurisdiction_id.get(position).equals("114")||
+                        arrayList_jurisdiction_id.get(position).equals("115")||arrayList_jurisdiction_id.get(position).equals("116")||
+                        arrayList_jurisdiction_id.get(position).equals("117")||arrayList_jurisdiction_id.get(position).equals("118")||
+                   arrayList_jurisdiction_id.get(position).equals("119")) // i.e. Blocks
                 {
                     layoutMultiDistrict.setVisibility(View.GONE);
                     txtViewSelectBlocks.setVisibility(View.VISIBLE);
@@ -488,6 +512,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     loadBlocksInCheckbox(str_district_id);
                     layoutBlocks.setVisibility(View.VISIBLE);
                     layoutState.setVisibility(View.GONE);
+
+                    str_jurisdiction="Blocks";
                 }
 
                 if(arrayList_jurisdiction_id.get(position).equals("1")) // i.e District
@@ -496,6 +522,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     layoutDistrict.setVisibility(View.VISIBLE);
                     //spinnerState.setVisibility(View.GONE);
                     layoutState.setVisibility(View.GONE);
+
+                    str_jurisdiction="District";
                 }
 
                 if(arrayList_jurisdiction_id.get(position).equals("2")) // i.e Districts
@@ -504,6 +532,8 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     layoutDistrict.setVisibility(View.GONE);
                     //spinnerState.setVisibility(View.GONE);
                     layoutState.setVisibility(View.GONE);
+
+                    str_jurisdiction="Districts";
                 }
 
                 if(arrayList_jurisdiction_id.get(position).equals("6") ||
@@ -516,6 +546,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     layoutMultiDistrict.setVisibility(View.GONE);
                     layoutDistrict.setVisibility(View.GONE);
 
+                    str_jurisdiction="State";
                 }
 
             }
@@ -538,10 +569,16 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                 str_jurisdictionName=district.getSelectedItem().toString();
 
                 //Toast.makeText(SignUpFarmer_2.this,"CLICKED AND PASSED districtid " +str_district_id , Toast.LENGTH_SHORT).show();
-                if(str_jurisdiction.equals(String.valueOf(2)))
+                if(str_jurisdiction.equals(String.valueOf(2))||str_jurisdiction.equals("Blocks"))
+                {
                     loadBlocksInCheckbox(str_district_id);
-                    else
-                load_block_from_a_district(str_district_id);
+                }
+
+                    else{
+                        str_jurisdiction="";
+                    load_block_from_a_district(str_district_id);
+                }
+
 
             }
 
@@ -584,6 +621,9 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                // load_gps_from_blockid(str_block_id);//str_block_id
 
                 loadGpsInCheckbox(str_block_id);
+
+                //-------------------- new code-----------------
+
 
             }
 

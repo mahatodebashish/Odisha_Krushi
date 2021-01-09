@@ -31,12 +31,13 @@
                 app:srcCompat="@drawable/ic_email"
                 android:layout_weight="3"/>
             <TextView
+                android:id="@+id/txtemail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="#000"
-                android:text="mail@odishakrushi.in"
+                android:text=""
                 android:textSize="20sp"
                 android:textStyle="bold"/>
         </LinearLayout>

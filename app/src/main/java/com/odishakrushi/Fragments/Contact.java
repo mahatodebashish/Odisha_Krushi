@@ -34,7 +34,7 @@ public class Contact extends Fragment {
 
     String smallBannerUrl="";
     LinearLayout email,call,location,website;
-    TextView txtEmail;
+    TextView txtemail;
     String strEmail="mail@odishakrushi.in";
     ImageButton facebook,whatsapp,youtube,instagram,twitter;
     TextView phone;
@@ -74,18 +74,20 @@ public class Contact extends Fragment {
         String user_group_id=Preferences.getGroupID(getContext());
 
         phone=getView().findViewById(R.id.phone);
-
         email=getView().findViewById(R.id.email);
+        txtemail=getView().findViewById(R.id.txtemail);
+
        
 
         //Setting dynamic email id as per user group
         if(Integer.parseInt(user_group_id)==4)
             strEmail="business@odishakrushi.in";
+
         else
             strEmail="mail@odishakrushi.in";
 
 
-
+        txtemail.setText(strEmail);
 
         email.setOnClickListener(new View.OnClickListener() {
             @Override
