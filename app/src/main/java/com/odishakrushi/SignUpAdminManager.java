@@ -815,7 +815,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(getApplicationContext());
-        String url = Config.getDcar+department_id;
+        String url = Config.getDcar+department_id+"&group_id="+str_group_id;
 
 
         stringRequest = new StringRequest(Request.Method.GET, url,

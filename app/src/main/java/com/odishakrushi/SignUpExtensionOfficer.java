@@ -329,6 +329,9 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     typeOfControl.setSelection(selectionPosition);
                     typeOfControl.setEnabled(false);
                     typeOfControl.setClickable(false);
+
+                    callGetDepartmentApi(typs_control_id);
+                    return;
                 }
                 String s= str_typeOfControl;
                 String s1=s.substring(1,s.length()-1);
@@ -1686,7 +1689,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(getApplicationContext());
-        String url = Config.getDcar+department_id;
+        String url = Config.getDcar+department_id+"&group_id="+str_group_id;
 
 
         stringRequest = new StringRequest(Request.Method.GET, url,
