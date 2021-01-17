@@ -530,7 +530,9 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     str_jurisdiction="District";
                 }
 
-                if(arrayList_jurisdiction_id.get(position).equals("2")) // i.e Districts
+                if(arrayList_jurisdiction_id.get(position).equals("2")||
+                        arrayList_jurisdiction_id.get(position).equals("141")||
+                        arrayList_jurisdiction_id.get(position).equals("142")) // i.e Districts
                 {
                     layoutMultiDistrict.setVisibility(View.VISIBLE);
                     layoutDistrict.setVisibility(View.GONE);

@@ -489,12 +489,21 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("125") ||
                         arrayList_jurisdiction_id.get(position).equals("127") ||
                         arrayList_jurisdiction_id.get(position).equals("128") ||
+                        arrayList_jurisdiction_id.get(position).equals("129") ||
                         arrayList_jurisdiction_id.get(position).equals("131")||
+                        arrayList_jurisdiction_id.get(position).equals("134")||
+                        arrayList_jurisdiction_id.get(position).equals("135")||
                         arrayList_jurisdiction_id.get(position).equals("137")||
+                        arrayList_jurisdiction_id.get(position).equals("87")||
                         arrayList_jurisdiction_id.get(position).equals("51")||
                         arrayList_jurisdiction_id.get(position).equals("52")||
+                        arrayList_jurisdiction_id.get(position).equals("53")||
                         arrayList_jurisdiction_id.get(position).equals("45")||
-                        arrayList_jurisdiction_id.get(position).equals("24"))// i.e State
+                        arrayList_jurisdiction_id.get(position).equals("40")||
+                        arrayList_jurisdiction_id.get(position).equals("24")||
+                        arrayList_jurisdiction_id.get(position).equals("25")||
+                        arrayList_jurisdiction_id.get(position).equals("26")||
+                        arrayList_jurisdiction_id.get(position).equals("27"))// i.e State
                 {
                     layoutState.setVisibility(View.VISIBLE);
                     layoutDistrict.setVisibility(View.GONE);
@@ -506,6 +515,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("82")||
                         arrayList_jurisdiction_id.get(position).equals("81")||
                         arrayList_jurisdiction_id.get(position).equals("80")||
+                        arrayList_jurisdiction_id.get(position).equals("60")||
                         arrayList_jurisdiction_id.get(position).equals("61")||
                         arrayList_jurisdiction_id.get(position).equals("62")||
                         arrayList_jurisdiction_id.get(position).equals("63")||

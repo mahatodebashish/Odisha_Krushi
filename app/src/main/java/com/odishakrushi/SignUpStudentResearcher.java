@@ -83,7 +83,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
 
 
     RadioGroup restatus,radioGender;
-    String str_edu_status="",str_gender="",str_qualification="",str_specialization="",str_institute="",str_other_detail="";
+    String str_edu_status="",str_gender="",str_qualification="",str_other_highest_qualification="",str_specialization="",str_institute="",str_other_detail="";
     LinearLayout layoutstudycontinuing;
     AppCompatEditText fname,/*lname,*/input_mob_no,input_mail,input_pass;
     LinearLayout layoutMainDistrict,layoutDistrict,layoutDistrictOnlyForEditProfile,layoutGender;
@@ -280,7 +280,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                 //str_qualification= ""+position;
 
 
-                if(str_qualification.equals("Others"))
+                if(position==5)
                 {
 
                     dialog.setContentView(R.layout.custom);
@@ -296,10 +296,10 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                     dialogButton.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            str_other_qualification= editOtherHighest.getText().toString();
+                            str_other_highest_qualification= editOtherHighest.getText().toString();
 
-                            Toast.makeText(SignUpStudentResearcher.this, str_other_qualification, Toast.LENGTH_SHORT).show();
-                            if(!str_other_qualification.equals(""))
+                            Toast.makeText(SignUpStudentResearcher.this, str_other_highest_qualification, Toast.LENGTH_SHORT).show();
+                            if(!str_other_highest_qualification.equals(""))
                             dialog.dismiss();
                         }
                     });
@@ -322,7 +322,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                str_specialization= spinnerspecialization.getSelectedItem().toString();
                // str_specialization= ""+position;
 
-                if(str_specialization.equals("Others"))
+                if(position==14)
                 {
                     dialog2.setContentView(R.layout.custom2);
                     dialog2.setTitle("Specialization");
@@ -528,8 +528,10 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                     .addBodyParameter("gender", str_gender)
                     .addBodyParameter("education_status",str_edu_status )
                     .addBodyParameter("highest_qualification", str_qualification)
+                    .addBodyParameter("other_highest_qualification", str_other_highest_qualification)
                     .addBodyParameter("other_detail", editotherdetails.getText().toString())
                     .addBodyParameter("specialization", str_specialization)
+                    .addBodyParameter("other_specialization", str_other_specialization)
                     .addBodyParameter("university_college",  editinsitutename.getText().toString())
                     .addBodyParameter("district", str_district_id )
                     .build()
@@ -594,8 +596,10 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                     .addBodyParameter("gender", str_gender)*/
                     .addBodyParameter("education_status",str_edu_status )
                     .addBodyParameter("highest_qualification", str_qualification)
+                    .addBodyParameter("other_VIhighest_qualification", str_other_highest_qualification)
                     .addBodyParameter("other_detail", editotherdetails.getText().toString())
                     .addBodyParameter("specialization", str_specialization)
+                    .addBodyParameter("other_specialization", str_other_specialization)
                     .addBodyParameter("university_college",  editinsitutename.getText().toString())
                    /* .addBodyParameter("district", str_district_id )*/
                     .build()
