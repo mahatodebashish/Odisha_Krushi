@@ -1386,10 +1386,40 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                         @Override
                         public void onResponse(String response) {
                             progressDialog.hide();
-                            Toast.makeText(SignUpExtensionOfficer.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                           /* Toast.makeText(SignUpExtensionOfficer.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                             Intent intent =new Intent (SignUpExtensionOfficer.this, Login.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
+                            startActivity(intent);*/
+
+                            String message="";
+                            boolean status;
+                            try {
+
+                                JSONObject jsonObject = new JSONObject(response);
+                                //str_user_id = String.valueOf(jsonObject.optInt("user_id"));
+                                message = jsonObject.optString("message");
+                                status = jsonObject.optBoolean("status");
+                                Toast.makeText(SignUpExtensionOfficer.this, message, Toast.LENGTH_SHORT).show();
+
+                                if (status) {
+                                    Toast.makeText(SignUpExtensionOfficer.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(SignUpExtensionOfficer.this, Login.class);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+
+                            } catch (JSONException ex) {
+                                ex.printStackTrace();
+                                progressDialog.hide();
+                                try {
+                                    JSONObject jsonObject1 = new JSONObject(response);
+                                    message = jsonObject1.optString("message");
+                                    Toast.makeText(SignUpExtensionOfficer.this, message, Toast.LENGTH_SHORT).show();
+                                } catch (JSONException ex1) {
+                                    ex.printStackTrace();
+
+                                }
+                            }
                         }
 
                         @Override
