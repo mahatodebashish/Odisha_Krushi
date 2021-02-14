@@ -1,11 +1,24 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#71d687"
     tools:context="com.odishakrushi.Message.GroupMessaging">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/MyDarkToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?actionBarSize"
+        >
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
@@ -15,7 +28,7 @@
         android:layout_marginLeft="10dp"
         android:gravity="center|top"
         android:textStyle="bold"
-        android:background="@drawable/rectangle_border"
+        android:textSize="20sp"
         android:text="@string/Select_Groups" />
     <Spinner
         android:id="@+id/spinnerValues"
@@ -23,7 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:spinnerMode="dialog"
-     />
+  />
+
     <EditText
         android:visibility="gone"
         android:id="@+id/edit_phone"
@@ -42,12 +56,12 @@
         android:textStyle="bold"
         android:text="@string/Message"/>
     <EditText
-
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
         android:paddingLeft="5dp"
         android:gravity="top"
         android:hint="@string/Type_here"
@@ -62,22 +76,18 @@
             android:id="@+id/btnOK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="2dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:text="@string/OK"
             />
-        <Button
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_weight="1"
-            android:text="@string/Cancel"/>
+    </LinearLayout>
     </LinearLayout>
 
-
-</LinearLayout>
+    <ImageView
+        android:id="@+id/image_ad"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        android:src="@drawable/advertisement"
+        android:scaleType="fitXY"/>
+</FrameLayout>

@@ -33,10 +33,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
+import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.Apptutorial.AppTutorial;
 import com.odishakrushi.ChangePassword;
 import com.odishakrushi.ExtensionOffQuestionAnswer.ExtOffQuestionAnswerFragment;
 import com.odishakrushi.Message.MessagingExtOff;
+import com.odishakrushi.Message.SendMessageDetail;
 import com.odishakrushi.Survey.SurveyExtOff;
 import com.odishakrushi.PreferenceManager.Preferences;
 import com.odishakrushi.ViewProfile.ViewProfileExtensionOff;
@@ -59,6 +64,14 @@ import com.odishakrushi.R;
 import com.odishakrushi.SignUpExtensionOfficer;
 import com.odishakrushi.utils.CircleTransform;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import static com.odishakrushi.Config.getAdminManagerProfileData;
+import static com.odishakrushi.Config.getBusinessManProfileData;
+import static com.odishakrushi.Config.getExtensionOfficerProfileData;
+
 public class NavdrawerRP extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -68,6 +81,9 @@ public class NavdrawerRP extends AppCompatActivity
         super.attachBaseContext(ViewPumpContextWrapper.wrap(newBase));
     }  // Calligraphy
 
+    String service_status_str="";
+    String user_id="";
+    String login_user="";
     String str_phone="";
     TextView txt_mobile;
     String img_url="";
@@ -103,8 +119,11 @@ public class NavdrawerRP extends AppCompatActivity
         SharedPreferences.Editor editor = sharedpreferences.edit();
         logged_in_name=sharedpreferences.getString("LOGIN_NAME", "");
         str_phone=sharedpreferences.getString("PHONE", "");
+        login_user=sharedpreferences.getString("LOGGED_IN_AS", "");
+        user_id=sharedpreferences.getString("FLAG", "");
         editor.commit(); // commit changes
 
+        getServiceStatus();
 
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -579,5 +598,53 @@ public class NavdrawerRP extends AppCompatActivity
         }
     };
 
+    private void getServiceStatus() {
 
+        String api="";
+        if(login_user.equals("7"))
+            api=getAdminManagerProfileData;
+        else   if(login_user.equals("3"))
+            api=getExtensionOfficerProfileData;
+        else  if(login_user.equals("4"))
+            api=getBusinessManProfileData;
+
+        AndroidNetworking.get(api+"?user_id="+user_id)
+                .setPriority(Priority.HIGH)
+                .build()
+                .getAsString(new StringRequestListener() {
+
+                    @Override
+                    public void onResponse(String s) {
+
+                        //Toast.makeText(ViewProfileFarmer.this, s, Toast.LENGTH_SHORT).show();
+
+                        try {
+                            JSONObject jsonObject=new JSONObject(s);
+                            JSONArray jsonArray=jsonObject.getJSONArray("data");
+                            for(int i=0;i<jsonArray.length();i++){
+                                JSONObject jsonObject1=jsonArray.getJSONObject(i);
+
+                                service_status_str= jsonObject1.optString("service_status");
+                                sharedpreferences = getSharedPreferences(mypreference,
+                                        Context.MODE_MULTI_PROCESS);
+                                SharedPreferences.Editor editor = sharedpreferences.edit();
+                                editor.putString("SERVICE_STATUS", service_status_str);
+                                editor.commit();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+
+                    }
+
+                    @Override
+                    public void onError(ANError anError) {
+                        Toast.makeText(NavdrawerRP.this, "Something Went wrong", Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                    }
+                });
+
+
+    }
 }

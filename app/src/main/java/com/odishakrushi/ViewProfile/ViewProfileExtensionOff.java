@@ -188,6 +188,13 @@ public class ViewProfileExtensionOff extends AppCompatActivity {
 
                                 service_status_str= jsonObject1.optString("service_status");
                                 service_status_str= Utils.nullCheck(service_status_str);
+
+                                sharedpreferences = getSharedPreferences(mypreference,
+                                        Context.MODE_MULTI_PROCESS);
+                                SharedPreferences.Editor editor = sharedpreferences.edit();
+                                editor.putString("SERVICE_STATUS", service_status_str);
+                                editor.commit();
+
                                 if(service_status_str.equals("")) cardServiceStatus.setVisibility(View.GONE);
                                 serviceStatus.setText(service_status_str);
 

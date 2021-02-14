@@ -372,21 +372,51 @@
     <string name="Group_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ </string> <!--ଦଳ କୁ ବାର୍ତ୍ତା-->
     <string name="Select_Groups">ଦଳ ଚୟନ କରନ୍ତୁ</string>
 
-    <string-array name="msg_groups">
-        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
-        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ଚାଷୀ</item>
-        <item>ମୋ ପରି ସମସ୍ତ ବିଶେଷଜ୍ଞ</item>
-        <item>ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
+    <string-array name="ext_msg_groups_inservice">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>My Officers</item>
+        <item>My Staffs</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
         <item>Customise</item>
     </string-array>
-
-    <string name="Business_Admin_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ</string> <!--ବାର୍ତ୍ତା-->
-
-    <string-array name="business_msg_groups">
-        <item>ରାଜ୍ୟ ର ସବୁ ଚାଷୀ</item>
-        <item>ରାଜ୍ୟ ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
-        <item>ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
+    <string-array name="ext_msg_groups_retired">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
         <item>Customise</item>
+    </string-array>
+    <string name="Business_Admin_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ</string> <!--ବାର୍ତ୍ତା-->
+    <string-array name="business_msg_groups">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Officers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
+    </string-array>
+    <string-array name="admin_msg_groups_inservice">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>My Officers</item>
+        <item>My Staffs</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
+    </string-array>
+    <string-array name="admin_msg_groups_retired">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
     </string-array>
 
     <string name="Pesticides_For">କେଉଁ କୀଟନାଶକ</string>
@@ -413,12 +443,7 @@
     <string name="sendToFarmerandOpenforum">ଚାଷୀକୁ ଓ ଖୋଲାମଞ୍ଚକୁ  ପଠାନ୍ତୁ</string>
     <string name="or">କିମ୍ବା</string>
 
-    <string-array name="admin_msg_groups">
-        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ବିଭାଗୀୟ ଅଧିକାରୀ</item>
-        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସବୁ ଚାଷୀ</item>
-        <item>ମୋ କର୍ମକ୍ଷେତ୍ର ର ସମସ୍ତ ବ୍ୟବସାୟୀ</item>
-        <item>Customise</item>
-    </string-array>
+
 
     <string name="Success_Story">ସଫଳ କାହାଣୀ</string>
     <string name="Failure_Story">ବିଫଳ କାହାଣୀ</string>

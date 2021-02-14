@@ -53297,25 +53297,54 @@ The PRODUCT means, 	1) “Odisha Krushi” android mobile app.
         <item>Q and A</item>
         <item>Product</item>
     </string-array>
-    <string-array name="msg_groups">
-        <item>All Officers of Department in my Jurisdiction</item>
-        <item>All farmers of my jurisdiction</item>
-        <item>All expert of my domain</item>
-        <item>All businessmen</item>
+    <string-array name="ext_msg_groups_inservice">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>My Officers</item>
+        <item>My Staffs</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
         <item>Customise</item>
     </string-array>
+
+    <string-array name="ext_msg_groups_retired">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customise</item>
+    </string-array>
+
     <string-array name="business_msg_groups">
-        <item>All farmers of the state</item>
-        <item>All officers of the state</item>
-        <item>All businessmen</item>
-        <item>Customise</item>
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Officers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
     </string-array>
-    <string-array name="admin_msg_groups">
-        <item>All Officers of department in my jurisdiction</item>
-        <item>All farmers of my jurisdiction</item>
-        <item>All businessmen in my jurisdiction</item>
-        <item>Customise</item>
+    <string-array name="admin_msg_groups_inservice">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>My Officers</item>
+        <item>My Staffs</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
     </string-array>
+    <string-array name="admin_msg_groups_retired">
+        <item>All Users</item>
+        <item>All Farmers</item>
+        <item>All Businessmen</item>
+        <item>All Students/Researchers</item>
+        <item>All Guests</item>
+        <item>Customize</item>
+    </string-array>
+
     <string-array name="choosefrom_cameragallery">
         <item>Camera</item>
         <item>Gallery</item>

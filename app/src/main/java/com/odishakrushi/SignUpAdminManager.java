@@ -335,6 +335,17 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 str_serviceStatus= serviceStatus.getSelectedItem().toString();
 
+                if(position==1 ){ // i.e. Retired
+                    layoutJurisdiction.setVisibility(View.GONE);
+                    layoutJurisdictionName.setVisibility(View.GONE);
+                    str_jurisdictionName="";
+
+                }
+                else{
+                    layoutJurisdiction.setVisibility(View.VISIBLE);
+                    layoutJurisdictionName.setVisibility(View.VISIBLE);
+                }
+                
                 String s= str_serviceStatus;
                 String s1=s.substring(1,s.length()-1);
 
@@ -347,16 +358,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                     break;
                 }
 
-                if(position==1){ // i.e. Retired
-                    layoutJurisdiction.setVisibility(View.GONE);
-                    layoutJurisdictionName.setVisibility(View.GONE);
-                    str_jurisdictionName="";
 
-                }
-                else{
-                    layoutJurisdiction.setVisibility(View.VISIBLE);
-                    layoutJurisdictionName.setVisibility(View.VISIBLE);
-                }
 
             }
 
@@ -487,18 +489,28 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("122") ||
                         arrayList_jurisdiction_id.get(position).equals("123") ||
                         arrayList_jurisdiction_id.get(position).equals("125") ||
+                        arrayList_jurisdiction_id.get(position).equals("126") ||
                         arrayList_jurisdiction_id.get(position).equals("127") ||
                         arrayList_jurisdiction_id.get(position).equals("128") ||
                         arrayList_jurisdiction_id.get(position).equals("129") ||
                         arrayList_jurisdiction_id.get(position).equals("131")||
                         arrayList_jurisdiction_id.get(position).equals("134")||
                         arrayList_jurisdiction_id.get(position).equals("135")||
+                        arrayList_jurisdiction_id.get(position).equals("136")||
                         arrayList_jurisdiction_id.get(position).equals("137")||
                         arrayList_jurisdiction_id.get(position).equals("87")||
+                        arrayList_jurisdiction_id.get(position).equals("72")||
+                        arrayList_jurisdiction_id.get(position).equals("73")||
                         arrayList_jurisdiction_id.get(position).equals("51")||
                         arrayList_jurisdiction_id.get(position).equals("52")||
                         arrayList_jurisdiction_id.get(position).equals("53")||
+                        arrayList_jurisdiction_id.get(position).equals("54")||
+                        arrayList_jurisdiction_id.get(position).equals("59")||
+                        arrayList_jurisdiction_id.get(position).equals("60")||
+                        arrayList_jurisdiction_id.get(position).equals("49")||
+                        arrayList_jurisdiction_id.get(position).equals("48")||
                         arrayList_jurisdiction_id.get(position).equals("45")||
+                        arrayList_jurisdiction_id.get(position).equals("44")||
                         arrayList_jurisdiction_id.get(position).equals("40")||
                         arrayList_jurisdiction_id.get(position).equals("24")||
                         arrayList_jurisdiction_id.get(position).equals("25")||
@@ -520,6 +532,14 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("62")||
                         arrayList_jurisdiction_id.get(position).equals("63")||
                         arrayList_jurisdiction_id.get(position).equals("64")||
+                        arrayList_jurisdiction_id.get(position).equals("65")||
+                        arrayList_jurisdiction_id.get(position).equals("69")||
+                        arrayList_jurisdiction_id.get(position).equals("70")||
+                        arrayList_jurisdiction_id.get(position).equals("74")||
+                        arrayList_jurisdiction_id.get(position).equals("75")||
+                        arrayList_jurisdiction_id.get(position).equals("76")||
+                        arrayList_jurisdiction_id.get(position).equals("77")||
+                        arrayList_jurisdiction_id.get(position).equals("78")||
                         arrayList_jurisdiction_id.get(position).equals("79"))// i.e District
                 {
                     layoutState.setVisibility(View.GONE);
@@ -532,9 +552,12 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                         arrayList_jurisdiction_id.get(position).equals("31")||
                         arrayList_jurisdiction_id.get(position).equals("32")||
                         arrayList_jurisdiction_id.get(position).equals("33")||
+                        arrayList_jurisdiction_id.get(position).equals("34")||
+                        arrayList_jurisdiction_id.get(position).equals("35")||
+                        arrayList_jurisdiction_id.get(position).equals("36")||
+                        arrayList_jurisdiction_id.get(position).equals("37")||
                         arrayList_jurisdiction_id.get(position).equals("38")||
                         arrayList_jurisdiction_id.get(position).equals("87")||
-                        arrayList_jurisdiction_id.get(position).equals("137")||
                         arrayList_jurisdiction_id.get(position).equals("138")||
                         arrayList_jurisdiction_id.get(position).equals("139")||
                         arrayList_jurisdiction_id.get(position).equals("140")

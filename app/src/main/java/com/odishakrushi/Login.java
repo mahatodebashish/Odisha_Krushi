@@ -29,12 +29,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
+import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.StringRequestListener;
+import com.odishakrushi.Message.SendMessageDetail;
 import com.odishakrushi.PreferenceManager.Preferences;
 import com.pixplicity.easyprefs.library.Prefs;
 import com.tapadoo.alerter.Alerter;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -46,6 +53,10 @@ import com.odishakrushi.NavDrawer.NavDrawerAdminManager;
 import com.odishakrushi.NavDrawer.NavDrawerBusiness;
 import com.odishakrushi.NavDrawer.NavDrawerStudentR;
 import com.odishakrushi.NavDrawer.NavdrawerRP;
+
+import static com.odishakrushi.Config.getAdminManagerProfileData;
+import static com.odishakrushi.Config.getBusinessManProfileData;
+import static com.odishakrushi.Config.getExtensionOfficerProfileData;
 //import spencerstudios.com.bungeelib.Bungee;
 
 public class Login extends AppCompatActivity {
@@ -165,6 +176,7 @@ public class Login extends AppCompatActivity {
         login_user=sharedpreferences.getString("LOGGED_IN_AS", "");
         editor.commit(); // commit changes
 
+
         if (/*login_user.equals("1")*/ login_user.equals("7")){startActivity(new Intent(this,NavDrawerAdminManager.class));finish();}
         if (login_user.equals("2")){startActivity(new Intent(this,NavDrawer.class));finish();}
         if (login_user.equals("3")){startActivity(new Intent(this,NavdrawerRP.class));finish();}
@@ -172,6 +184,10 @@ public class Login extends AppCompatActivity {
         if (login_user.equals("5")){startActivity(new Intent(this,NavDrawerStudentR.class));finish();}
         if (login_user.equals("6")){startActivity(new Intent(this,NavDrawerGuest.class));finish();}
     }
+
+
+
+
     public static boolean hasPermissions(Context context, String... permissions){
 
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.M && context!=null && permissions!=null){
