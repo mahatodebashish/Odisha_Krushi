@@ -1273,6 +1273,15 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
             Toast.makeText(this, getString(R.string.blanks), Toast.LENGTH_SHORT).show();
         }
+        else if (!Utils.isValidEmail(str_input_mail,SignUpExtensionOfficer.this)){
+           /* Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "Invalid Email", Snackbar.LENGTH_LONG);
+
+            snackbar.show();*/
+            Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+
+        }
+
         else if(!(isValidPhone(str_input_mob_no)))
         {
            /* Snackbar snackbar = Snackbar

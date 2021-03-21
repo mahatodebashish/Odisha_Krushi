@@ -506,7 +506,18 @@ public class SignUpFarmer extends AppCompatActivity {
         if (fname.getText().toString().isEmpty() || str_gender.equals("") || input_pass.getText().toString().isEmpty() ||
                 str_caste.equals("") || input_mob_no.getText().toString().isEmpty()) {
             Toast.makeText(SignUpFarmer.this, getString(R.string.blanks), Toast.LENGTH_SHORT).show();
-        } else if (!(isValidPhone(input_mob_no.getText().toString()))) {
+        }
+       /* else if (!Utils.isValidEmail(input_mail.getText().toString().trim(),SignUpFarmer.this)){
+           *//* Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "Invalid Email", Snackbar.LENGTH_LONG);
+
+            snackbar.show();*//*
+            Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+
+        }*/
+
+
+        else if (!(isValidPhone(input_mob_no.getText().toString()))) {
          /*   Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "Phone number is Invalid", Snackbar.LENGTH_LONG);
 

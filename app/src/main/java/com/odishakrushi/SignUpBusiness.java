@@ -287,7 +287,7 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
 
                     List<String> list = Arrays.asList(getResources().getStringArray(R.array.array_deals_in_these_services));
                     /** Defining the ArrayAdapter to set items to Spinner Widget */
-                    adapter = new ArrayAdapter<String>(SignUpBusiness.this, android.R.layout.simple_spinner_item, list);
+                    adapter = new ArrayAdapter<String>(SignUpBusiness.this, R.layout.custom_simple_spinner_item, list);
 
                     dealsIn.setAdapter(adapter);
                 }
@@ -296,7 +296,7 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
 
                     List<String> list = Arrays.asList(getResources().getStringArray(R.array.array_deals_in));
                     /** Defining the ArrayAdapter to set items to Spinner Widget */
-                    adapter = new ArrayAdapter<String>(SignUpBusiness.this, android.R.layout.simple_spinner_item, list);
+                    adapter = new ArrayAdapter<String>(SignUpBusiness.this, R.layout.custom_simple_spinner_item, list);
 
                     dealsIn.setAdapter(adapter);
                 }
@@ -497,11 +497,18 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
                     .make(findViewById(android.R.id.content), "One or More Field Blank", Snackbar.LENGTH_LONG);
 
             snackbar.show();*/
-            Alerter.create(SignUpBusiness.this)
-                    .setTitle(getString(R.string.blanks))
-                    .show();
+            Toast.makeText(this, "One or More Field Blank", Toast.LENGTH_SHORT).show();
+
         }
 
+            else if (!Utils.isValidEmail(stremail,SignUpBusiness.this)){
+           /* Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "Invalid Email", Snackbar.LENGTH_LONG);
+
+            snackbar.show();*/
+                Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+
+            }
      /*  else if(!(Patterns.WEB_URL.matcher(strwebsite).matches()))
         {
            *//* Snackbar snackbar = Snackbar
@@ -518,16 +525,14 @@ public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.Mu
                     .make(findViewById(android.R.id.content), "Phone number is Invalid", Snackbar.LENGTH_LONG);
 
             snackbar.show();*/
-            Alerter.create(SignUpBusiness.this)
-                    .setTitle(getString(R.string.invalidphone))
-                    .show();
+            Toast.makeText(this, "Phone number is Invalid", Toast.LENGTH_SHORT).show();
+
         }
         else if(strpass.length()<6&&strpass.length()>8)
         {
             //Toast.makeText(this, "Length error(min 6 and max 8 characters)", Toast.LENGTH_SHORT).show();
-            Alerter.create(SignUpBusiness.this)
-                    .setTitle(getString(R.string.pass_length))
-                    .show();
+            Toast.makeText(this, "Length error(min 6 and max 8 characters)", Toast.LENGTH_SHORT).show();
+
         }
         else
         {

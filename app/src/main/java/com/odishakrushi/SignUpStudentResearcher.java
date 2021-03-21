@@ -322,7 +322,7 @@ public class SignUpStudentResearcher extends AppCompatActivity {
                str_specialization= spinnerspecialization.getSelectedItem().toString();
                // str_specialization= ""+position;
 
-                if(position==14)
+                if(position==13)
                 {
                     dialog2.setContentView(R.layout.custom2);
                     dialog2.setTitle("Specialization");
@@ -487,18 +487,32 @@ public class SignUpStudentResearcher extends AppCompatActivity {
         if(/*strfname.equals("")||strlname.equals("")||*/str_institute.equals("")||
                 (isEditProfile.equals("0")&&strpass.equals(""))||strmob.equals(""))
         {
-            Snackbar snackbar = Snackbar
+            /*Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "One or More Field(s) Blank", Snackbar.LENGTH_LONG);
 
-            snackbar.show();
+            snackbar.show();*/
+
+            Toast.makeText(this, "One or More Field(s) Blank", Toast.LENGTH_SHORT).show();
+
         }
 
+        else if (!Utils.isValidEmail(str_email,SignUpStudentResearcher.this)){
+           /* Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "Invalid Email", Snackbar.LENGTH_LONG);
+
+            snackbar.show();*/
+            Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+
+        }
         else if(!(isValidPhone(strmob)))
         {
-            Snackbar snackbar = Snackbar
+           /* Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "Phone number is Invalid", Snackbar.LENGTH_LONG);
 
-            snackbar.show();
+            snackbar.show();*/
+
+            Toast.makeText(this, "Phone number is Invalid", Toast.LENGTH_SHORT).show();
+
         }
         else if(strpass.length()<6&&strpass.length()>8)
         {

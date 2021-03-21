@@ -139,11 +139,8 @@ public class NavDrawerGuest extends AppCompatActivity
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        //Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
-        Snackbar snackbar = Snackbar
-                .make(findViewById(android.R.id.content), "Please click BACK again to exit", Snackbar.LENGTH_LONG);
+        Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
 
-        snackbar.show();
         new Handler().postDelayed(new Runnable() {
 
             @Override

@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -312,5 +313,26 @@ public class Utils {
     //checking for string if it has numeric values
     public static boolean isNumeric(String str) {
         return str.matches("-?\\d+(\\.\\d+)?");  //match a number with optional '-' and decimal.
+    }
+
+    public static boolean isValidEmail(String str, Context context){
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        boolean message;
+
+        /*if(str.isEmpty()) {
+            message ="enter email address";
+           // Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
+        }else {*/
+            if (str.trim().matches(emailPattern)) {
+               // message ="valid email address";
+             //   Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
+                message=true;
+            } else {
+              //  message ="Invalid email address";
+              //  Toast.makeText(context,"Invalid email address", Toast.LENGTH_SHORT).show();
+                message=false;
+            }
+        //}
+        return message;
     }
 }

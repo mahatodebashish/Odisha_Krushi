@@ -321,6 +321,8 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 }
                 //When type of control is selected , then it will call getDepartment API
                 // callGetDepartmentApi(String.valueOf(position+1));
+
+                Log.d("callGetDepartmentApi ", "position="+""+position + " " +arrayList_typs_control_id.get(position));
                 callGetDepartmentApi(arrayList_typs_control_id.get(position));
             }
 
@@ -395,6 +397,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 }
 
 
+              //  Log.d("calldcarApi ", "position="+""+position + " " +arrayList_department_id.get(position));
                 calldcarApi(arrayList_department_id.get(position));
             }
 
@@ -1258,24 +1261,32 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
         if(str_name.equals("")||str_mobile.equals("")||(isEditProfile.equals("0")&&str_pass.equals(""))||(isEditProfile.equals("0")&&str_gender.equals("")))
         {
-            Snackbar snackbar = Snackbar
+            /*Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "One or More Field Blank", Snackbar.LENGTH_LONG);
 
-            snackbar.show();
-           /* Alerter.create(SignUpAdminManager.this)
-                    .setTitle(getString(R.string.blanks))
-                    .show();*/
+            snackbar.show();*/
+            Toast.makeText(this, "One or More Field Blank", Toast.LENGTH_SHORT).show();
+
 
         }
+
+        else if (!Utils.isValidEmail(str_email,SignUpAdminManager.this)){
+           /* Snackbar snackbar = Snackbar
+                    .make(findViewById(android.R.id.content), "Invalid Email", Snackbar.LENGTH_LONG);
+
+            snackbar.show();*/
+            Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+
+        }
+
         else if(!(isValidPhone(str_mobile)))
         {
-            Snackbar snackbar = Snackbar
+            /*Snackbar snackbar = Snackbar
                     .make(findViewById(android.R.id.content), "Phone number is Invalid", Snackbar.LENGTH_LONG);
 
-            snackbar.show();
-           /* Alerter.create(SignUpAdminManager.this)
-                    .setTitle(getString(R.string.invalidphone))
-                    .show();*/
+            snackbar.show();*/
+            Toast.makeText(this, "Phone number is Invalid", Toast.LENGTH_SHORT).show();
+
         }
         else if(str_pass.length()<6&&str_pass.length()>8)
         {
