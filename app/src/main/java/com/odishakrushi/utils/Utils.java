@@ -323,7 +323,7 @@ public class Utils {
             message ="enter email address";
            // Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
         }else {*/
-            if (str.trim().matches(emailPattern)) {
+            if (str.trim().matches(emailPattern) || str.equals("")) {
                // message ="valid email address";
              //   Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
                 message=true;

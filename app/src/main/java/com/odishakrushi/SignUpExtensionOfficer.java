@@ -95,7 +95,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
     String str_name="",str_input_mob_no="",str_input_pass="",str_typeOfControl="",str_serviceStatus="",
             str_depart_type="",str_dcar="",str_post="",str_jurisdiction="",str_jurisdictionName="",str_expertise_in="";
     String str_check_value="";
-
+    boolean isRetired=false;
 
     SharedPreferences sharedpreferences;
     public static final String mypreference = "mypref";
@@ -364,12 +364,15 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                 if(position==1){ // i.e. Retired
                     layoutJurisdiction.setVisibility(View.GONE);
                     layoutJurisdictionName.setVisibility(View.GONE);
-                    str_jurisdictionName="";
 
+                    str_jurisdiction="";
+                    str_jurisdictionName="";
+                    isRetired=true;
                 }
                 else{
                     layoutJurisdiction.setVisibility(View.VISIBLE);
                     layoutJurisdictionName.setVisibility(View.VISIBLE);
+                    isRetired=false;
                 }
             }
 

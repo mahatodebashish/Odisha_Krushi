@@ -109,7 +109,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
     ProgressDialog progressDialog;
     String str_gender="",str_typeOfControl="",str_serviceStatus="",str_depart_type="",str_jurisdictionName="",str_dcar="",str_post="";
     LinearLayout layoutGender,layoutState,layoutDistrict,layoutMultiDistrict,layoutJurisdiction,layoutJurisdictionName;
-
+    boolean isRetired=false;
     String isOdia="false";
     String str_group_id="";
 
@@ -310,14 +310,29 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                 if(position==2){ // i.e. NGO
 
-                    layoutJurisdiction.setVisibility(View.VISIBLE);
-                    layoutJurisdictionName.setVisibility(View.VISIBLE);
+                    if(!isRetired) {
+                        layoutJurisdiction.setVisibility(View.GONE);
+                        layoutJurisdictionName.setVisibility(View.GONE);
+
+                        str_jurisdiction="";
+                        str_jurisdictionName="";
+                        isRetired=true;
+
+                    }
+                    else {
+                        layoutJurisdiction.setVisibility(View.VISIBLE);
+                        layoutJurisdictionName.setVisibility(View.VISIBLE);
+                        isRetired=false;
+                    }
                 }
                 else {
 
                     layoutJurisdiction.setVisibility(View.GONE);
                     layoutJurisdictionName.setVisibility(View.GONE);
+
+                    str_jurisdiction="";
                     str_jurisdictionName="";
+                    isRetired=true;
                 }
                 //When type of control is selected , then it will call getDepartment API
                 // callGetDepartmentApi(String.valueOf(position+1));
@@ -340,12 +355,16 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                 if(position==1 ){ // i.e. Retired
                     layoutJurisdiction.setVisibility(View.GONE);
                     layoutJurisdictionName.setVisibility(View.GONE);
+
+                    str_jurisdiction="";
                     str_jurisdictionName="";
+                    isRetired=true;
 
                 }
                 else{
                     layoutJurisdiction.setVisibility(View.VISIBLE);
                     layoutJurisdictionName.setVisibility(View.VISIBLE);
+                    isRetired=false;
                 }
                 
                 String s= str_serviceStatus;
@@ -801,8 +820,18 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
                             jurisdiction.setAdapter(spinnerArrayAdapter);
 
 
-                            layoutJurisdiction.setVisibility(View.VISIBLE);
-                            layoutJurisdictionName.setVisibility(View.VISIBLE);
+                            if(!isRetired){
+                                layoutJurisdiction.setVisibility(View.GONE);
+                                layoutJurisdictionName.setVisibility(View.GONE);
+
+                                str_jurisdiction="";
+                                str_jurisdictionName="";
+                                isRetired=true;
+                            }
+                            else {
+                                layoutJurisdiction.setVisibility(View.VISIBLE);
+                                layoutJurisdictionName.setVisibility(View.VISIBLE);
+                            }
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -812,7 +841,7 @@ public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinn
 
                             str_jurisdiction="";
                             str_jurisdictionName="";
-
+                            isRetired=true;
                         }
 
 
