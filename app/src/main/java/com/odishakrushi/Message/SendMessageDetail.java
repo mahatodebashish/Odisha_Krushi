@@ -82,6 +82,7 @@ public class SendMessageDetail extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedpreferences.edit();
         login_user=sharedpreferences.getString("LOGGED_IN_AS", "");
         service_status_str=sharedpreferences.getString("SERVICE_STATUS", "");
+        user_id=sharedpreferences.getString("FLAG",  "");
         editor.commit(); // commit changes
 
 

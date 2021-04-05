@@ -376,19 +376,19 @@
         <item>All Users</item>
         <item>All Farmers</item>
         <item>My Officers</item>
-        <item>My Staffs</item>
+       <!-- <item>My Staffs</item>-->
         <item>All Businessmen</item>
         <item>All Students/Researchers</item>
-        <item>All Guests</item>
-        <item>Customise</item>
+        <!--<item>All Guests</item>
+        <item>Customise</item>-->
     </string-array>
     <string-array name="ext_msg_groups_retired">
         <item>All Users</item>
         <item>All Farmers</item>
         <item>All Businessmen</item>
         <item>All Students/Researchers</item>
-        <item>All Guests</item>
-        <item>Customise</item>
+      <!--  <item>All Guests</item>
+        <item>Customise</item>-->
     </string-array>
     <string name="Business_Admin_Messaging">ବାର୍ତ୍ତା ପଠାନ୍ତୁ</string> <!--ବାର୍ତ୍ତା-->
     <string-array name="business_msg_groups">
@@ -397,26 +397,26 @@
         <item>All Officers</item>
         <item>All Businessmen</item>
         <item>All Students/Researchers</item>
-        <item>All Guests</item>
-        <item>Customize</item>
+      <!--  <item>All Guests</item>
+        <item>Customize</item>-->
     </string-array>
     <string-array name="admin_msg_groups_inservice">
         <item>All Users</item>
         <item>All Farmers</item>
         <item>My Officers</item>
-        <item>My Staffs</item>
+     <!--   <item>My Staffs</item>-->
         <item>All Businessmen</item>
         <item>All Students/Researchers</item>
-        <item>All Guests</item>
-        <item>Customize</item>
+       <!-- <item>All Guests</item>
+        <item>Customize</item>-->
     </string-array>
     <string-array name="admin_msg_groups_retired">
         <item>All Users</item>
         <item>All Farmers</item>
         <item>All Businessmen</item>
         <item>All Students/Researchers</item>
-        <item>All Guests</item>
-        <item>Customize</item>
+   <!--     <item>All Guests</item>
+        <item>Customize</item>-->
     </string-array>
 
     <string name="Pesticides_For">କେଉଁ କୀଟନାଶକ</string>

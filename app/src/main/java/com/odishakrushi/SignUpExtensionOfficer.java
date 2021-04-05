@@ -117,6 +117,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
     ArrayList<String> arraylist_districtid=new ArrayList<String>();
     ArrayList<String> arraylist_blockid;
+    ArrayList<String> arraylist_blockname;
     ArrayList<String> arraylist_gp_id;
 
     String gpNotFound="";
@@ -497,7 +498,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                     txtViewSelectBlocks.setVisibility(View.GONE);
                     layoutGPs.setVisibility(View.GONE);
                     layoutBlocks.setVisibility(View.GONE);
-                    str_jurisdictionName=str_block_id;
+                    //str_jurisdictionName=str_block_id;
                     layoutState.setVisibility(View.GONE);
 
                     str_jurisdiction="Block";
@@ -623,7 +624,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                // strblock= block.getSelectedItem().toString();
-                //str_block_id= String.valueOf(position+1);
+                str_jurisdictionName=arraylist_blockname.get(position);
 
                 // TASK IS TO GET THE BLOCK_ID FROM DISTRICT_ID ..?
                 str_block_id=arraylist_blockid.get(position);
@@ -815,6 +816,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                             //Initialize arraylist
                             ArrayList<String> al=new ArrayList<String>();
                             arraylist_blockid =new ArrayList<String>();
+                            arraylist_blockname =new ArrayList<String>();
                             jsonObject=new JSONObject(s);
                             array=jsonObject.getJSONArray("blocks");
 
@@ -835,6 +837,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                                 al.add(name);
                                 arraylist_blockid.add(bid);
+                                arraylist_blockname.add(name);
 
                             }
 
@@ -1003,6 +1006,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
                             //Initialize arraylist
                             ArrayList<String> al=new ArrayList<String>();
                             arraylist_blockid =new ArrayList<String>();
+                            arraylist_blockname =new ArrayList<String>();
                             jsonObject=new JSONObject(s);
                             array=jsonObject.getJSONArray("blocks");
 
@@ -1023,6 +1027,7 @@ public class SignUpExtensionOfficer extends AppCompatActivity implements
 
                                 al.add(name);
                                 arraylist_blockid.add(bid);
+                                arraylist_blockname.add(name);
 
                             }
                          /*   Toast.makeText(SignUpFarmer_2.this, "arraylist_blockid", Toast.LENGTH_SHORT).show();

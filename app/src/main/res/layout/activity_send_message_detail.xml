@@ -30,13 +30,26 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:text="@string/Select_Groups" />
-    <Spinner
-        android:id="@+id/spinnerValues"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:spinnerMode="dialog"
-  />
+
+        <LinearLayout
+            android:background="@drawable/rectangle_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+           >
+
+            <Spinner
+                android:id="@+id/spinnerValues"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog"
+                />
+
+
+        </LinearLayout>
 
     <EditText
         android:visibility="gone"
@@ -52,20 +65,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_margin="20dp"
         android:textStyle="bold"
         android:text="@string/Message"/>
     <EditText
         android:id="@+id/message"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:paddingLeft="5dp"
         android:gravity="top"
         android:hint="@string/Type_here"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:background="@drawable/rectangle_border"/>
 
     <LinearLayout
@@ -76,7 +88,9 @@
             android:id="@+id/btnOK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/OK"
             />
 
