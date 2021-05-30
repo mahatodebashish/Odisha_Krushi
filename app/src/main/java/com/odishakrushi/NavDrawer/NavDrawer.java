@@ -233,6 +233,8 @@ public class NavDrawer extends AppCompatActivity
         LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(this);
         lbm.registerReceiver(receiver, new IntentFilter("filter_string"));
 
+        System.out.print("navdrawer_");
+
         // added here Showcase view
       /*  new GuideView.Builder(this)
                 .setTitle(getString(R.string.msgtofarmer))
