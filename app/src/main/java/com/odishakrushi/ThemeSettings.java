@@ -3,17 +3,11 @@ package com.odishakrushi;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
-import android.support.annotation.ColorInt;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,15 +16,9 @@ import android.widget.Toast;
 import com.skydoves.colorpickerpreference.ColorEnvelope;
 import com.skydoves.colorpickerpreference.ColorListener;
 import com.skydoves.colorpickerpreference.ColorPickerDialog;
-import com.skydoves.colorpickerpreference.ColorPickerPreference;
 import com.skydoves.colorpickerpreference.ColorPickerView;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.NavDrawer.NavDrawer;
-import com.odishakrushi.NavDrawer.NavDrawerAdminManager;
-import com.odishakrushi.NavDrawer.NavDrawerBusiness;
-import com.odishakrushi.NavDrawer.NavDrawerStudentR;
-import com.odishakrushi.NavDrawer.NavdrawerRP;
 
 public class ThemeSettings extends AppCompatActivity {
 

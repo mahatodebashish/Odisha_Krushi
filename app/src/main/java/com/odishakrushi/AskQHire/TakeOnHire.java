@@ -1,41 +1,21 @@
 package com.odishakrushi.AskQHire;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.net.Uri;
-import android.os.Environment;
-import android.os.StrictMode;
-import android.provider.MediaStore;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.text.format.DateFormat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.MediaController;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -48,30 +28,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.Adapter.AdapterServicesAvailable;
+
 import com.odishakrushi.Adapter.AdapterTakeOnHire;
-import com.odishakrushi.AskQService.ServicesAvail;
 import com.odishakrushi.Config;
-import com.odishakrushi.Farmer_ViewQuestion.ViewQuestionList_Farmer;
-import com.odishakrushi.Farmer_ViewQuestion.View_AskedQuestion_Detail;
-import com.odishakrushi.Model.ListItem;
-import com.odishakrushi.Model.ListServiceAvailable;
 import com.odishakrushi.Model.ListTakeOnHire;
 import com.odishakrushi.R;
 import com.odishakrushi.RecyclerTouchListener;
-import com.odishakrushi.Utility;
 
 public class TakeOnHire extends AppCompatActivity {
 

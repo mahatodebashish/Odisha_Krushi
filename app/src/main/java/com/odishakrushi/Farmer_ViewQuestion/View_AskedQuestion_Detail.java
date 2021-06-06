@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +22,6 @@ import android.widget.VideoView;
 import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
-import java.net.URL;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import com.odishakrushi.R;

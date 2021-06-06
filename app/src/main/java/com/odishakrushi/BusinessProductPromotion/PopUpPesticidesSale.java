@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +26,6 @@ import org.json.JSONObject;
 
 import com.odishakrushi.Config;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpFarmer;
 
 public class PopUpPesticidesSale extends Activity{ // Activity
 

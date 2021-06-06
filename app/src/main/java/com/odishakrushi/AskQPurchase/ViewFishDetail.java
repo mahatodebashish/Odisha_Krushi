@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -20,12 +20,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.AskQSale.PopUpAgrilProductSale;
-import com.odishakrushi.Ask_Hire;
+
 import com.odishakrushi.Ask_Purchase;
 import com.odishakrushi.Config;
 import com.odishakrushi.CustomHttpClient;
-import com.odishakrushi.Login;
 import com.odishakrushi.R;
 
 public class ViewFishDetail extends AppCompatActivity {

@@ -1,14 +1,15 @@
 package com.odishakrushi.QuestionAnswerSection;
 
 import android.app.Activity;
-import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
 //import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +18,6 @@ import com.odishakrushi.Farmer_ViewQuestion.AnswerList;
 import com.odishakrushi.Fragments.Ask;
 import com.odishakrushi.NavDrawer.NavDrawer;
 import com.odishakrushi.R;
-import com.odishakrushi.Survey.GiveUrOpinion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,18 +76,18 @@ public class QuestionAnswer extends Fragment {
 
 
 
-    class ViewPagerAdapter extends  android.support.v4.app.FragmentStatePagerAdapter {//  FragmentPagerAdapter
-        private final List<android.support.v4.app.Fragment> mFragmentList = new ArrayList<>();
+    class ViewPagerAdapter extends FragmentStatePagerAdapter {//  FragmentPagerAdapter
+        private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
 
 
-        public ViewPagerAdapter(android.support.v4.app.FragmentManager fragmentManager) {
+        public ViewPagerAdapter(FragmentManager fragmentManager) {
             super(fragmentManager);
         }
 
         @Override
-        public android.support.v4.app.Fragment getItem(int position) {
+        public Fragment getItem(int position) {
             return mFragmentList.get(position);
         }
 
@@ -96,7 +96,7 @@ public class QuestionAnswer extends Fragment {
             return mFragmentList.size();
         }
 
-        public void addFragment(android.support.v4.app.Fragment fragment, String title) {
+        public void addFragment(Fragment fragment, String title) {
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
         }

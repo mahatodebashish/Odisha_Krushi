@@ -2,11 +2,10 @@ package com.odishakrushi.Message;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,28 +15,13 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.Config;
-import com.odishakrushi.Login;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpAdminManager;
-import com.odishakrushi.ViewProfile.ViewProfileExtensionOff;
-import com.odishakrushi.utils.Utils;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.Arrays;
 import java.util.List;
-
-import cc.cloudist.acplibrary.ACProgressCustom;
-
-import static com.odishakrushi.Config.getAdminManagerProfileData;
-import static com.odishakrushi.Config.getBusinessManProfileData;
-import static com.odishakrushi.Config.getExtensionOfficerProfileData;
 
 public class SendMessageDetail extends AppCompatActivity {
 

@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,10 +44,10 @@
                     android:tint="@color/white"
                     />
             </LinearLayout>
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
         <!--First Name-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -89,10 +89,10 @@
 
 
             </LinearLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--Lastname-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardLastname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -135,10 +135,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--Phone-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardPhone"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -181,10 +181,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--Email-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardEmail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -227,10 +227,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--Gender-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardGender"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -273,10 +273,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--District-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardDistrict"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -319,10 +319,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--Education Status-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardEducationStatus"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -365,10 +365,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--highest qualization-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardHighestQualification"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -411,10 +411,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--specialization-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardSpecialization"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -457,10 +457,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--college-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardCollege"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -503,10 +503,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--cardOtherDetails-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardOtherDetails"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -549,10 +549,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--cardOtherHighestQualification-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardOtherHighestQualification"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -595,10 +595,10 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--cardOtherSpecialization-->
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardOtherSpecialization"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -642,7 +642,7 @@
 
             </LinearLayout>
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 

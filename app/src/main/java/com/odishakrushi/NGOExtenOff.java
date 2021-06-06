@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -29,7 +29,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.pixplicity.easyprefs.library.Prefs;
-import com.tapadoo.alerter.Alerter;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -41,7 +40,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.AskQSale.SaleList;
+
 import com.odishakrushi.NavDrawer.NavdrawerRP;
 import static com.odishakrushi.Config.ODIA_DISTRICTS;
 public class NGOExtenOff extends AppCompatActivity {

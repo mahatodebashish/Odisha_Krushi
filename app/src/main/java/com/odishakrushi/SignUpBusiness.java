@@ -2,18 +2,16 @@ package com.odishakrushi;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.provider.Browser;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatEditText;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
-import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
@@ -21,7 +19,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,12 +33,9 @@ import com.android.volley.toolbox.Volley;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
-import com.koushikdutta.async.future.FutureCallback;
-import com.koushikdutta.ion.Ion;
 import com.odishakrushi.utils.Utils;
 import com.odishakrushi.utils.multiselectspinner.MultiSpinner;
 import com.pixplicity.easyprefs.library.Prefs;
-import com.tapadoo.alerter.Alerter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -55,7 +49,6 @@ import java.util.regex.Pattern;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
-import static android.R.layout.simple_spinner_item;
 import static com.odishakrushi.Config.ODIA_DISTRICTS;
 
 public class SignUpBusiness extends AppCompatActivity implements MultiSpinner.MultiSpinnerListener {

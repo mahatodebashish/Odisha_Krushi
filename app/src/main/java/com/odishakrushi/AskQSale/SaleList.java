@@ -1,16 +1,15 @@
 package com.odishakrushi.AskQSale;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -29,7 +28,6 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
-import com.tapadoo.alerter.Alerter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -39,19 +37,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.odishakrushi.Adapter.AdapterProductOnSale;
-import com.odishakrushi.Adapter.MyAdapter;
-import com.odishakrushi.BusinessProductPromotion.PopUpBPPMachinetool;
 import com.odishakrushi.Config;
-import com.odishakrushi.ExtensionOff_ViewQuestion.ViewQuestionDetail_ExtOff;
-import com.odishakrushi.ExtensionOff_ViewQuestion.ViewQuestionList_ExtOff;
-import com.odishakrushi.Login;
-import com.odishakrushi.Model.ListItem;
 import com.odishakrushi.Model.ProductOnSale;
-import com.odishakrushi.PopUpMachineTool;
 import com.odishakrushi.R;
 import com.odishakrushi.RecyclerTouchListener;
-import com.odishakrushi.utils.FastNetworkingClass;
-import retrofit2.http.DELETE;
 //import spencerstudios.com.bungeelib.Bungee;
 
 public class SaleList extends AppCompatActivity {

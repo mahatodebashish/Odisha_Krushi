@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,9 +44,9 @@
                 android:tint="@color/white"
            />
         </LinearLayout>
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
           android:id="@+id/cardName"
            android:layout_width="match_parent"
            android:layout_height="50dp"
@@ -100,9 +100,9 @@
 
 
         </LinearLayout>
-       </android.support.v7.widget.CardView>
+       </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFatherName"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -153,9 +153,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardGender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -207,9 +207,9 @@
             </LinearLayout>
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardCaste"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -260,9 +260,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardDistrict"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -318,9 +318,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardBlock"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -376,9 +376,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardGp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -434,9 +434,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardVillage"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -487,9 +487,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardPhone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -540,9 +540,9 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -593,7 +593,7 @@
                 android:layout_weight="1"/>
         </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="match_parent"
@@ -606,7 +606,7 @@
         />
 
     <!--irrigated_land_under_cultivation-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardIluc"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -657,10 +657,10 @@
             </LinearLayout>
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--irrigation_source-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardIrrigationSource"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -712,10 +712,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--non_irrigated_land_under_cultivation-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardNiluc"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -768,10 +768,10 @@
             </LinearLayout>
 
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--machine_tool_own-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardMachineAndToolOwn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -821,10 +821,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--last_crop_grown_in-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardLastCropGrownIn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -874,10 +874,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--area-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardArea"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -927,10 +927,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--soil testing-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardSoilTestingDone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -980,10 +980,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--crop-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardCrop"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1033,10 +1033,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--seed_seedling_variety-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardSeedSeedlingVariety"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1086,10 +1086,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fertiliser_used-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFertiliserUsed"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1139,10 +1139,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--pesticide_used-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardPesticidesUsed"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1192,10 +1192,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--machines_used-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardLcpUsed"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1245,10 +1245,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--last_crop_insurane_done-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardCoveredByInsurance"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1298,10 +1298,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--loan_taken-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardLoanTaken"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1351,11 +1351,11 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
     <!--any special crop grown-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardAnySpecialCropGrown"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1406,7 +1406,7 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
     <TextView
@@ -1421,7 +1421,7 @@
 
 
     <!--fishery_activity-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardFisheryActivity"
         android:layout_width="match_parent"
@@ -1472,10 +1472,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--area_of_pond_acres-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardAreaOfPond"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1525,10 +1525,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--owner_of_pond-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardOwnerOfPond"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1578,10 +1578,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fingerling_from-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFingerlingFrom"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1631,10 +1631,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fishery_trained_for_farming-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFisheryTrainedForFarming"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1684,10 +1684,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fishery_medicine_used-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFisheryMedicineUsed"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1737,10 +1737,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fishery_lone_taken-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFisheryLoneTaken"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1790,10 +1790,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fishery_insurance_done-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardFisheryInsuranceDone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -1843,10 +1843,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--area_of_pond_own_lease-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardAreaOfPondOwnLease"
         android:layout_width="match_parent"
@@ -1897,10 +1897,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--fishery_lone_taken_for-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardFisheryLoanTakenFor"
         android:layout_width="match_parent"
@@ -1951,11 +1951,11 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
     <!--veterinary_activity-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardVeterinaryActivity"
         android:layout_width="match_parent"
@@ -2006,11 +2006,11 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
     <!--animal_type-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardAnimalType"
         android:layout_width="match_parent"
@@ -2061,10 +2061,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--animal_variety-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardAnimalVariety"
         android:layout_width="match_parent"
@@ -2115,10 +2115,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--animal_numbers-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardAnimalNumbers"
         android:layout_width="match_parent"
@@ -2169,10 +2169,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--covered_by_insurance-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardCoveredByInsuranceAnimal"
         android:layout_width="match_parent"
@@ -2223,7 +2223,7 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 
@@ -2239,7 +2239,7 @@
 
 
     <!--animals-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardAnimals"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2289,10 +2289,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--veterinary_trained_for_farming-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardVeterinaryTrainedForFarming"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2341,10 +2341,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--veterinary_medicine_used-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardVeterinaryMedicineUsed"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2394,10 +2394,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--veterinary_lone_taken-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardVeterinaryLoneTaken"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2447,10 +2447,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--veterinary_insurance_done-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardVeterinaryInsuranceDone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -2500,10 +2500,10 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <!--veterinary_lone_taken_for-->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:visibility="gone"
         android:id="@+id/cardVeterinaryLoneTakenFor"
         android:layout_width="match_parent"
@@ -2554,7 +2554,7 @@
                     android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 

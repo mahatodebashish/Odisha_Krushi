@@ -11,12 +11,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -29,19 +29,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.StringRequestListener;
-import com.odishakrushi.Message.SendMessageDetail;
 import com.odishakrushi.PreferenceManager.Preferences;
 import com.pixplicity.easyprefs.library.Prefs;
-import com.tapadoo.alerter.Alerter;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -53,10 +45,6 @@ import com.odishakrushi.NavDrawer.NavDrawerAdminManager;
 import com.odishakrushi.NavDrawer.NavDrawerBusiness;
 import com.odishakrushi.NavDrawer.NavDrawerStudentR;
 import com.odishakrushi.NavDrawer.NavdrawerRP;
-
-import static com.odishakrushi.Config.getAdminManagerProfileData;
-import static com.odishakrushi.Config.getBusinessManProfileData;
-import static com.odishakrushi.Config.getExtensionOfficerProfileData;
 //import spencerstudios.com.bungeelib.Bungee;
 
 public class Login extends AppCompatActivity {

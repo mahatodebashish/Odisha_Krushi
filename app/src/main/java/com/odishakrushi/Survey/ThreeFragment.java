@@ -4,7 +4,7 @@ package com.odishakrushi.Survey;
  * Created by RatnaDev008 on 2/22/2018.
  */
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

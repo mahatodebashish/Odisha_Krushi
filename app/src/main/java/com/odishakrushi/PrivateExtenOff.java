@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -48,7 +48,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import com.odishakrushi.NavDrawer.NavdrawerRP;
 import com.odishakrushi.ProfilePic.ProfilePic;
 import static com.odishakrushi.Config.ODIA_DISTRICTS;
-import static com.odishakrushi.Config.ODIA_DISTRICTS;
+
 public class PrivateExtenOff extends AppCompatActivity {
 
 

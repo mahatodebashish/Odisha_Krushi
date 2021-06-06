@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,7 +17,6 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.EditProfileActivity.EditProfileGuest;
-import com.odishakrushi.EditProfileActivity.EditProfileStudentResearcher;
 import com.odishakrushi.R;
 import com.odishakrushi.utils.Utils;
 
@@ -28,7 +27,6 @@ import org.json.JSONObject;
 import cc.cloudist.acplibrary.ACProgressCustom;
 
 import static com.odishakrushi.Config.getGuestProfileData;
-import static com.odishakrushi.Config.getStudentProfileData;
 
 public class ViewProfileGuest extends AppCompatActivity {
 

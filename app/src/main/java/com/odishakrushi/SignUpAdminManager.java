@@ -7,17 +7,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Handler;
 import android.provider.Browser;
-import android.support.annotation.RequiresApi;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatEditText;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,17 +41,12 @@ import com.android.volley.toolbox.Volley;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
-import com.koushikdutta.async.future.FutureCallback;
-import com.koushikdutta.ion.Ion;
 import com.odishakrushi.PreferenceManager.Preferences;
 import com.odishakrushi.utils.Utils;
 import com.odishakrushi.utils.multiselectspinner.MultiSpinner;
 import com.pixplicity.easyprefs.library.Prefs;
-import com.tapadoo.alerter.Alerter;
 import com.xeoh.android.checkboxgroup.CheckBoxGroup;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,7 +58,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.ProfilePic.ProfilePic;
 
 public class SignUpAdminManager extends AppCompatActivity  implements MultiSpinner.MultiSpinnerListener{
 

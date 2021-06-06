@@ -1,23 +1,20 @@
 package com.odishakrushi.BusinessProductPromotion;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,7 +28,6 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
 import com.odishakrushi.Config;
 import com.odishakrushi.CustomHttpClient;
-import com.odishakrushi.PopUpMachineTool;
 import com.odishakrushi.R;
 
 public class PopUpBPPMachinetool extends AppCompatActivity {

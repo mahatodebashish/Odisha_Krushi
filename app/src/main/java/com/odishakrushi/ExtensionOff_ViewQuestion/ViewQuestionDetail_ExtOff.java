@@ -13,13 +13,12 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.Handler;
 import android.provider.MediaStore;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -53,16 +52,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.AskQAgriculture.CultivationPractise;
+
 import com.odishakrushi.Config;
 import com.odishakrushi.CustomHttpClient;
-import com.odishakrushi.Farmer_ViewQuestion.View_AskedQuestion_Detail;
 import com.odishakrushi.ModelClass.EventModel;
 import com.odishakrushi.NetworkRelatedClass.NetworkCall;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpFarmer;
-import com.odishakrushi.SplashScreen;
-import com.odishakrushi.WelcomeScreen;
 
 public class ViewQuestionDetail_ExtOff extends AppCompatActivity {
 

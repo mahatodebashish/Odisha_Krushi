@@ -25,12 +25,12 @@
                 android:fitsSystemWindows="true"
 
                 >
-                <android.support.design.widget.AppBarLayout
+                <com.google.android.material.appbar.AppBarLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:theme="@style/AppTheme.AppBarOverlay">
 
-                    <android.support.v7.widget.Toolbar
+                    <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
                         app:title="@string/Sign_Up"
                         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                         android:background="?attr/colorPrimary"
                         app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-                </android.support.design.widget.AppBarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
 
 
@@ -62,7 +62,7 @@
                             android:layout_height="wrap_content"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/name_of_farm"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"
@@ -81,7 +81,7 @@
                             android:layout_marginTop="10dp"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/properiter_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"
@@ -221,7 +221,7 @@
                             android:layout_marginTop="10dp"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/input_mob_no"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"
@@ -242,7 +242,7 @@
                             android:layout_marginTop="10dp"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/input_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"
@@ -262,7 +262,7 @@
                             android:layout_marginTop="10dp"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/idwebsite"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"
@@ -282,7 +282,7 @@
                             android:layout_marginTop="10dp"
                             >
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/input_pass"
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/edittext_height"

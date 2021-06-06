@@ -1,7 +1,7 @@
 package com.odishakrushi.Adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,26 +18,6 @@ import java.util.List;
 
 import com.odishakrushi.Config;
 import com.odishakrushi.Model.ListServices;
-import com.odishakrushi.Model.ProductOnSale;
-import com.odishakrushi.R;
-import android.content.Context;
-import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.StringRequestListener;
-import org.json.JSONException;
-import org.json.JSONObject;
-import java.util.List;
-import com.odishakrushi.AskQSale.PopUpAgrilProductSale;
-import com.odishakrushi.Model.ProductOnSale;
 import com.odishakrushi.R;
 
 /**

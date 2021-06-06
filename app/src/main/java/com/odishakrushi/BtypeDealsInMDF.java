@@ -3,9 +3,9 @@ package com.odishakrushi;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
@@ -22,8 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.AskQAgriculture.CultivationPractise;
-import com.odishakrushi.AskQSale.SaleList;
+
 import com.odishakrushi.ProfilePic.ProfilePic;
 
 public class BtypeDealsInMDF extends AppCompatActivity {

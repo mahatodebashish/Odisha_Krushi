@@ -2,17 +2,13 @@ package com.odishakrushi.AskQHire;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,12 +37,8 @@ import org.json.JSONObject;
 import java.util.Calendar;
 
 import com.odishakrushi.Adapter.CustomAdapter;
-import com.odishakrushi.Adapter.CustomAdapterAreaOfOperation;
-import com.odishakrushi.Ask_Hire;
 import com.odishakrushi.Config;
-import com.odishakrushi.FullscreenDialogFragment;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpFarmer_2;
 
 
 public class PopUpGiveOnHireFragment extends DialogFragment implements

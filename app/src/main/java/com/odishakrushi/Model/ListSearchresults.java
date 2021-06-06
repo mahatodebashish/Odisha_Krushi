@@ -9,6 +9,7 @@ public class ListSearchresults {
     // for my story , qna id
     private String dropdown;
     private String questext;
+    private String anstext;
     private String district;
     private String block;
     private String phone;
@@ -25,9 +26,10 @@ public class ListSearchresults {
     private String image_url;
    // private String video_url;
 
-    public ListSearchresults(String dropdown, String questext, String district, String block, String phone, String farmer_name, String village, String category_name, String sub_category_name, String product_type, String make, String model, String image_url) { // String url, String video_url
+    public ListSearchresults(String dropdown, String questext, String anstext, String district, String block, String phone, String farmer_name, String village, String category_name, String sub_category_name, String product_type, String make, String model, String image_url) { // String url, String video_url
         this.dropdown = dropdown;
         this.questext = questext;
+        this.anstext = anstext;
         this.district = district;
         this.block = block;
         this.phone = phone;
@@ -41,6 +43,10 @@ public class ListSearchresults {
         this.model = model;
         this.image_url = image_url;
        // this.video_url = video_url;
+    }
+
+    public String getAnstext() {
+        return anstext;
     }
 
     public String getDropdown() {

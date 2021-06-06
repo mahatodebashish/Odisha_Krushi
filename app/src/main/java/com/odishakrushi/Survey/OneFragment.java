@@ -5,14 +5,13 @@ package com.odishakrushi.Survey;
  */
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.odishakrushi.NavDrawer.NavDrawer;
 import com.odishakrushi.R;
-import com.odishakrushi.SurveyFarmer;
 
 
 public class OneFragment extends Fragment{

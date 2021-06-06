@@ -26,12 +26,12 @@
                 android:fitsSystemWindows="true"
 
                 >
-                <android.support.design.widget.AppBarLayout
+                <com.google.android.material.appbar.AppBarLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:theme="@style/AppTheme.AppBarOverlay">
 
-                    <android.support.v7.widget.Toolbar
+                    <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
@@ -39,7 +39,7 @@
                         app:popupTheme="@style/AppTheme.PopupOverlay"
                         app:title="@string/Profile_Completeness" />
 
-                </android.support.design.widget.AppBarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
 
 
@@ -61,11 +61,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColorHint="#b9101010">
-                                <android.support.v7.widget.AppCompatEditText
+                                <androidx.appcompat.widget.AppCompatEditText
                                     android:id="@+id/fname"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -74,7 +74,7 @@
                                    android:focusable="false"
 
                                     />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
 
 
@@ -92,11 +92,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColorHint="#b9101010">
-                                <android.support.v7.widget.AppCompatEditText
+                                <androidx.appcompat.widget.AppCompatEditText
                                     android:id="@+id/lname"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -104,7 +104,7 @@
                                     android:textSize="13sp"
                                     android:focusable="false"
                                     />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
 
 
@@ -125,19 +125,19 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="right">
-                                <android.support.design.widget.TextInputLayout
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:textColorHint="#b9101010">
 
-                                    </android.support.design.widget.TextInputLayout>
-                                <android.support.design.widget.TextInputLayout
+                                    </com.google.android.material.textfield.TextInputLayout>
+                                <com.google.android.material.textfield.TextInputLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:textColorHint="#b9101010">
 
-                                    <android.support.v7.widget.AppCompatEditText
+                                    <androidx.appcompat.widget.AppCompatEditText
                                         android:id="@+id/input_mob_no"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -146,7 +146,7 @@
                                         android:textSize="13sp"
                                         android:maxLength="10"
                                         android:textColor="@android:color/black"/>
-                                </android.support.design.widget.TextInputLayout>
+                                </com.google.android.material.textfield.TextInputLayout>
                             </LinearLayout>
 
                         </LinearLayout>
@@ -159,12 +159,12 @@
                         android:layout_marginRight="20dp"
                         android:layout_marginLeft="20dp"
                         >
-                        <android.support.design.widget.TextInputLayout
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textColorHint="#b9101010">
 
-                            <android.support.v7.widget.AppCompatEditText
+                            <androidx.appcompat.widget.AppCompatEditText
                                 android:id="@+id/input_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
                                 android:textSize="13sp"
                                 android:inputType="textEmailAddress"
                                 />
-                        </android.support.design.widget.TextInputLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -185,11 +185,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
-                            <android.support.design.widget.TextInputLayout
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColorHint="#b9101010">
-                                <android.support.v7.widget.AppCompatEditText
+                                <androidx.appcompat.widget.AppCompatEditText
                                     android:id="@+id/pass"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -200,7 +200,7 @@
                                     android:maxLength="6"
                                     android:visibility="gone"
                                     />
-                            </android.support.design.widget.TextInputLayout>
+                            </com.google.android.material.textfield.TextInputLayout>
                         </LinearLayout>
 
 

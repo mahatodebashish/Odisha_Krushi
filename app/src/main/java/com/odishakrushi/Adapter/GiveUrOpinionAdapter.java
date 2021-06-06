@@ -1,30 +1,15 @@
 package com.odishakrushi.Adapter;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.graphics.Color;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.StringRequestListener;
-import com.odishakrushi.Config;
 import com.odishakrushi.Model.GiveUrOpinionModel;
-import com.odishakrushi.Model.ListAnswers;
 import com.odishakrushi.R;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.List;
 

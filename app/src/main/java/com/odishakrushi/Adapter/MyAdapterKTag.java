@@ -1,32 +1,19 @@
 package com.odishakrushi.Adapter;
 
-import android.app.ProgressDialog;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.MediaController;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.VideoView;
 
 import com.odishakrushi.Interfaces.KBankInterface;
-import com.odishakrushi.Interfaces.KnowledgeBankDropdownIndex;
-import com.odishakrushi.SearchResults;
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import com.odishakrushi.Model.ListItem;
 import com.odishakrushi.Model.ListTags;
 import com.odishakrushi.R;
 

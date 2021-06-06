@@ -3,42 +3,17 @@ package com.odishakrushi.AskQService;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
+
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.Adapter.AdapterServicesAvailable;
-import com.odishakrushi.Adapter.MyAdapter;
-import com.odishakrushi.AskQPurchase.AgrilProductPurchase;
-import com.odishakrushi.AskQPurchase.ProductListPurchase;
-import com.odishakrushi.Model.ListItem;
-import com.odishakrushi.Model.ListServiceAvailable;
+
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpFarmer;
 
 public class ServicesAvail extends AppCompatActivity {
 

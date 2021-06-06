@@ -1,16 +1,14 @@
 package com.odishakrushi;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,7 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
-import com.odishakrushi.NavDrawer.NavDrawer;
+
 import com.odishakrushi.NavDrawer.NavdrawerRP;
 
 public class PopUpExpertiseAgril extends Activity {

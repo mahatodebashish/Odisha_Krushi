@@ -1,14 +1,12 @@
 package com.odishakrushi;
 
-import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,8 +16,6 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,17 +23,15 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.pixplicity.easyprefs.library.Prefs;
-import com.tapadoo.alerter.Alerter;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import cc.cloudist.acplibrary.ACProgressCustom;
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
@@ -79,6 +73,22 @@ public class WelcomeScreen extends AppCompatActivity {
         countFarmer=findViewById(R.id.countFarmer);
         refresh=findViewById(R.id.refresh);
 
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if (!task.isSuccessful()) {
+                            Log.d("FIREBASE_TAG", "getInstanceId failed",
+                                    task.getException());
+                            return;
+                        }
+
+                        // Get new Instance ID token
+                        String token = task.getResult().getToken();
+                        Log.d("FIREBASE_TAG", token);
+                        //dNb7kqbq8Pc:APA91bE8uioIFaTUEd_jGAf6Yj3DLiRqBp1GQXqQqkhiFPForbhbGzkMlSkyXYsA2GnbrqPW5925yf994477zFOIkZgDD2-e4KDpQmezkPvqHmcgm6Ci2ZvdvBDbSQHsAElz3O3iq4Sf
+                    }
+                });
         loadData();
 
 

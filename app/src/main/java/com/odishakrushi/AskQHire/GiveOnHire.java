@@ -1,49 +1,24 @@
 package com.odishakrushi.AskQHire;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
-import android.app.TimePickerDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Environment;
-import android.os.StrictMode;
-import android.provider.MediaStore;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.text.format.DateFormat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.MediaController;
 import android.widget.ProgressBar;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
-import android.widget.VideoView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -58,42 +33,18 @@ import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.Config;
 import com.tapadoo.alerter.Alerter;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import com.odishakrushi.Adapter.AdapterGiveOnHire;
-import com.odishakrushi.Adapter.AdapterProductOnSale;
-import com.odishakrushi.AskQRepair.RepairMachines;
-import com.odishakrushi.AskQSale.AgrilProductSale;
-import com.odishakrushi.AskQSale.PopUpAgrilProductSale;
-import com.odishakrushi.AskQSale.PopUpFish;
-import com.odishakrushi.AskQSale.PopUpMachineToolSale;
-import com.odishakrushi.AskQSale.PopUpOtherProductToSale;
-import com.odishakrushi.AskQSale.PopUpSaleAnimal;
-import com.odishakrushi.AskQSale.SaleList;
-import com.odishakrushi.CustomHttpClient;
-import com.odishakrushi.FullscreenDialogFragment;
 import com.odishakrushi.Model.GiveOnHireModel;
-import com.odishakrushi.Model.ProductOnSale;
 import com.odishakrushi.R;
 import com.odishakrushi.RecyclerTouchListener;
-import com.odishakrushi.TimePickerFragment;
-import com.odishakrushi.Utility;
 //import spencerstudios.com.bungeelib.Bungee;
 
 

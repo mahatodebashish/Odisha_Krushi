@@ -23,12 +23,12 @@
                 android:fitsSystemWindows="true"
 
                 >
-                <android.support.design.widget.AppBarLayout
+                <com.google.android.material.appbar.AppBarLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:theme="@style/AppTheme.AppBarOverlay">
 
-                    <android.support.v7.widget.Toolbar
+                    <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
                         app:title="@string/Register_as_Farmer"
                         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                         android:background="?attr/colorPrimary"
                         app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-                </android.support.design.widget.AppBarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
 
 
 
@@ -1160,7 +1160,7 @@
                                 </LinearLayout>
 
 
-                                <android.support.v7.widget.RecyclerView
+                                <androidx.recyclerview.widget.RecyclerView
                                     android:visibility="gone"
                                     android:id="@+id/recyclerViewAnimals"
                                     android:layout_width="match_parent"

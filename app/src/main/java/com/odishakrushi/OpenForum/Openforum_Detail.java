@@ -1,15 +1,14 @@
 package com.odishakrushi.OpenForum;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -31,7 +30,6 @@ import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.Config;
 import com.odishakrushi.utils.FullScreenViewer;
 import com.squareup.picasso.Picasso;
-import com.tapadoo.alerter.Alerter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,12 +38,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.odishakrushi.Adapter.MyAdapterOpenForum;
 import com.odishakrushi.Adapter.MyAdapterOpenForumAnswersList;
 import com.odishakrushi.Model.ListOpenFanswerers;
-import com.odishakrushi.Model.ListOpenForum;
 import com.odishakrushi.R;
-import com.odishakrushi.StateGovtFisheryExtOff;
 
 public class Openforum_Detail extends AppCompatActivity {
 

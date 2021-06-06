@@ -4,9 +4,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -20,10 +19,6 @@ import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
 import com.odishakrushi.Config;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpFarmer_2;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class GiveUrOpinionFarmer extends AppCompatActivity {
 

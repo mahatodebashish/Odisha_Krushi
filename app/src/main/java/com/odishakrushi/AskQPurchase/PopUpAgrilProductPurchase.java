@@ -6,7 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,9 +35,7 @@ import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import com.odishakrushi.Config;
 import com.odishakrushi.CustomHttpClient;
 import com.odishakrushi.Login;
-import com.odishakrushi.PopUpMachineTool;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpGuest;
 
 public class PopUpAgrilProductPurchase extends Activity {
 

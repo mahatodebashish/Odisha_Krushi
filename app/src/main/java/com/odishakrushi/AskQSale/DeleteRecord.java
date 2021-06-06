@@ -3,7 +3,7 @@ package com.odishakrushi.AskQSale;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -13,19 +13,14 @@ import android.widget.Toast;
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONArrayRequestListener;
 import com.androidnetworking.interfaces.StringRequestListener;
-import com.tapadoo.alerter.Alerter;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 import com.odishakrushi.Config;
-import com.odishakrushi.Login;
 import com.odishakrushi.R;
-import com.odishakrushi.utils.FastNetworkingClass;
 //import spencerstudios.com.bungeelib.Bungee;
 
 public class DeleteRecord extends Activity {

@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <!-- Toolbar instead of ActionBar so the drawer_menu can slide on top -->
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                         android:padding="8dp"
                         android:src="@android:drawable/star_big_on" />
                 </LinearLayout>
-            </android.support.v7.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
             <TextView
                 android:id="@+id/textMessage"
                 android:layout_width="match_parent"

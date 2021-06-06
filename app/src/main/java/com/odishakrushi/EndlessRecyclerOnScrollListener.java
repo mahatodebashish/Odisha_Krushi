@@ -4,8 +4,8 @@ package com.odishakrushi;
  * Created by RatnaDev008 on 7/25/2018.
  */
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class EndlessRecyclerOnScrollListener extends
         RecyclerView.OnScrollListener {

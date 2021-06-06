@@ -3,10 +3,10 @@ package com.odishakrushi.ViewProfile;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -17,10 +17,7 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
-import com.odishakrushi.EditProfileActivity.EditProfileBusiness;
-import com.odishakrushi.EditProfileActivity.EditProfileExtoff;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpAdminManager;
 import com.odishakrushi.SignUpExtensionOfficer;
 import com.odishakrushi.utils.Utils;
 
@@ -30,7 +27,6 @@ import org.json.JSONObject;
 
 import cc.cloudist.acplibrary.ACProgressCustom;
 
-import static com.odishakrushi.Config.getBusinessManProfileData;
 import static com.odishakrushi.Config.getExtensionOfficerProfileData;
 
 public class ViewProfileExtensionOff extends AppCompatActivity {

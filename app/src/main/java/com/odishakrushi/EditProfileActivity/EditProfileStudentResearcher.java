@@ -3,20 +3,17 @@ package com.odishakrushi.EditProfileActivity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.AppCompatEditText;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -49,7 +46,6 @@ import com.odishakrushi.Config;
 import com.odishakrushi.CustomHttpClient;
 import com.odishakrushi.Login;
 import com.odishakrushi.R;
-import com.odishakrushi.SignUpStudentResearcher;
 
 public class EditProfileStudentResearcher extends AppCompatActivity {
 

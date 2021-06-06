@@ -7,29 +7,19 @@ package com.odishakrushi.Adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
-import android.media.MediaPlayer;
 
 import android.net.Uri;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.VideoView;
-
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import com.odishakrushi.AskQSale.PopUpAgrilProductSale;
 import com.odishakrushi.Model.ListViewStory;
-import com.odishakrushi.Model.ProductOnSale;
 import com.odishakrushi.R;
 
 

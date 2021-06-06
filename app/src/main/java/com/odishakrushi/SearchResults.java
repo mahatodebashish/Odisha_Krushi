@@ -2,12 +2,12 @@ package com.odishakrushi;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -132,7 +132,7 @@ public class SearchResults extends AppCompatActivity {
                             }
                             for(int i=0;i<array.length();i++)
                             {
-                                String dropdown="",  questext="",  district="",  block="",  phone="",  farmer_name="",  village="",
+                                String dropdown="",  questext="", anstext="",  district="",  block="",  phone="",  farmer_name="",  village="",
                                         url="",  category_name="",  sub_category_name="",  product_type="",  make="",  model="",  image_url="";
 
                                 JSONObject o=array.getJSONObject(i);
@@ -141,6 +141,7 @@ public class SearchResults extends AppCompatActivity {
                                 {
                                     dropdown=o.getString("dropdown");
                                     questext=o.getString("questext");
+                                    anstext=o.getString("anstext");
                                     district=o.getString("district");
                                     block=o.getString("block");
                                     phone=o.getString("phone");
@@ -160,7 +161,7 @@ public class SearchResults extends AppCompatActivity {
                                 }
 
                                 ListSearchresults item=new ListSearchresults(
-                                        dropdown,  questext,  district,  block,  phone,  farmer_name,  village,
+                                        dropdown,  questext, anstext, district,  block,  phone,  farmer_name,  village,
                                           category_name,  sub_category_name,  product_type,  make,  model,  image_url);
 
 

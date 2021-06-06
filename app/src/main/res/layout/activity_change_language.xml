@@ -10,7 +10,7 @@
     <!--android:background="#62a6f2a6"
       android:background="@drawable/watermark_bg"-->
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:visibility="visible"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
