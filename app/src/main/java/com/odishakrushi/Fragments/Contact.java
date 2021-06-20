@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -33,10 +34,11 @@ public class Contact extends Fragment {
 
 
     String smallBannerUrl="";
-    LinearLayout email,call,location,website;
-    TextView txtemail;
+    LinearLayout location,website;
+    ImageView call,whatsapp,telegram,email;
+    //TextView txtemail;
     String strEmail="mail@odishakrushi.in";
-    ImageButton facebook,whatsapp,youtube,instagram,twitter;
+    ImageButton facebook,youtube,instagram,twitter;
     TextView phone;
     ImageView image_ad;
     AppCompatActivity context;
@@ -75,19 +77,19 @@ public class Contact extends Fragment {
 
         phone=getView().findViewById(R.id.phone);
         email=getView().findViewById(R.id.email);
-        txtemail=getView().findViewById(R.id.txtemail);
+       // txtemail=getView().findViewById(R.id.txtemail);
 
        
 
         //Setting dynamic email id as per user group
-        if(Integer.parseInt(user_group_id)==4)
+        if(!user_group_id.equals("") && Integer.parseInt(user_group_id)==4)
             strEmail="business@odishakrushi.in";
 
         else
             strEmail="mail@odishakrushi.in";
 
 
-        txtemail.setText(strEmail);
+       // txtemail.setText(strEmail);
 
         email.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,13 +132,17 @@ public class Contact extends Fragment {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("smsto:" + "8763865936");
-                Intent i = new Intent(Intent.ACTION_SENDTO, uri);
-                i.setPackage("com.whatsapp");
-                startActivity(Intent.createChooser(i, "Hi !! Odisha Krushi"));
+
+                intentMessageWhatsapp("Hi ! This is Odisha Krushi",context);
             }
         });
-
+        telegram=getView().findViewById(R.id.telegram);
+        telegram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intentMessageTelegram("Hi ! This is Odisha Krushi",context);
+            }
+        });
 
         youtube=getView().findViewById(R.id.youtube);
         youtube.setOnClickListener(new View.OnClickListener() {
@@ -195,5 +201,57 @@ public class Contact extends Fragment {
         }
     };
 
+    void intentMessageTelegram(String msg, Context context)
+    {
+        final String appName = "org.telegram.messenger";
+        final boolean isAppInstalled = isAppAvailable(context, appName);
+        if (isAppInstalled)
+        {
+            Intent myIntent = new Intent(Intent.ACTION_SEND);
+            myIntent.setType("text/plain");
+            myIntent.setPackage(appName);
+            myIntent.putExtra(Intent.EXTRA_TEXT, msg);//
+            this.startActivity(Intent.createChooser(myIntent, "Share with"));
+        }
+        else
+        {
+            Toast.makeText(context, "Telegram not Installed", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(android.content.Intent.ACTION_VIEW);
+            i.setData(Uri.parse("https://play.google.com/store/apps/details?id=org.telegram.messenger"));
+            startActivity(i);
+        }
+    }
 
+    void intentMessageWhatsapp(String msg, Context context)
+    {
+        final String appName = "com.whatsapp";
+        final boolean isAppInstalled = isAppAvailable(context, appName);
+        if (isAppInstalled)
+        {
+            Uri uri = Uri.parse("smsto:" + "8763865936");
+            Intent i = new Intent(Intent.ACTION_SENDTO, uri);
+            i.setPackage("com.whatsapp");
+            startActivity(Intent.createChooser(i, msg));
+        }
+        else
+        {
+            Toast.makeText(context, "Whatsapp not Installed", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(android.content.Intent.ACTION_VIEW);
+            i.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.whatsapp"));
+            startActivity(i);
+        }
+    }
+    public static boolean isAppAvailable(Context context, String appName)
+    {
+        PackageManager pm = context.getPackageManager();
+        try
+        {
+            pm.getPackageInfo(appName, PackageManager.GET_ACTIVITIES);
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
 }

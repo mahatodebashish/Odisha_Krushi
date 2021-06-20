@@ -115,7 +115,7 @@ public class KnowledgeBank extends Fragment {
         searchtext=getView().findViewById(R.id.searchtext);
        // spinnerdropdown=getView().findViewById(R.id.spinnerdropdown);
 
-        txt_no_questions=getView().findViewById(R.id.txt_no_questions);
+       // txt_no_questions=getView().findViewById(R.id.txt_no_questions);
 
         btn_search=getView().findViewById(R.id.btn_search);
         image_ad=getView().findViewById(R.id.image_ad);
@@ -396,7 +396,7 @@ public class KnowledgeBank extends Fragment {
 
                             if(array.length()==0)
                             {
-                                txt_no_questions.setVisibility(View.VISIBLE);
+                              //  txt_no_questions.setVisibility(View.VISIBLE);
                             }
                             for(int i=0;i<array.length();i++)
                             {
@@ -434,7 +434,7 @@ public class KnowledgeBank extends Fragment {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 progressDialog.dismiss();
-                txt_no_questions.setVisibility(View.VISIBLE);
+               // txt_no_questions.setVisibility(View.VISIBLE);
                 Toast.makeText(getActivity(),"Error while loading",Toast.LENGTH_LONG).show();
             }
         });
